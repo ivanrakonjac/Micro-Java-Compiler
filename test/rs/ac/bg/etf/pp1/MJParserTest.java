@@ -46,7 +46,11 @@ public class MJParserTest {
 			RuleVisitor v = new RuleVisitor();
 			prog.traverseBottomUp(v); 
 	      
-			log.info(" Program count calls = " + v.programCounter);
+			log.info(" Program count calls = " + v.varDeclCounter);
+			
+			log.info(" Program count calls = " + v.methodDeclCounter);
+			
+			log.info(" Program count calls = " + v.formalParamDeclCounter);
 
 			//log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
 			

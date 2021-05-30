@@ -5,11 +5,24 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 public class RuleVisitor extends VisitorAdaptor{
 	
-	int programCounter = 0;
+	int varDeclCounter = 0;
 	
-	public void visit(Program program) {
-		programCounter++;
+	public void visit(VarDecl varDecl) {
+		varDeclCounter++;
 	}
+	
+	int methodDeclCounter = 0;
+	
+	public void visit(MethodDecl methodDecl) {
+		methodDeclCounter++;
+	}
+	
+	int formalParamDeclCounter = 0;
+	
+	public void visit(FormalParamDecl formalParamDecl) {
+		formalParamDeclCounter++;
+	}
+	
 
 	/*int printCallCount = 0;
 	int varDeclCount = 0;

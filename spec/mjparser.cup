@@ -46,6 +46,36 @@ terminal PRINT, RETURN, NUMBER, PLUS, EQUAL, COMMA, SEMI, LPAREN, RPAREN, VOID;
 terminal PROG, LBRACE, RBRACE;
 terminal String IDENT;
 
-nonterminal Program;
+nonterminal Program, Type;
+nonterminal VarDeclList, VarDecl;
+nonterminal MethodDecl, FormPars, FormalParamList, FormalParamDecl, MethodDeclList;
 
-Program ::= (Program) PROG IDENT LBRACE RBRACE;
+Program ::= (Program) PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+			|
+			(NoVarDecl) /* epsilon */
+			;
+
+VarDecl ::= (VarDecl) Type:varType IDENT:varName SEMI;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				|
+				(NoMethodDecl) /* epsilon */
+				;
+
+MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE RBRACE;
+
+FormPars ::= (FormParams) FormalParamList
+			  |
+			  (NoFormParam) /* epsilon */
+			  ;
+		  
+FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+					|
+					(SingleFormalParamDecl) FormalParamDecl
+					;
+					
+FormalParamDecl ::= (FormalParamDecl) Type:varType IDENT:varName;
+
+Type ::= (Type) IDENT:typeName;

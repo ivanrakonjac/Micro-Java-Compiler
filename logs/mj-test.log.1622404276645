@@ -1,0 +1,17 @@
+INFO  21:50:28,059 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  21:50:28,083 - #12 program
+INFO  21:50:28,084 - #15 MJProgram
+INFO  21:50:28,084 - #15 int
+INFO  21:50:28,085 - #15 x
+INFO  21:50:28,086 - #8 ;
+INFO  21:50:28,087 - #15 int
+INFO  21:50:28,088 - #15 y
+INFO  21:50:28,088 - #8 ;
+INFO  21:50:28,088 - #13 {
+INFO  21:50:28,088 - #15 int
+INFO  21:50:28,088 - #15 getValue
+INFO  21:50:28,088 - #9 (
+INFO  21:50:28,089 - #15 int
+ERROR 21:50:28,089 - 
+Sintaksna greska na liniji 6
+ERROR 21:50:28,089 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

@@ -1,4 +1,11 @@
  program MJProgram
+ 
+ int x; int y;
+ 
 {
-
+	int getValue(int g, int a, int b) int a; int c; {}
+	
+	double main() {
+	
+	}
 }
