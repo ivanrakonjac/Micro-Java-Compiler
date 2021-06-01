@@ -86,7 +86,14 @@ StatementList ::= (Statements) StatementList Statement
 				(NoStmt) /* epsilon */
 				;
 
-Statement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI;
+Statement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
+				|
+				(PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+		    	|
+			  	(ReturnExpr) RETURN Expr:t SEMI
+			  	|
+			  	(ReturnNoExpr) RETURN SEMI
+				;
 
 Expr ::= (AddExpr) Expr:te Addop Term:t
 	 |

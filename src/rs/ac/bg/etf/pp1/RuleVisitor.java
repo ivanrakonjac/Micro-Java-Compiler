@@ -35,6 +35,18 @@ public class RuleVisitor extends VisitorAdaptor{
 		actualParamsCounter++;
 	}
 	
+	int printCounter = 0;
+	
+	public void visit(PrintStmt printStmt) {
+		printCounter++;
+	}
+	
+	int returnCounter = 0;
+	
+	public void visit(ReturnExpr returnExpr) {
+		returnCounter++;
+	}
+	
 	
 
 	/*int printCallCount = 0;

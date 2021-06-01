@@ -9,6 +9,8 @@
 	}
 	
 	double main() {
-		
+		print(c);
+		print(c+8+g(2,3));
+		return 2 + 3;
 	}
 }

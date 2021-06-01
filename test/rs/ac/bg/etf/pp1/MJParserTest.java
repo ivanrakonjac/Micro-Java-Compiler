@@ -55,6 +55,10 @@ public class MJParserTest {
 			log.info(" termExprCounter = " + v.termExprCounter);
 			
 			log.info(" actualParamsCounter = " + v.actualParamsCounter);
+			
+			log.info(" printCounter = " + v.printCounter);
+			
+			log.info(" returnCounter = " + v.returnCounter);
 
 			//log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
 			
