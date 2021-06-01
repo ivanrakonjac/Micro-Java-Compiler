@@ -1,16 +1,37 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/4/2021 22:1:2
+// 1/5/2021 0:55:59
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
+    public void visit(Factor Factor) { }
+    public void visit(ActualParamList ActualParamList) { }
+    public void visit(Expr Expr) { }
     public void visit(FormalParamList FormalParamList) { }
-    public void visit(VarDeclList VarDeclList) { }
     public void visit(FormPars FormPars) { }
+    public void visit(VarDeclList VarDeclList) { }
     public void visit(MethodDeclList MethodDeclList) { }
+    public void visit(Statement Statement) { }
+    public void visit(StatementList StatementList) { }
+    public void visit(ActualPars ActualPars) { }
+    public void visit(Addop Addop) { visit(); }
+    public void visit(Designator Designator) { visit(); }
+    public void visit(ActualParam ActualParam) { visit(); }
+    public void visit(ActualParams ActualParams) { visit(); }
+    public void visit(NoActuals NoActuals) { visit(); }
+    public void visit(Actuals Actuals) { visit(); }
+    public void visit(FuncCall FuncCall) { visit(); }
+    public void visit(Var Var) { visit(); }
+    public void visit(Const Const) { visit(); }
+    public void visit(Term Term) { visit(); }
+    public void visit(TermExpr TermExpr) { visit(); }
+    public void visit(AddExpr AddExpr) { visit(); }
+    public void visit(Assignment Assignment) { visit(); }
+    public void visit(NoStmt NoStmt) { visit(); }
+    public void visit(Statements Statements) { visit(); }
     public void visit(Type Type) { visit(); }
     public void visit(FormalParamDecl FormalParamDecl) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }

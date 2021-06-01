@@ -1,0 +1,39 @@
+INFO  00:30:00,660 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  00:30:00,689 - #12 program
+INFO  00:30:00,689 - #15 MJProgram
+INFO  00:30:00,689 - #15 int
+INFO  00:30:00,690 - #15 x
+INFO  00:30:00,692 - #8 ;
+INFO  00:30:00,692 - #15 int
+INFO  00:30:00,694 - #15 y
+INFO  00:30:00,694 - #8 ;
+INFO  00:30:00,694 - #13 {
+INFO  00:30:00,695 - #15 int
+INFO  00:30:00,696 - #15 getValue
+INFO  00:30:00,696 - #9 (
+INFO  00:30:00,696 - #15 int
+INFO  00:30:00,696 - #15 g
+INFO  00:30:00,697 - #7 ,
+INFO  00:30:00,698 - #15 int
+INFO  00:30:00,698 - #15 a
+INFO  00:30:00,699 - #7 ,
+INFO  00:30:00,699 - #15 int
+INFO  00:30:00,699 - #15 b
+INFO  00:30:00,699 - #10 )
+INFO  00:30:00,699 - #15 int
+INFO  00:30:00,700 - #15 a
+INFO  00:30:00,700 - #8 ;
+INFO  00:30:00,700 - #15 int
+INFO  00:30:00,701 - #15 c
+INFO  00:30:00,701 - #8 ;
+INFO  00:30:00,701 - #13 {
+INFO  00:30:00,701 - #14 }
+INFO  00:30:00,701 - #15 double
+INFO  00:30:00,703 - #15 main
+INFO  00:30:00,703 - #9 (
+INFO  00:30:00,703 - #10 )
+INFO  00:30:00,704 - #13 {
+INFO  00:30:00,705 - #14 }
+ERROR 00:30:00,705 - 
+Sintaksna greska na liniji 11
+ERROR 00:30:00,705 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

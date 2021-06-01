@@ -49,6 +49,7 @@ terminal String IDENT;
 nonterminal Program, Type;
 nonterminal VarDeclList, VarDecl;
 nonterminal MethodDecl, FormPars, FormalParamList, FormalParamDecl, MethodDeclList;
+nonterminal Statement, Designator, Expr, Addop, Term, Factor, StatementList, ActualPars, ActualParamList;
 
 Program ::= (Program) PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
 
@@ -64,7 +65,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 				(NoMethodDecl) /* epsilon */
 				;
 
-MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE RBRACE;
+MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
 
 FormPars ::= (FormParams) FormalParamList
 			  |
@@ -79,3 +80,38 @@ FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 FormalParamDecl ::= (FormalParamDecl) Type:varType IDENT:varName;
 
 Type ::= (Type) IDENT:typeName;
+
+StatementList ::= (Statements) StatementList Statement
+				|
+				(NoStmt) /* epsilon */
+				;
+
+Statement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI;
+
+Expr ::= (AddExpr) Expr:te Addop Term:t
+	 |
+	 (TermExpr) Term:t
+	 ;
+	 
+Term ::= (Term) Factor:t;
+		
+Factor ::= (Const) NUMBER
+		|
+		(Var) Designator:d
+		| 
+		(FuncCall) Designator:func LPAREN ActualPars RPAREN
+		;
+		
+ActualPars ::= (Actuals) ActualParamList
+			|
+			(NoActuals) /* epsilon */
+			;
+
+ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
+				|
+				(ActualParam) Expr
+				;
+
+Designator ::= (Designator) IDENT:name;
+
+Addop ::= (Addop) PLUS;

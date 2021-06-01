@@ -1,0 +1,42 @@
+INFO  00:28:36,671 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  00:28:36,712 - #12 program
+INFO  00:28:36,712 - #15 MJProgram
+INFO  00:28:36,712 - #15 int
+INFO  00:28:36,714 - #15 x
+INFO  00:28:36,716 - #8 ;
+INFO  00:28:36,716 - #15 int
+INFO  00:28:36,718 - #15 y
+INFO  00:28:36,719 - #8 ;
+INFO  00:28:36,719 - #13 {
+INFO  00:28:36,719 - #15 int
+INFO  00:28:36,720 - #15 getValue
+INFO  00:28:36,720 - #9 (
+INFO  00:28:36,720 - #15 int
+INFO  00:28:36,720 - #15 g
+INFO  00:28:36,721 - #7 ,
+INFO  00:28:36,722 - #15 int
+INFO  00:28:36,722 - #15 a
+INFO  00:28:36,722 - #7 ,
+INFO  00:28:36,722 - #15 int
+INFO  00:28:36,722 - #15 b
+INFO  00:28:36,723 - #10 )
+INFO  00:28:36,723 - #15 int
+INFO  00:28:36,723 - #15 a
+INFO  00:28:36,723 - #8 ;
+INFO  00:28:36,723 - #15 int
+INFO  00:28:36,724 - #15 c
+INFO  00:28:36,724 - #8 ;
+INFO  00:28:36,724 - #13 {
+INFO  00:28:36,724 - #14 }
+INFO  00:28:36,724 - #15 double
+INFO  00:28:36,726 - #15 main
+INFO  00:28:36,726 - #9 (
+INFO  00:28:36,726 - #10 )
+INFO  00:28:36,728 - #13 {
+INFO  00:28:36,728 - #14 }
+INFO  00:28:36,728 - #14 }
+INFO  00:28:36,730 - *** Ime programa *** - rs.ac.bg.etf.pp1.ast.Program@62043840
+INFO  00:28:36,730 - ===================================
+INFO  00:28:36,735 -  Program count calls = 4
+INFO  00:28:36,736 -  Program count calls = 2
+INFO  00:28:36,736 -  Program count calls = 3

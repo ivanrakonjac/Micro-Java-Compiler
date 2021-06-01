@@ -1,42 +1,65 @@
-INFO  22:01:49,875 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
-INFO  22:01:49,903 - #12 program
-INFO  22:01:49,903 - #15 MJProgram
-INFO  22:01:49,904 - #15 int
-INFO  22:01:49,905 - #15 x
-INFO  22:01:49,907 - #8 ;
-INFO  22:01:49,907 - #15 int
-INFO  22:01:49,908 - #15 y
-INFO  22:01:49,909 - #8 ;
-INFO  22:01:49,909 - #13 {
-INFO  22:01:49,909 - #15 int
-INFO  22:01:49,910 - #15 getValue
-INFO  22:01:49,910 - #9 (
-INFO  22:01:49,911 - #15 int
-INFO  22:01:49,911 - #15 g
-INFO  22:01:49,911 - #7 ,
-INFO  22:01:49,912 - #15 int
-INFO  22:01:49,912 - #15 a
-INFO  22:01:49,912 - #7 ,
-INFO  22:01:49,913 - #15 int
-INFO  22:01:49,913 - #15 b
-INFO  22:01:49,913 - #10 )
-INFO  22:01:49,913 - #15 int
-INFO  22:01:49,914 - #15 a
-INFO  22:01:49,914 - #8 ;
-INFO  22:01:49,914 - #15 int
-INFO  22:01:49,914 - #15 c
-INFO  22:01:49,914 - #8 ;
-INFO  22:01:49,914 - #13 {
-INFO  22:01:49,914 - #14 }
-INFO  22:01:49,915 - #15 double
-INFO  22:01:49,917 - #15 main
-INFO  22:01:49,917 - #9 (
-INFO  22:01:49,917 - #10 )
-INFO  22:01:49,919 - #13 {
-INFO  22:01:49,919 - #14 }
-INFO  22:01:49,919 - #14 }
-INFO  22:01:49,920 - *** Ime programa *** - rs.ac.bg.etf.pp1.ast.Program@62043840
-INFO  22:01:49,921 - ===================================
-INFO  22:01:49,923 -  Program count calls = 4
-INFO  22:01:49,923 -  Program count calls = 2
-INFO  22:01:49,923 -  Program count calls = 3
+INFO  00:56:22,009 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  00:56:22,045 - #12 program
+INFO  00:56:22,045 - #15 MJProgram
+INFO  00:56:22,045 - #15 int
+INFO  00:56:22,047 - #15 x
+INFO  00:56:22,049 - #8 ;
+INFO  00:56:22,049 - #15 int
+INFO  00:56:22,051 - #15 y
+INFO  00:56:22,051 - #8 ;
+INFO  00:56:22,051 - #13 {
+INFO  00:56:22,052 - #15 int
+INFO  00:56:22,053 - #15 getValue
+INFO  00:56:22,053 - #9 (
+INFO  00:56:22,053 - #15 int
+INFO  00:56:22,054 - #15 g
+INFO  00:56:22,054 - #7 ,
+INFO  00:56:22,055 - #15 int
+INFO  00:56:22,056 - #15 a
+INFO  00:56:22,056 - #7 ,
+INFO  00:56:22,056 - #15 int
+INFO  00:56:22,056 - #15 b
+INFO  00:56:22,057 - #10 )
+INFO  00:56:22,057 - #15 int
+INFO  00:56:22,057 - #15 a
+INFO  00:56:22,057 - #8 ;
+INFO  00:56:22,058 - #15 int
+INFO  00:56:22,058 - #15 c
+INFO  00:56:22,058 - #8 ;
+INFO  00:56:22,058 - #13 {
+INFO  00:56:22,058 - #15 c
+INFO  00:56:22,059 - #6 =
+INFO  00:56:22,060 - #4 5
+INFO  00:56:22,061 - #5 +
+INFO  00:56:22,063 - #4 3
+INFO  00:56:22,065 - #5 +
+INFO  00:56:22,065 - #15 a
+INFO  00:56:22,065 - #5 +
+INFO  00:56:22,065 - #15 e
+INFO  00:56:22,065 - #5 +
+INFO  00:56:22,066 - #15 f
+INFO  00:56:22,066 - #9 (
+INFO  00:56:22,066 - #4 3
+INFO  00:56:22,066 - #7 ,
+INFO  00:56:22,066 - #4 5
+INFO  00:56:22,066 - #10 )
+INFO  00:56:22,067 - #8 ;
+INFO  00:56:22,067 - #15 z
+INFO  00:56:22,067 - #6 =
+INFO  00:56:22,067 - #15 r
+INFO  00:56:22,068 - #8 ;
+INFO  00:56:22,068 - #14 }
+INFO  00:56:22,068 - #15 double
+INFO  00:56:22,070 - #15 main
+INFO  00:56:22,070 - #9 (
+INFO  00:56:22,070 - #10 )
+INFO  00:56:22,072 - #13 {
+INFO  00:56:22,072 - #14 }
+INFO  00:56:22,072 - #14 }
+INFO  00:56:22,075 - *** Ime programa *** - rs.ac.bg.etf.pp1.ast.Program@6b143ee9
+INFO  00:56:22,075 - ===================================
+INFO  00:56:22,078 -  varDeclCounter = 4
+INFO  00:56:22,078 -  methodDeclCounter = 2
+INFO  00:56:22,078 -  formalParamDeclCounter = 3
+INFO  00:56:22,078 -  termExprCounter = 4
+INFO  00:56:22,078 -  actualParamsCounter = 1

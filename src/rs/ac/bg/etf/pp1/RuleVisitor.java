@@ -23,6 +23,19 @@ public class RuleVisitor extends VisitorAdaptor{
 		formalParamDeclCounter++;
 	}
 	
+	int termExprCounter = 0;
+	
+	public void visit(TermExpr termExpr) {
+		termExprCounter++;
+	}
+	
+	int actualParamsCounter = 0;
+	
+	public void visit(ActualParams actualParams) {
+		actualParamsCounter++;
+	}
+	
+	
 
 	/*int printCallCount = 0;
 	int varDeclCount = 0;

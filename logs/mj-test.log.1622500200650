@@ -1,0 +1,42 @@
+INFO  00:29:21,913 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  00:29:21,948 - #12 program
+INFO  00:29:21,948 - #15 MJProgram
+INFO  00:29:21,948 - #15 int
+INFO  00:29:21,950 - #15 x
+INFO  00:29:21,952 - #8 ;
+INFO  00:29:21,952 - #15 int
+INFO  00:29:21,954 - #15 y
+INFO  00:29:21,955 - #8 ;
+INFO  00:29:21,955 - #13 {
+INFO  00:29:21,955 - #15 int
+INFO  00:29:21,957 - #15 getValue
+INFO  00:29:21,957 - #9 (
+INFO  00:29:21,958 - #15 int
+INFO  00:29:21,958 - #15 g
+INFO  00:29:21,958 - #7 ,
+INFO  00:29:21,960 - #15 int
+INFO  00:29:21,960 - #15 a
+INFO  00:29:21,960 - #7 ,
+INFO  00:29:21,960 - #15 int
+INFO  00:29:21,961 - #15 b
+INFO  00:29:21,961 - #10 )
+INFO  00:29:21,961 - #15 int
+INFO  00:29:21,962 - #15 a
+INFO  00:29:21,962 - #8 ;
+INFO  00:29:21,962 - #15 int
+INFO  00:29:21,962 - #15 c
+INFO  00:29:21,963 - #8 ;
+INFO  00:29:21,963 - #13 {
+INFO  00:29:21,963 - #14 }
+INFO  00:29:21,963 - #15 double
+INFO  00:29:21,965 - #15 main
+INFO  00:29:21,966 - #9 (
+INFO  00:29:21,966 - #10 )
+INFO  00:29:21,967 - #13 {
+INFO  00:29:21,968 - #14 }
+INFO  00:29:21,968 - #14 }
+INFO  00:29:21,971 - *** Ime programa *** - rs.ac.bg.etf.pp1.ast.Program@62043840
+INFO  00:29:21,972 - ===================================
+INFO  00:29:21,976 -  varDeclCounter = 4
+INFO  00:29:21,977 -  methodDeclCounter = 2
+INFO  00:29:21,977 -  formalParamDeclCounter = 3

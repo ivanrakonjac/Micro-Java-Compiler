@@ -55,6 +55,15 @@ nonterminal FormPars FormPars;
 nonterminal FormalParamList FormalParamList;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal MethodDeclList MethodDeclList;
+nonterminal Statement Statement;
+nonterminal Designator Designator;
+nonterminal Expr Expr;
+nonterminal Addop Addop;
+nonterminal Term Term;
+nonterminal Factor Factor;
+nonterminal StatementList StatementList;
+nonterminal ActualPars ActualPars;
+nonterminal ActualParamList ActualParamList;
 
 Program ::= (Program) PROG IDENT:I1 VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(I1, V2, M3); RESULT.setLine(I1left); :};
 
@@ -70,7 +79,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESUL
 				(NoMethodDecl) {: RESULT=new NoMethodDecl(); :} /* epsilon */
 				;
 
-MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE RBRACE {: RESULT=new MethodDecl(retType, methName, F1, V2); RESULT.setLine(retTypeleft); :};
+MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(retType, methName, F1, V2, S3); RESULT.setLine(retTypeleft); :};
 
 FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :}
 			  |
@@ -85,3 +94,38 @@ FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:
 FormalParamDecl ::= (FormalParamDecl) Type:varType IDENT:varName {: RESULT=new FormalParamDecl(varType, varName); RESULT.setLine(varTypeleft); :};
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
+
+StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :}
+				|
+				(NoStmt) {: RESULT=new NoStmt(); :} /* epsilon */
+				;
+
+Statement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI {: RESULT=new Assignment(dest, e); RESULT.setLine(destleft); :};
+
+Expr ::= (AddExpr) Expr:te Addop:A1 Term:t {: RESULT=new AddExpr(te, A1, t); RESULT.setLine(teleft); :}
+	 |
+	 (TermExpr) Term:t {: RESULT=new TermExpr(t); RESULT.setLine(tleft); :}
+	 ;
+	 
+Term ::= (Term) Factor:t {: RESULT=new Term(t); RESULT.setLine(tleft); :};
+		
+Factor ::= (Const) NUMBER {: RESULT=new Const(); :}
+		|
+		(Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
+		| 
+		(FuncCall) Designator:func LPAREN ActualPars:A1 RPAREN {: RESULT=new FuncCall(func, A1); RESULT.setLine(funcleft); :}
+		;
+		
+ActualPars ::= (Actuals) ActualParamList:A1 {: RESULT=new Actuals(A1); RESULT.setLine(A1left); :}
+			|
+			(NoActuals) {: RESULT=new NoActuals(); :} /* epsilon */
+			;
+
+ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=new ActualParams(A1, E2); RESULT.setLine(A1left); :}
+				|
+				(ActualParam) Expr:E1 {: RESULT=new ActualParam(E1); RESULT.setLine(E1left); :}
+				;
+
+Designator ::= (Designator) IDENT:name {: RESULT=new Designator(name); RESULT.setLine(nameleft); :};
+
+Addop ::= (Addop) PLUS {: RESULT=new Addop(); :};

@@ -3,9 +3,12 @@
  int x; int y;
  
 {
-	int getValue(int g, int a, int b) int a; int c; {}
+	int getValue(int g, int a, int b) int a; int c; {
+		c = 5 + 3 + a + e + f(3,5);
+		z = r;
+	}
 	
 	double main() {
-	
+		
 	}
 }
