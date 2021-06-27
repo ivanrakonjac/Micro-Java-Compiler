@@ -1,17 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class SwitchExpretion extends Expr {
+public class SwitchExp extends Expr {
 
     private SwitchExpr SwitchExpr;
     private Expr Expr;
     private CaseList CaseList;
 
-    public SwitchExpretion (SwitchExpr SwitchExpr, Expr Expr, CaseList CaseList) {
+    public SwitchExp (SwitchExpr SwitchExpr, Expr Expr, CaseList CaseList) {
         this.SwitchExpr=SwitchExpr;
         if(SwitchExpr!=null) SwitchExpr.setParent(this);
         this.Expr=Expr;
@@ -71,7 +71,7 @@ public class SwitchExpretion extends Expr {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("SwitchExpretion(\n");
+        buffer.append("SwitchExp(\n");
 
         if(SwitchExpr!=null)
             buffer.append(SwitchExpr.toString("  "+tab));
@@ -92,7 +92,7 @@ public class SwitchExpretion extends Expr {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [SwitchExpretion]");
+        buffer.append(") [SwitchExp]");
         return buffer.toString();
     }
 }

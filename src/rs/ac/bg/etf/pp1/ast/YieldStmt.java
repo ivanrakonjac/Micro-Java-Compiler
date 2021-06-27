@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class YieldStmt extends Statement {
 
+    private YieldStatement YieldStatement;
     private Expr Expr;
 
-    public YieldStmt (Expr Expr) {
+    public YieldStmt (YieldStatement YieldStatement, Expr Expr) {
+        this.YieldStatement=YieldStatement;
+        if(YieldStatement!=null) YieldStatement.setParent(this);
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
+    }
+
+    public YieldStatement getYieldStatement() {
+        return YieldStatement;
+    }
+
+    public void setYieldStatement(YieldStatement YieldStatement) {
+        this.YieldStatement=YieldStatement;
     }
 
     public Expr getExpr() {
@@ -27,15 +38,18 @@ public class YieldStmt extends Statement {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(YieldStatement!=null) YieldStatement.accept(visitor);
         if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(YieldStatement!=null) YieldStatement.traverseTopDown(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(YieldStatement!=null) YieldStatement.traverseBottomUp(visitor);
         if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -44,6 +58,12 @@ public class YieldStmt extends Statement {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("YieldStmt(\n");
+
+        if(YieldStatement!=null)
+            buffer.append(YieldStatement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));

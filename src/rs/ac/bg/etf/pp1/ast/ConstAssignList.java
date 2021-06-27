@@ -1,21 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MultiBoolConst extends ConstAssign {
+public class ConstAssignList extends ConstAssign {
 
     private ConstAssign ConstAssign;
-    private String constName;
-    private String constVal;
+    private Constant Constant;
 
-    public MultiBoolConst (ConstAssign ConstAssign, String constName, String constVal) {
+    public ConstAssignList (ConstAssign ConstAssign, Constant Constant) {
         this.ConstAssign=ConstAssign;
         if(ConstAssign!=null) ConstAssign.setParent(this);
-        this.constName=constName;
-        this.constVal=constVal;
+        this.Constant=Constant;
+        if(Constant!=null) Constant.setParent(this);
     }
 
     public ConstAssign getConstAssign() {
@@ -26,20 +25,12 @@ public class MultiBoolConst extends ConstAssign {
         this.ConstAssign=ConstAssign;
     }
 
-    public String getConstName() {
-        return constName;
+    public Constant getConstant() {
+        return Constant;
     }
 
-    public void setConstName(String constName) {
-        this.constName=constName;
-    }
-
-    public String getConstVal() {
-        return constVal;
-    }
-
-    public void setConstVal(String constVal) {
-        this.constVal=constVal;
+    public void setConstant(Constant Constant) {
+        this.Constant=Constant;
     }
 
     public void accept(Visitor visitor) {
@@ -48,22 +39,25 @@ public class MultiBoolConst extends ConstAssign {
 
     public void childrenAccept(Visitor visitor) {
         if(ConstAssign!=null) ConstAssign.accept(visitor);
+        if(Constant!=null) Constant.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ConstAssign!=null) ConstAssign.traverseTopDown(visitor);
+        if(Constant!=null) Constant.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ConstAssign!=null) ConstAssign.traverseBottomUp(visitor);
+        if(Constant!=null) Constant.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MultiBoolConst(\n");
+        buffer.append("ConstAssignList(\n");
 
         if(ConstAssign!=null)
             buffer.append(ConstAssign.toString("  "+tab));
@@ -71,14 +65,14 @@ public class MultiBoolConst extends ConstAssign {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+constName);
-        buffer.append("\n");
-
-        buffer.append(" "+tab+constVal);
+        if(Constant!=null)
+            buffer.append(Constant.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [MultiBoolConst]");
+        buffer.append(") [ConstAssignList]");
         return buffer.toString();
     }
 }

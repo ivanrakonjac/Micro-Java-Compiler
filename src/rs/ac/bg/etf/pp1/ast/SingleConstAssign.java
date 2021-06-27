@@ -1,18 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class SingleBoolConst extends ConstAssign {
+public class SingleConstAssign extends Constant {
 
     private String constName;
-    private String constVal;
+    private Value Value;
 
-    public SingleBoolConst (String constName, String constVal) {
+    public SingleConstAssign (String constName, Value Value) {
         this.constName=constName;
-        this.constVal=constVal;
+        this.Value=Value;
+        if(Value!=null) Value.setParent(this);
     }
 
     public String getConstName() {
@@ -23,12 +24,12 @@ public class SingleBoolConst extends ConstAssign {
         this.constName=constName;
     }
 
-    public String getConstVal() {
-        return constVal;
+    public Value getValue() {
+        return Value;
     }
 
-    public void setConstVal(String constVal) {
-        this.constVal=constVal;
+    public void setValue(Value Value) {
+        this.Value=Value;
     }
 
     public void accept(Visitor visitor) {
@@ -36,29 +37,35 @@ public class SingleBoolConst extends ConstAssign {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Value!=null) Value.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Value!=null) Value.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Value!=null) Value.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("SingleBoolConst(\n");
+        buffer.append("SingleConstAssign(\n");
 
         buffer.append(" "+tab+constName);
         buffer.append("\n");
 
-        buffer.append(" "+tab+constVal);
+        if(Value!=null)
+            buffer.append(Value.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [SingleBoolConst]");
+        buffer.append(") [SingleConstAssign]");
         return buffer.toString();
     }
 }

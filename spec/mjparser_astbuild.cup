@@ -58,9 +58,9 @@ terminal LSQUARE, RSQUARE;
 terminal QUESTION, DDOT;
 terminal DEFAULT, YIELD, GOTO;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName, MethodDecl, MethodTypeName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Statement, DesignatorStatement, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName, MethodDecl, MethodTypeName, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodRetType;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Statement, DesignatorStatement;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, BasicExpr;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition,CondTermList, CondTerm, Term, CondFactList, CondFact;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CaseList, CaseStmt;
@@ -69,12 +69,13 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor;
 nonterminal ParamDecl ParamDecl;
 nonterminal ConstDecl ConstDecl;
 nonterminal ConstAssign ConstAssign;
+nonterminal Constant Constant;
+nonterminal Value Value;
 nonterminal VarDecl VarDecl;
 nonterminal VarDeclExtension VarDeclExtension;
 nonterminal VarDeclList VarDeclList;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal OptionalFormPars OptionalFormPars;
-nonterminal MethodRetType MethodRetType;
 nonterminal FormParams FormParams;
 nonterminal FormParamDecl FormParamDecl;
 nonterminal OptionalMinus OptionalMinus;
@@ -86,6 +87,7 @@ nonterminal ActualParams ActualParams;
 nonterminal ActPars ActPars;
 nonterminal SwitchExpr SwitchExpr;
 nonterminal DefaultStmt DefaultStmt;
+nonterminal YieldStatement YieldStatement;
 nonterminal Assignop Assignop;
 nonterminal Relop Relop;
 nonterminal Addop Addop;
@@ -107,18 +109,17 @@ ProgramName ::= (ProgramName) IDENT:programName {: RESULT=new ProgramName(progra
 
 ConstDecl ::= (ConstDecl) CONST Type:constType ConstAssign:C1 SEMI {: RESULT=new ConstDecl(constType, C1); RESULT.setLine(constTypeleft); :};
             
-ConstAssign ::= (SingleNumberConst) IDENT:constName EQUAL NUMBER:constVal {: RESULT=new SingleNumberConst(constName, constVal); RESULT.setLine(constNameleft); :}
+ConstAssign ::= (ConstAssignList) ConstAssign:C1 COMMA Constant:C2 {: RESULT=new ConstAssignList(C1, C2); RESULT.setLine(C1left); :}
                 |
-                (MultiNumberConst) ConstAssign:C1 COMMA IDENT:constName EQUAL NUMBER:constVal {: RESULT=new MultiNumberConst(C1, constName, constVal); RESULT.setLine(C1left); :}
-                |
-                (SingleCharConst) IDENT:constName EQUAL CHARCONST:constVal {: RESULT=new SingleCharConst(constName, constVal); RESULT.setLine(constNameleft); :}
-                |
-                (MultiCharConst) ConstAssign:C1 COMMA IDENT:constName EQUAL CHARCONST:constVal {: RESULT=new MultiCharConst(C1, constName, constVal); RESULT.setLine(C1left); :}
-                |
-                (SingleBoolConst )IDENT:constName EQUAL BOOLCONST:constVal {: RESULT=new SingleBoolConst(constName, constVal); RESULT.setLine(constNameleft); :}
-                |
-                (MultiBoolConst) ConstAssign:C1 COMMA IDENT:constName EQUAL BOOLCONST:constVal {: RESULT=new MultiBoolConst(C1, constName, constVal); RESULT.setLine(C1left); :}
-                ;
+                (OneConstAssign) Constant:C1 {: RESULT=new OneConstAssign(C1); RESULT.setLine(C1left); :};
+
+Constant ::= (SingleConstAssign) IDENT:constName EQUAL Value:V1 {: RESULT=new SingleConstAssign(constName, V1); RESULT.setLine(constNameleft); :};
+
+Value ::=   (NumConstValue) NUMBER:constVal {: RESULT=new NumConstValue(constVal); RESULT.setLine(constValleft); :} 
+            |
+            (CharConstValue) CHARCONST:constVal {: RESULT=new CharConstValue(constVal); RESULT.setLine(constValleft); :} 
+            |
+            (BoolConstValue) BOOLCONST:constVal {: RESULT=new BoolConstValue(constVal); RESULT.setLine(constValleft); :};
 
 VarDecl     ::= (VarDeclaration) Type:varType IDENT:varName VarDeclExtension:V1 SEMI {: RESULT=new VarDeclaration(varType, varName, V1); RESULT.setLine(varTypeleft); :}
                 |
@@ -180,7 +181,7 @@ Statement ::=   (DesignStmt) DesignatorStatement:D1 SEMI {: RESULT=new DesignStm
                 |
                 (DoWhileStmt) DoStmt:D1 Statement:S2 WHILE LPAREN Condition:C3 RPAREN SEMI {: RESULT=new DoWhileStmt(D1, S2, C3); RESULT.setLine(D1left); :}
                 |
-                (YieldStmt) YIELD Expr:E1 SEMI {: RESULT=new YieldStmt(E1); RESULT.setLine(E1left); :}
+                (YieldStmt) YieldStatement:Y1 Expr:E2 SEMI {: RESULT=new YieldStmt(Y1, E2); RESULT.setLine(Y1left); :}
                 |
                 (BreakStmt) BREAK SEMI {: RESULT=new BreakStmt(); :}
                 |
@@ -203,11 +204,11 @@ Statement ::=   (DesignStmt) DesignatorStatement:D1 SEMI {: RESULT=new DesignStm
 
 DesignatorStatement ::= (DesignatorAssign) Designator:varName Assignop:A1 Expr:val {: RESULT=new DesignatorAssign(varName, A1, val); RESULT.setLine(varNameleft); :}
                         |
-                        (ProcedureCall) Designator:procName LPAREN ActualParams:A1 RPAREN {: RESULT=new ProcedureCall(procName, A1); RESULT.setLine(procNameleft); :}
+                        (ProcCall) Designator:procName LPAREN ActualParams:A1 RPAREN {: RESULT=new ProcCall(procName, A1); RESULT.setLine(procNameleft); :}
                         |
-                        (VarInc) Designator:varName INC {: RESULT=new VarInc(varName); RESULT.setLine(varNameleft); :}
+                        (VariableInc) Designator:varName INC {: RESULT=new VariableInc(varName); RESULT.setLine(varNameleft); :}
                         |
-                        (VarDec) Designator:varName DEC {: RESULT=new VarDec(varName); RESULT.setLine(varNameleft); :}
+                        (VariableDec) Designator:varName DEC {: RESULT=new VariableDec(varName); RESULT.setLine(varNameleft); :}
                         ;
 
 Designator ::=  (DesignatorBasic) IDENT:varName {: RESULT=new DesignatorBasic(varName); RESULT.setLine(varNameleft); :}
@@ -215,11 +216,11 @@ Designator ::=  (DesignatorBasic) IDENT:varName {: RESULT=new DesignatorBasic(va
                 (DesignatorArray) DesignatorArrayName:D1 LSQUARE Expr:arrayIndex RSQUARE {: RESULT=new DesignatorArray(D1, arrayIndex); RESULT.setLine(D1left); :}
                 ;
 
-DesignatorArrayName ::= (DesignatorArrayName) IDENT:varName {: RESULT=new DesignatorArrayName(varName); RESULT.setLine(varNameleft); :};
+DesignatorArrayName ::= (DesArrName) IDENT:varName {: RESULT=new DesArrName(varName); RESULT.setLine(varNameleft); :};
 
 Expr ::= (BasicExprr) OptionalMinus:O1 BasicExpr:basicExpr {: RESULT=new BasicExprr(O1, basicExpr); RESULT.setLine(O1left); :}
         |
-        (SwitchExpretion) SwitchExpr:S1 LPAREN Expr:condVal RPAREN LBRACE CaseList:C2 RBRACE {: RESULT=new SwitchExpretion(S1, condVal, C2); RESULT.setLine(S1left); :}
+        (SwitchExp) SwitchExpr:S1 LPAREN Expr:condVal RPAREN LBRACE CaseList:C2 RBRACE {: RESULT=new SwitchExp(S1, condVal, C2); RESULT.setLine(S1left); :}
         ;
 
 BasicExpr ::=   (AddExpr) BasicExpr:basicExprTerm Addop:A1 Term:term {: RESULT=new AddExpr(basicExprTerm, A1, term); RESULT.setLine(basicExprTermleft); :}
@@ -294,6 +295,8 @@ CaseList ::=    (MultiCaseList) CaseList:C1 CaseStmt:C2 {: RESULT=new MultiCaseL
                 ;
 
 DefaultStmt ::= (DefaultStmt) DEFAULT {: RESULT=new DefaultStmt(); :};
+
+YieldStatement ::= (YieldStatmnt) YIELD {: RESULT=new YieldStatmnt(); :};
 
 Factor ::=  (Var) Designator:varName {: RESULT=new Var(varName); RESULT.setLine(varNameleft); :}
             |

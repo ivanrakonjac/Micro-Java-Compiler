@@ -1,33 +1,23 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class SingleCharConst extends ConstAssign {
+public class NumConstValue extends Value {
 
-    private String constName;
-    private Character constVal;
+    private Integer constVal;
 
-    public SingleCharConst (String constName, Character constVal) {
-        this.constName=constName;
+    public NumConstValue (Integer constVal) {
         this.constVal=constVal;
     }
 
-    public String getConstName() {
-        return constName;
-    }
-
-    public void setConstName(String constName) {
-        this.constName=constName;
-    }
-
-    public Character getConstVal() {
+    public Integer getConstVal() {
         return constVal;
     }
 
-    public void setConstVal(Character constVal) {
+    public void setConstVal(Integer constVal) {
         this.constVal=constVal;
     }
 
@@ -49,16 +39,13 @@ public class SingleCharConst extends ConstAssign {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("SingleCharConst(\n");
-
-        buffer.append(" "+tab+constName);
-        buffer.append("\n");
+        buffer.append("NumConstValue(\n");
 
         buffer.append(" "+tab+constVal);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [SingleCharConst]");
+        buffer.append(") [NumConstValue]");
         return buffer.toString();
     }
 }

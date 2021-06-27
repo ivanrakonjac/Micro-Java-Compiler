@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:57
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class VarDec extends DesignatorStatement {
+public class VariableInc extends DesignatorStatement {
 
     private Designator Designator;
 
-    public VarDec (Designator Designator) {
+    public VariableInc (Designator Designator) {
         this.Designator=Designator;
         if(Designator!=null) Designator.setParent(this);
     }
@@ -43,7 +43,7 @@ public class VarDec extends DesignatorStatement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("VarDec(\n");
+        buffer.append("VariableInc(\n");
 
         if(Designator!=null)
             buffer.append(Designator.toString("  "+tab));
@@ -52,7 +52,7 @@ public class VarDec extends DesignatorStatement {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [VarDec]");
+        buffer.append(") [VariableInc]");
         return buffer.toString();
     }
 }

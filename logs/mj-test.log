@@ -1,50 +1,71 @@
-INFO  13:42:14,941 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
-INFO  13:42:15,169 - Program(
+INFO  23:44:11,601 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  23:44:11,698 - Program(
   ProgramName(
-   test302
+   test301
   ) [ProgramName]
   VarParamDecl(
     VarParamDecl(
-      VarParamDecl(
+      ConstParamDecl(
         ConstParamDecl(
-          NoParamDecl(
-          ) [NoParamDecl]
+          ConstParamDecl(
+            NoParamDecl(
+            ) [NoParamDecl]
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              OneConstAssign(
+                SingleConstAssign(
+                 nula
+                  NumConstValue(
+                   0
+                  ) [NumConstValue]
+                ) [SingleConstAssign]
+              ) [OneConstAssign]
+            ) [ConstDecl]
+          ) [ConstParamDecl]
           ConstDecl(
             Type(
              int
             ) [Type]
-            SingleNumberConst(
-             jedan
-             1
-            ) [SingleNumberConst]
+            OneConstAssign(
+              SingleConstAssign(
+               jedan
+                NumConstValue(
+                 1
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
           ) [ConstDecl]
         ) [ConstParamDecl]
-        VarDeclaration(
+        ConstDecl(
           Type(
            int
           ) [Type]
-         i
-          VarDeclExt(
-            NoVarDeclMore(
-            ) [NoVarDeclMore]
-           j
-          ) [VarDeclExt]
-        ) [VarDeclaration]
-      ) [VarParamDecl]
-      VarDeclaration(
+          OneConstAssign(
+            SingleConstAssign(
+             pet
+              NumConstValue(
+               5
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [OneConstAssign]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      VarDeclArray(
         Type(
-         bool
+         int
         ) [Type]
-       ibool
+       niz
         NoVarDeclMore(
         ) [NoVarDeclMore]
-      ) [VarDeclaration]
+      ) [VarDeclArray]
     ) [VarParamDecl]
     VarDeclArray(
       Type(
-       int
+       char
       ) [Type]
-     niz
+     nizch
       NoVarDeclMore(
       ) [NoVarDeclMore]
     ) [VarDeclArray]
@@ -62,7 +83,7 @@ INFO  13:42:15,169 - Program(
                  int
                 ) [Type]
               ) [MethodReturnType]
-             sum
+             k
             ) [MethodTypeName]
             OptionalFormalParams(
               FormParamss(
@@ -71,14 +92,14 @@ INFO  13:42:15,169 - Program(
                     Type(
                      int
                     ) [Type]
-                   z
+                   a
                   ) [FormParam]
                 ) [NoFormParams]
                 FormParam(
                   Type(
                    int
                   ) [Type]
-                 d
+                 b
                 ) [FormParam]
               ) [FormParamss]
             ) [OptionalFormalParams]
@@ -89,28 +110,66 @@ INFO  13:42:15,169 - Program(
               ) [NoStmt]
               ReturnStmt(
                 BasicExprr(
-                  NoMinus(
-                  ) [NoMinus]
-                  AddExpr(
-                    TermExpr(
-                      FactorTerm(
-                        Var(
-                          DesignatorBasic(
-                           z
-                          ) [DesignatorBasic]
-                        ) [Var]
-                      ) [FactorTerm]
-                    ) [TermExpr]
-                    AddOper(
-                    ) [AddOper]
+                  Minus(
+                  ) [Minus]
+                  TermExpr(
                     FactorTerm(
-                      Var(
-                        DesignatorBasic(
-                         d
-                        ) [DesignatorBasic]
-                      ) [Var]
+                      FactExpr(
+                        BasicExprr(
+                          NoMinus(
+                          ) [NoMinus]
+                          AddExpr(
+                            AddExpr(
+                              TermExpr(
+                                FactorTerm(
+                                  Var(
+                                    DesignatorBasic(
+                                     a
+                                    ) [DesignatorBasic]
+                                  ) [Var]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                              AddOper(
+                              ) [AddOper]
+                              FactorTerm(
+                                FactExpr(
+                                  BasicExprr(
+                                    Minus(
+                                    ) [Minus]
+                                    AddExpr(
+                                      TermExpr(
+                                        FactorTerm(
+                                          Var(
+                                            DesignatorBasic(
+                                             b
+                                            ) [DesignatorBasic]
+                                          ) [Var]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                      AddOper(
+                                      ) [AddOper]
+                                      FactorTerm(
+                                        NumberConst(
+                                         2
+                                        ) [NumberConst]
+                                      ) [FactorTerm]
+                                    ) [AddExpr]
+                                  ) [BasicExprr]
+                                ) [FactExpr]
+                              ) [FactorTerm]
+                            ) [AddExpr]
+                            AddOper(
+                            ) [AddOper]
+                            FactorTerm(
+                              NumberConst(
+                               1
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [AddExpr]
+                        ) [BasicExprr]
+                      ) [FactExpr]
                     ) [FactorTerm]
-                  ) [AddExpr]
+                  ) [TermExpr]
                 ) [BasicExprr]
               ) [ReturnStmt]
             ) [MultiStmtList]
@@ -123,210 +182,24 @@ INFO  13:42:15,169 - Program(
                int
               ) [Type]
             ) [MethodReturnType]
-           inkrement
+           m
           ) [MethodTypeName]
-          OptionalFormalParams(
-            FormParamss(
-              NoFormParams(
-                FormParam(
-                  Type(
-                   int
-                  ) [Type]
-                 a
-                ) [FormParam]
-              ) [NoFormParams]
-              FormParam(
-                Type(
-                 int
-                ) [Type]
-               inc
-              ) [FormParam]
-            ) [FormParamss]
-          ) [OptionalFormalParams]
-          VarDeclarationList(
-            NoVarDecl(
-            ) [NoVarDecl]
-            VarDeclaration(
-              Type(
-               int
-              ) [Type]
-             pom
-              NoVarDeclMore(
-              ) [NoVarDeclMore]
-            ) [VarDeclaration]
-          ) [VarDeclarationList]
+          NoFormPars(
+          ) [NoFormPars]
+          NoVarDecl(
+          ) [NoVarDecl]
           MultiStmtList(
-            MultiStmtList(
-              NoStmt(
-              ) [NoStmt]
-              IfElseMatchedStmt(
-                Condition(
-                  CondSimple(
-                    CondTerm(
-                      CondTermSimple(
-                        CondRelop(
-                          BasicExprr(
-                            NoMinus(
-                            ) [NoMinus]
-                            TermExpr(
-                              FactorTerm(
-                                Var(
-                                  DesignatorBasic(
-                                   inc
-                                  ) [DesignatorBasic]
-                                ) [Var]
-                              ) [FactorTerm]
-                            ) [TermExpr]
-                          ) [BasicExprr]
-                          EqualsOper(
-                          ) [EqualsOper]
-                          BasicExprr(
-                            NoMinus(
-                            ) [NoMinus]
-                            TermExpr(
-                              FactorTerm(
-                                Var(
-                                  DesignatorBasic(
-                                   jedan
-                                  ) [DesignatorBasic]
-                                ) [Var]
-                              ) [FactorTerm]
-                            ) [TermExpr]
-                          ) [BasicExprr]
-                        ) [CondRelop]
-                      ) [CondTermSimple]
-                    ) [CondTerm]
-                  ) [CondSimple]
-                ) [Condition]
-                DesignStmt(
-                  DesignatorAssign(
-                    DesignatorBasic(
-                     pom
-                    ) [DesignatorBasic]
-                    AssignOper(
-                    ) [AssignOper]
-                    BasicExprr(
-                      NoMinus(
-                      ) [NoMinus]
-                      TermExpr(
-                        FactorTerm(
-                          NumberConst(
-                           1
-                          ) [NumberConst]
-                        ) [FactorTerm]
-                      ) [TermExpr]
-                    ) [BasicExprr]
-                  ) [DesignatorAssign]
-                ) [DesignStmt]
-                ElseStatmt(
-                  IfElseMatchedStmt(
-                    Condition(
-                      CondSimple(
-                        CondTerm(
-                          CondTermSimple(
-                            CondRelop(
-                              BasicExprr(
-                                NoMinus(
-                                ) [NoMinus]
-                                TermExpr(
-                                  FactorTerm(
-                                    Var(
-                                      DesignatorBasic(
-                                       inc
-                                      ) [DesignatorBasic]
-                                    ) [Var]
-                                  ) [FactorTerm]
-                                ) [TermExpr]
-                              ) [BasicExprr]
-                              EqualsOper(
-                              ) [EqualsOper]
-                              BasicExprr(
-                                NoMinus(
-                                ) [NoMinus]
-                                TermExpr(
-                                  FactorTerm(
-                                    NumberConst(
-                                     2
-                                    ) [NumberConst]
-                                  ) [FactorTerm]
-                                ) [TermExpr]
-                              ) [BasicExprr]
-                            ) [CondRelop]
-                          ) [CondTermSimple]
-                        ) [CondTerm]
-                      ) [CondSimple]
-                    ) [Condition]
-                    DesignStmt(
-                      DesignatorAssign(
-                        DesignatorBasic(
-                         pom
-                        ) [DesignatorBasic]
-                        AssignOper(
-                        ) [AssignOper]
-                        BasicExprr(
-                          NoMinus(
-                          ) [NoMinus]
-                          TermExpr(
-                            FactorTerm(
-                              Var(
-                                DesignatorBasic(
-                                 a
-                                ) [DesignatorBasic]
-                              ) [Var]
-                            ) [FactorTerm]
-                          ) [TermExpr]
-                        ) [BasicExprr]
-                      ) [DesignatorAssign]
-                    ) [DesignStmt]
-                    NoElseStmt(
-                    ) [NoElseStmt]
-                  ) [IfElseMatchedStmt]
-                ) [ElseStatmt]
-              ) [IfElseMatchedStmt]
-            ) [MultiStmtList]
+            NoStmt(
+            ) [NoStmt]
             ReturnStmt(
               BasicExprr(
-                NoMinus(
-                ) [NoMinus]
+                Minus(
+                ) [Minus]
                 TermExpr(
                   FactorTerm(
-                    FunctionCall(
-                      DesignatorBasic(
-                       sum
-                      ) [DesignatorBasic]
-                      ActualParamss(
-                        MultipleParams(
-                          OneParam(
-                            BasicExprr(
-                              NoMinus(
-                              ) [NoMinus]
-                              TermExpr(
-                                FactorTerm(
-                                  Var(
-                                    DesignatorBasic(
-                                     a
-                                    ) [DesignatorBasic]
-                                  ) [Var]
-                                ) [FactorTerm]
-                              ) [TermExpr]
-                            ) [BasicExprr]
-                          ) [OneParam]
-                          BasicExprr(
-                            NoMinus(
-                            ) [NoMinus]
-                            TermExpr(
-                              FactorTerm(
-                                Var(
-                                  DesignatorBasic(
-                                   pom
-                                  ) [DesignatorBasic]
-                                ) [Var]
-                              ) [FactorTerm]
-                            ) [TermExpr]
-                          ) [BasicExprr]
-                        ) [MultipleParams]
-                      ) [ActualParamss]
-                    ) [FunctionCall]
+                    NumberConst(
+                     1
+                    ) [NumberConst]
                   ) [FactorTerm]
                 ) [TermExpr]
               ) [BasicExprr]
@@ -336,62 +209,43 @@ INFO  13:42:15,169 - Program(
       ) [MethodDeclarationList]
       MethodDecl(
         MethodTypeName(
-          MethodReturnType(
-            Type(
-             bool
-            ) [Type]
-          ) [MethodReturnType]
-         verify
+          VoidRetType(
+          ) [VoidRetType]
+         test2
         ) [MethodTypeName]
         NoFormPars(
         ) [NoFormPars]
-        NoVarDecl(
-        ) [NoVarDecl]
-        MultiStmtList(
-          MultiStmtList(
-            NoStmt(
-            ) [NoStmt]
-            PrintStmt(
-              BasicExprr(
-                NoMinus(
-                ) [NoMinus]
-                TermExpr(
-                  FactorTerm(
-                    CharConst(
-                     v
-                    ) [CharConst]
-                  ) [FactorTerm]
-                ) [TermExpr]
-              ) [BasicExprr]
-            ) [PrintStmt]
-          ) [MultiStmtList]
-          ReturnStmt(
-            BasicExprr(
-              NoMinus(
-              ) [NoMinus]
-              TermExpr(
-                FactorTerm(
-                  BoolConst(
-                   false
-                  ) [BoolConst]
-                ) [FactorTerm]
-              ) [TermExpr]
-            ) [BasicExprr]
-          ) [ReturnStmt]
-        ) [MultiStmtList]
-      ) [MethodDecl]
-    ) [MethodDeclarationList]
-    MethodDecl(
-      MethodTypeName(
-        VoidRetType(
-        ) [VoidRetType]
-       main
-      ) [MethodTypeName]
-      NoFormPars(
-      ) [NoFormPars]
-      NoVarDecl(
-      ) [NoVarDecl]
-      MultiStmtList(
+        VarDeclarationList(
+          VarDeclarationList(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclExt(
+                VarDeclExt(
+                  NoVarDeclMore(
+                  ) [NoVarDeclMore]
+                 b
+                ) [VarDeclExt]
+               c
+              ) [VarDeclExt]
+            ) [VarDeclaration]
+          ) [VarDeclarationList]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           i
+            VarDeclArrayExt(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             arr
+            ) [VarDeclArrayExt]
+          ) [VarDeclaration]
+        ) [VarDeclarationList]
         MultiStmtList(
           MultiStmtList(
             MultiStmtList(
@@ -402,1033 +256,39 @@ INFO  13:42:15,169 - Program(
                       MultiStmtList(
                         MultiStmtList(
                           MultiStmtList(
-                            MultiStmtList(
-                              MultiStmtList(
-                                MultiStmtList(
-                                  MultiStmtList(
-                                    MultiStmtList(
-                                      MultiStmtList(
-                                        MultiStmtList(
-                                          MultiStmtList(
-                                            MultiStmtList(
-                                              MultiStmtList(
-                                                MultiStmtList(
-                                                  MultiStmtList(
-                                                    MultiStmtList(
-                                                      MultiStmtList(
-                                                        NoStmt(
-                                                        ) [NoStmt]
-                                                        IfElseMatchedStmt(
-                                                          Condition(
-                                                            CondSimple(
-                                                              CondTerm(
-                                                                CondTermSimple(
-                                                                  CondRelop(
-                                                                    BasicExprr(
-                                                                      NoMinus(
-                                                                      ) [NoMinus]
-                                                                      TermExpr(
-                                                                        FactorTerm(
-                                                                          NumberConst(
-                                                                           1
-                                                                          ) [NumberConst]
-                                                                        ) [FactorTerm]
-                                                                      ) [TermExpr]
-                                                                    ) [BasicExprr]
-                                                                    NotEqualsOper(
-                                                                    ) [NotEqualsOper]
-                                                                    BasicExprr(
-                                                                      NoMinus(
-                                                                      ) [NoMinus]
-                                                                      TermExpr(
-                                                                        FactorTerm(
-                                                                          NumberConst(
-                                                                           1
-                                                                          ) [NumberConst]
-                                                                        ) [FactorTerm]
-                                                                      ) [TermExpr]
-                                                                    ) [BasicExprr]
-                                                                  ) [CondRelop]
-                                                                ) [CondTermSimple]
-                                                              ) [CondTerm]
-                                                            ) [CondSimple]
-                                                          ) [Condition]
-                                                          PrintStmt(
-                                                            BasicExprr(
-                                                              Minus(
-                                                              ) [Minus]
-                                                              TermExpr(
-                                                                FactorTerm(
-                                                                  NumberConst(
-                                                                   6
-                                                                  ) [NumberConst]
-                                                                ) [FactorTerm]
-                                                              ) [TermExpr]
-                                                            ) [BasicExprr]
-                                                          ) [PrintStmt]
-                                                          ElseStatmt(
-                                                            PrintStmt(
-                                                              BasicExprr(
-                                                                NoMinus(
-                                                                ) [NoMinus]
-                                                                TermExpr(
-                                                                  FactorTerm(
-                                                                    NumberConst(
-                                                                     0
-                                                                    ) [NumberConst]
-                                                                  ) [FactorTerm]
-                                                                ) [TermExpr]
-                                                              ) [BasicExprr]
-                                                            ) [PrintStmt]
-                                                          ) [ElseStatmt]
-                                                        ) [IfElseMatchedStmt]
-                                                      ) [MultiStmtList]
-                                                      DesignStmt(
-                                                        DesignatorAssign(
-                                                          DesignatorBasic(
-                                                           ibool
-                                                          ) [DesignatorBasic]
-                                                          AssignOper(
-                                                          ) [AssignOper]
-                                                          BasicExprr(
-                                                            NoMinus(
-                                                            ) [NoMinus]
-                                                            TermExpr(
-                                                              FactorTerm(
-                                                                BoolConst(
-                                                                 false
-                                                                ) [BoolConst]
-                                                              ) [FactorTerm]
-                                                            ) [TermExpr]
-                                                          ) [BasicExprr]
-                                                        ) [DesignatorAssign]
-                                                      ) [DesignStmt]
-                                                    ) [MultiStmtList]
-                                                    DesignStmt(
-                                                      DesignatorAssign(
-                                                        DesignatorBasic(
-                                                         i
-                                                        ) [DesignatorBasic]
-                                                        AssignOper(
-                                                        ) [AssignOper]
-                                                        BasicExprr(
-                                                          NoMinus(
-                                                          ) [NoMinus]
-                                                          TermExpr(
-                                                            FactorTerm(
-                                                              NumberConst(
-                                                               0
-                                                              ) [NumberConst]
-                                                            ) [FactorTerm]
-                                                          ) [TermExpr]
-                                                        ) [BasicExprr]
-                                                      ) [DesignatorAssign]
-                                                    ) [DesignStmt]
-                                                  ) [MultiStmtList]
-                                                  DoWhileStmt(
-                                                    DoStmt(
-                                                    ) [DoStmt]
-                                                    BasicStmt(
-                                                      MultiStmtList(
-                                                        MultiStmtList(
-                                                          NoStmt(
-                                                          ) [NoStmt]
-                                                          IfElseMatchedStmt(
-                                                            Condition(
-                                                              CondSimple(
-                                                                CondTerm(
-                                                                  CondTermSimple(
-                                                                    CondRelop(
-                                                                      BasicExprr(
-                                                                        NoMinus(
-                                                                        ) [NoMinus]
-                                                                        TermExpr(
-                                                                          FactorTerm(
-                                                                            Var(
-                                                                              DesignatorBasic(
-                                                                               i
-                                                                              ) [DesignatorBasic]
-                                                                            ) [Var]
-                                                                          ) [FactorTerm]
-                                                                        ) [TermExpr]
-                                                                      ) [BasicExprr]
-                                                                      EqualsOper(
-                                                                      ) [EqualsOper]
-                                                                      BasicExprr(
-                                                                        NoMinus(
-                                                                        ) [NoMinus]
-                                                                        TermExpr(
-                                                                          FactorTerm(
-                                                                            NumberConst(
-                                                                             2
-                                                                            ) [NumberConst]
-                                                                          ) [FactorTerm]
-                                                                        ) [TermExpr]
-                                                                      ) [BasicExprr]
-                                                                    ) [CondRelop]
-                                                                  ) [CondTermSimple]
-                                                                ) [CondTerm]
-                                                              ) [CondSimple]
-                                                            ) [Condition]
-                                                            DesignStmt(
-                                                              DesignatorAssign(
-                                                                DesignatorBasic(
-                                                                 ibool
-                                                                ) [DesignatorBasic]
-                                                                AssignOper(
-                                                                ) [AssignOper]
-                                                                BasicExprr(
-                                                                  NoMinus(
-                                                                  ) [NoMinus]
-                                                                  TermExpr(
-                                                                    FactorTerm(
-                                                                      BoolConst(
-                                                                       true
-                                                                      ) [BoolConst]
-                                                                    ) [FactorTerm]
-                                                                  ) [TermExpr]
-                                                                ) [BasicExprr]
-                                                              ) [DesignatorAssign]
-                                                            ) [DesignStmt]
-                                                            NoElseStmt(
-                                                            ) [NoElseStmt]
-                                                          ) [IfElseMatchedStmt]
-                                                        ) [MultiStmtList]
-                                                        DesignStmt(
-                                                          VarInc(
-                                                            DesignatorBasic(
-                                                             i
-                                                            ) [DesignatorBasic]
-                                                          ) [VarInc]
-                                                        ) [DesignStmt]
-                                                      ) [MultiStmtList]
-                                                    ) [BasicStmt]
-                                                    Condition(
-                                                      CondSimple(
-                                                        CondTerm(
-                                                          CondTermSimple(
-                                                            CondRelop(
-                                                              BasicExprr(
-                                                                NoMinus(
-                                                                ) [NoMinus]
-                                                                TermExpr(
-                                                                  FactorTerm(
-                                                                    Var(
-                                                                      DesignatorBasic(
-                                                                       i
-                                                                      ) [DesignatorBasic]
-                                                                    ) [Var]
-                                                                  ) [FactorTerm]
-                                                                ) [TermExpr]
-                                                              ) [BasicExprr]
-                                                              LessOper(
-                                                              ) [LessOper]
-                                                              BasicExprr(
-                                                                NoMinus(
-                                                                ) [NoMinus]
-                                                                TermExpr(
-                                                                  FactorTerm(
-                                                                    NumberConst(
-                                                                     5
-                                                                    ) [NumberConst]
-                                                                  ) [FactorTerm]
-                                                                ) [TermExpr]
-                                                              ) [BasicExprr]
-                                                            ) [CondRelop]
-                                                          ) [CondTermSimple]
-                                                        ) [CondTerm]
-                                                      ) [CondSimple]
-                                                    ) [Condition]
-                                                  ) [DoWhileStmt]
-                                                ) [MultiStmtList]
-                                                IfElseMatchedStmt(
-                                                  Condition(
-                                                    CondSimple(
-                                                      CondTerm(
-                                                        CondTermSimple(
-                                                          CondExpr(
-                                                            BasicExprr(
-                                                              NoMinus(
-                                                              ) [NoMinus]
-                                                              TermExpr(
-                                                                FactorTerm(
-                                                                  Var(
-                                                                    DesignatorBasic(
-                                                                     ibool
-                                                                    ) [DesignatorBasic]
-                                                                  ) [Var]
-                                                                ) [FactorTerm]
-                                                              ) [TermExpr]
-                                                            ) [BasicExprr]
-                                                          ) [CondExpr]
-                                                        ) [CondTermSimple]
-                                                      ) [CondTerm]
-                                                    ) [CondSimple]
-                                                  ) [Condition]
-                                                  IfElseMatchedStmt(
-                                                    Condition(
-                                                      CondSimple(
-                                                        CondTerm(
-                                                          CondTermSimple(
-                                                            CondRelop(
-                                                              BasicExprr(
-                                                                NoMinus(
-                                                                ) [NoMinus]
-                                                                TermExpr(
-                                                                  FactorTerm(
-                                                                    Var(
-                                                                      DesignatorBasic(
-                                                                       i
-                                                                      ) [DesignatorBasic]
-                                                                    ) [Var]
-                                                                  ) [FactorTerm]
-                                                                ) [TermExpr]
-                                                              ) [BasicExprr]
-                                                              EqualsOper(
-                                                              ) [EqualsOper]
-                                                              BasicExprr(
-                                                                NoMinus(
-                                                                ) [NoMinus]
-                                                                TermExpr(
-                                                                  FactorTerm(
-                                                                    NumberConst(
-                                                                     5
-                                                                    ) [NumberConst]
-                                                                  ) [FactorTerm]
-                                                                ) [TermExpr]
-                                                              ) [BasicExprr]
-                                                            ) [CondRelop]
-                                                          ) [CondTermSimple]
-                                                        ) [CondTerm]
-                                                      ) [CondSimple]
-                                                    ) [Condition]
-                                                    PrintStmt(
-                                                      BasicExprr(
-                                                        NoMinus(
-                                                        ) [NoMinus]
-                                                        TermExpr(
-                                                          FactorTerm(
-                                                            NumberConst(
-                                                             1
-                                                            ) [NumberConst]
-                                                          ) [FactorTerm]
-                                                        ) [TermExpr]
-                                                      ) [BasicExprr]
-                                                    ) [PrintStmt]
-                                                    ElseStatmt(
-                                                      PrintStmt(
-                                                        BasicExprr(
-                                                          Minus(
-                                                          ) [Minus]
-                                                          TermExpr(
-                                                            FactorTerm(
-                                                              NumberConst(
-                                                               1
-                                                              ) [NumberConst]
-                                                            ) [FactorTerm]
-                                                          ) [TermExpr]
-                                                        ) [BasicExprr]
-                                                      ) [PrintStmt]
-                                                    ) [ElseStatmt]
-                                                  ) [IfElseMatchedStmt]
-                                                  NoElseStmt(
-                                                  ) [NoElseStmt]
-                                                ) [IfElseMatchedStmt]
-                                              ) [MultiStmtList]
-                                              DesignStmt(
-                                                DesignatorAssign(
-                                                  DesignatorBasic(
-                                                   niz
-                                                  ) [DesignatorBasic]
-                                                  AssignOper(
-                                                  ) [AssignOper]
-                                                  BasicExprr(
-                                                    NoMinus(
-                                                    ) [NoMinus]
-                                                    TermExpr(
-                                                      FactorTerm(
-                                                        NewArray(
-                                                          Type(
-                                                           int
-                                                          ) [Type]
-                                                          BasicExprr(
-                                                            NoMinus(
-                                                            ) [NoMinus]
-                                                            TermExpr(
-                                                              FactorTerm(
-                                                                NumberConst(
-                                                                 3
-                                                                ) [NumberConst]
-                                                              ) [FactorTerm]
-                                                            ) [TermExpr]
-                                                          ) [BasicExprr]
-                                                        ) [NewArray]
-                                                      ) [FactorTerm]
-                                                    ) [TermExpr]
-                                                  ) [BasicExprr]
-                                                ) [DesignatorAssign]
-                                              ) [DesignStmt]
-                                            ) [MultiStmtList]
-                                            DesignStmt(
-                                              DesignatorAssign(
-                                                DesignatorArray(
-                                                  DesignatorArrayName(
-                                                   niz
-                                                  ) [DesignatorArrayName]
-                                                  BasicExprr(
-                                                    NoMinus(
-                                                    ) [NoMinus]
-                                                    TermExpr(
-                                                      FactorTerm(
-                                                        NumberConst(
-                                                         0
-                                                        ) [NumberConst]
-                                                      ) [FactorTerm]
-                                                    ) [TermExpr]
-                                                  ) [BasicExprr]
-                                                ) [DesignatorArray]
-                                                AssignOper(
-                                                ) [AssignOper]
-                                                BasicExprr(
-                                                  NoMinus(
-                                                  ) [NoMinus]
-                                                  TermExpr(
-                                                    FactorTerm(
-                                                      NumberConst(
-                                                       1
-                                                      ) [NumberConst]
-                                                    ) [FactorTerm]
-                                                  ) [TermExpr]
-                                                ) [BasicExprr]
-                                              ) [DesignatorAssign]
-                                            ) [DesignStmt]
-                                          ) [MultiStmtList]
-                                          DesignStmt(
-                                            DesignatorAssign(
-                                              DesignatorArray(
-                                                DesignatorArrayName(
-                                                 niz
-                                                ) [DesignatorArrayName]
-                                                BasicExprr(
-                                                  NoMinus(
-                                                  ) [NoMinus]
-                                                  TermExpr(
-                                                    FactorTerm(
-                                                      NumberConst(
-                                                       1
-                                                      ) [NumberConst]
-                                                    ) [FactorTerm]
-                                                  ) [TermExpr]
-                                                ) [BasicExprr]
-                                              ) [DesignatorArray]
-                                              AssignOper(
-                                              ) [AssignOper]
-                                              BasicExprr(
-                                                NoMinus(
-                                                ) [NoMinus]
-                                                TermExpr(
-                                                  FactorTerm(
-                                                    NumberConst(
-                                                     2
-                                                    ) [NumberConst]
-                                                  ) [FactorTerm]
-                                                ) [TermExpr]
-                                              ) [BasicExprr]
-                                            ) [DesignatorAssign]
-                                          ) [DesignStmt]
-                                        ) [MultiStmtList]
-                                        DesignStmt(
-                                          DesignatorAssign(
-                                            DesignatorArray(
-                                              DesignatorArrayName(
-                                               niz
-                                              ) [DesignatorArrayName]
-                                              BasicExprr(
-                                                NoMinus(
-                                                ) [NoMinus]
-                                                TermExpr(
-                                                  FactorTerm(
-                                                    NumberConst(
-                                                     2
-                                                    ) [NumberConst]
-                                                  ) [FactorTerm]
-                                                ) [TermExpr]
-                                              ) [BasicExprr]
-                                            ) [DesignatorArray]
-                                            AssignOper(
-                                            ) [AssignOper]
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              AddExpr(
-                                                TermExpr(
-                                                  FactorTerm(
-                                                    FunctionCall(
-                                                      DesignatorBasic(
-                                                       sum
-                                                      ) [DesignatorBasic]
-                                                      ActualParamss(
-                                                        MultipleParams(
-                                                          OneParam(
-                                                            BasicExprr(
-                                                              NoMinus(
-                                                              ) [NoMinus]
-                                                              TermExpr(
-                                                                FactorTerm(
-                                                                  Var(
-                                                                    DesignatorArray(
-                                                                      DesignatorArrayName(
-                                                                       niz
-                                                                      ) [DesignatorArrayName]
-                                                                      BasicExprr(
-                                                                        NoMinus(
-                                                                        ) [NoMinus]
-                                                                        TermExpr(
-                                                                          FactorTerm(
-                                                                            NumberConst(
-                                                                             1
-                                                                            ) [NumberConst]
-                                                                          ) [FactorTerm]
-                                                                        ) [TermExpr]
-                                                                      ) [BasicExprr]
-                                                                    ) [DesignatorArray]
-                                                                  ) [Var]
-                                                                ) [FactorTerm]
-                                                              ) [TermExpr]
-                                                            ) [BasicExprr]
-                                                          ) [OneParam]
-                                                          BasicExprr(
-                                                            NoMinus(
-                                                            ) [NoMinus]
-                                                            TermExpr(
-                                                              FactorTerm(
-                                                                Var(
-                                                                  DesignatorArray(
-                                                                    DesignatorArrayName(
-                                                                     niz
-                                                                    ) [DesignatorArrayName]
-                                                                    BasicExprr(
-                                                                      NoMinus(
-                                                                      ) [NoMinus]
-                                                                      TermExpr(
-                                                                        FactorTerm(
-                                                                          NumberConst(
-                                                                           0
-                                                                          ) [NumberConst]
-                                                                        ) [FactorTerm]
-                                                                      ) [TermExpr]
-                                                                    ) [BasicExprr]
-                                                                  ) [DesignatorArray]
-                                                                ) [Var]
-                                                              ) [FactorTerm]
-                                                            ) [TermExpr]
-                                                          ) [BasicExprr]
-                                                        ) [MultipleParams]
-                                                      ) [ActualParamss]
-                                                    ) [FunctionCall]
-                                                  ) [FactorTerm]
-                                                ) [TermExpr]
-                                                AddOper(
-                                                ) [AddOper]
-                                                FactorTerm(
-                                                  NumberConst(
-                                                   1
-                                                  ) [NumberConst]
-                                                ) [FactorTerm]
-                                              ) [AddExpr]
-                                            ) [BasicExprr]
-                                          ) [DesignatorAssign]
-                                        ) [DesignStmt]
-                                      ) [MultiStmtList]
-                                      IfElseMatchedStmt(
-                                        Condition(
-                                          OrCond(
-                                            CondSimple(
-                                              CondTerm(
-                                                CondTermSimple(
-                                                  CondExpr(
-                                                    BasicExprr(
-                                                      NoMinus(
-                                                      ) [NoMinus]
-                                                      TermExpr(
-                                                        FactorTerm(
-                                                          FunctionCall(
-                                                            DesignatorBasic(
-                                                             verify
-                                                            ) [DesignatorBasic]
-                                                            NoActualParams(
-                                                            ) [NoActualParams]
-                                                          ) [FunctionCall]
-                                                        ) [FactorTerm]
-                                                      ) [TermExpr]
-                                                    ) [BasicExprr]
-                                                  ) [CondExpr]
-                                                ) [CondTermSimple]
-                                              ) [CondTerm]
-                                            ) [CondSimple]
-                                            CondTerm(
-                                              CondTermSimple(
-                                                CondRelop(
-                                                  BasicExprr(
-                                                    NoMinus(
-                                                    ) [NoMinus]
-                                                    TermExpr(
-                                                      FactorTerm(
-                                                        Var(
-                                                          DesignatorArray(
-                                                            DesignatorArrayName(
-                                                             niz
-                                                            ) [DesignatorArrayName]
-                                                            BasicExprr(
-                                                              NoMinus(
-                                                              ) [NoMinus]
-                                                              TermExpr(
-                                                                FactorTerm(
-                                                                  NumberConst(
-                                                                   2
-                                                                  ) [NumberConst]
-                                                                ) [FactorTerm]
-                                                              ) [TermExpr]
-                                                            ) [BasicExprr]
-                                                          ) [DesignatorArray]
-                                                        ) [Var]
-                                                      ) [FactorTerm]
-                                                    ) [TermExpr]
-                                                  ) [BasicExprr]
-                                                  EqualsOper(
-                                                  ) [EqualsOper]
-                                                  BasicExprr(
-                                                    NoMinus(
-                                                    ) [NoMinus]
-                                                    TermExpr(
-                                                      FactorTerm(
-                                                        NumberConst(
-                                                         4
-                                                        ) [NumberConst]
-                                                      ) [FactorTerm]
-                                                    ) [TermExpr]
-                                                  ) [BasicExprr]
-                                                ) [CondRelop]
-                                              ) [CondTermSimple]
-                                            ) [CondTerm]
-                                          ) [OrCond]
-                                        ) [Condition]
-                                        PrintStmt(
-                                          BasicExprr(
-                                            NoMinus(
-                                            ) [NoMinus]
-                                            TermExpr(
-                                              FactorTerm(
-                                                FunctionCall(
-                                                  DesignatorBasic(
-                                                   ord
-                                                  ) [DesignatorBasic]
-                                                  ActualParamss(
-                                                    OneParam(
-                                                      BasicExprr(
-                                                        NoMinus(
-                                                        ) [NoMinus]
-                                                        TermExpr(
-                                                          FactorTerm(
-                                                            CharConst(
-                                                             A
-                                                            ) [CharConst]
-                                                          ) [FactorTerm]
-                                                        ) [TermExpr]
-                                                      ) [BasicExprr]
-                                                    ) [OneParam]
-                                                  ) [ActualParamss]
-                                                ) [FunctionCall]
-                                              ) [FactorTerm]
-                                            ) [TermExpr]
-                                          ) [BasicExprr]
-                                        ) [PrintStmt]
-                                        ElseStatmt(
-                                          PrintStmt(
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  FunctionCall(
-                                                    DesignatorBasic(
-                                                     ord
-                                                    ) [DesignatorBasic]
-                                                    ActualParamss(
-                                                      OneParam(
-                                                        BasicExprr(
-                                                          NoMinus(
-                                                          ) [NoMinus]
-                                                          TermExpr(
-                                                            FactorTerm(
-                                                              CharConst(
-                                                               a
-                                                              ) [CharConst]
-                                                            ) [FactorTerm]
-                                                          ) [TermExpr]
-                                                        ) [BasicExprr]
-                                                      ) [OneParam]
-                                                    ) [ActualParamss]
-                                                  ) [FunctionCall]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                          ) [PrintStmt]
-                                        ) [ElseStatmt]
-                                      ) [IfElseMatchedStmt]
-                                    ) [MultiStmtList]
-                                    PrintStmt(
-                                      BasicExprr(
-                                        NoMinus(
-                                        ) [NoMinus]
-                                        TermExpr(
-                                          FactorTerm(
-                                            Var(
-                                              DesignatorBasic(
-                                               eol
-                                              ) [DesignatorBasic]
-                                            ) [Var]
-                                          ) [FactorTerm]
-                                        ) [TermExpr]
-                                      ) [BasicExprr]
-                                    ) [PrintStmt]
-                                  ) [MultiStmtList]
-                                  DesignStmt(
-                                    DesignatorAssign(
-                                      DesignatorBasic(
-                                       i
-                                      ) [DesignatorBasic]
-                                      AssignOper(
-                                      ) [AssignOper]
-                                      BasicExprr(
-                                        NoMinus(
-                                        ) [NoMinus]
-                                        TermExpr(
-                                          FactorTerm(
-                                            NumberConst(
-                                             0
-                                            ) [NumberConst]
-                                          ) [FactorTerm]
-                                        ) [TermExpr]
-                                      ) [BasicExprr]
-                                    ) [DesignatorAssign]
-                                  ) [DesignStmt]
-                                ) [MultiStmtList]
-                                DoWhileStmt(
-                                  DoStmt(
-                                  ) [DoStmt]
-                                  BasicStmt(
-                                    MultiStmtList(
-                                      MultiStmtList(
-                                        MultiStmtList(
-                                          NoStmt(
-                                          ) [NoStmt]
-                                          IfElseMatchedStmt(
-                                            Condition(
-                                              CondSimple(
-                                                CondTerm(
-                                                  CondTermSimple(
-                                                    CondRelop(
-                                                      BasicExprr(
-                                                        NoMinus(
-                                                        ) [NoMinus]
-                                                        TermExpr(
-                                                          FactorTerm(
-                                                            Var(
-                                                              DesignatorBasic(
-                                                               i
-                                                              ) [DesignatorBasic]
-                                                            ) [Var]
-                                                          ) [FactorTerm]
-                                                        ) [TermExpr]
-                                                      ) [BasicExprr]
-                                                      EqualsOper(
-                                                      ) [EqualsOper]
-                                                      BasicExprr(
-                                                        NoMinus(
-                                                        ) [NoMinus]
-                                                        TermExpr(
-                                                          FactorTerm(
-                                                            NumberConst(
-                                                             3
-                                                            ) [NumberConst]
-                                                          ) [FactorTerm]
-                                                        ) [TermExpr]
-                                                      ) [BasicExprr]
-                                                    ) [CondRelop]
-                                                  ) [CondTermSimple]
-                                                ) [CondTerm]
-                                              ) [CondSimple]
-                                            ) [Condition]
-                                            BasicStmt(
-                                              MultiStmtList(
-                                                MultiStmtList(
-                                                  NoStmt(
-                                                  ) [NoStmt]
-                                                  DesignStmt(
-                                                    VarInc(
-                                                      DesignatorBasic(
-                                                       i
-                                                      ) [DesignatorBasic]
-                                                    ) [VarInc]
-                                                  ) [DesignStmt]
-                                                ) [MultiStmtList]
-                                                ContinueStmt(
-                                                ) [ContinueStmt]
-                                              ) [MultiStmtList]
-                                            ) [BasicStmt]
-                                            NoElseStmt(
-                                            ) [NoElseStmt]
-                                          ) [IfElseMatchedStmt]
-                                        ) [MultiStmtList]
-                                        IfElseMatchedStmt(
-                                          Condition(
-                                            CondSimple(
-                                              CondTerm(
-                                                CondTermSimple(
-                                                  CondRelop(
-                                                    BasicExprr(
-                                                      NoMinus(
-                                                      ) [NoMinus]
-                                                      TermExpr(
-                                                        FactorTerm(
-                                                          Var(
-                                                            DesignatorBasic(
-                                                             i
-                                                            ) [DesignatorBasic]
-                                                          ) [Var]
-                                                        ) [FactorTerm]
-                                                      ) [TermExpr]
-                                                    ) [BasicExprr]
-                                                    EqualsOper(
-                                                    ) [EqualsOper]
-                                                    BasicExprr(
-                                                      NoMinus(
-                                                      ) [NoMinus]
-                                                      TermExpr(
-                                                        FactorTerm(
-                                                          NumberConst(
-                                                           4
-                                                          ) [NumberConst]
-                                                        ) [FactorTerm]
-                                                      ) [TermExpr]
-                                                    ) [BasicExprr]
-                                                  ) [CondRelop]
-                                                ) [CondTermSimple]
-                                              ) [CondTerm]
-                                            ) [CondSimple]
-                                          ) [Condition]
-                                          BreakStmt(
-                                          ) [BreakStmt]
-                                          NoElseStmt(
-                                          ) [NoElseStmt]
-                                        ) [IfElseMatchedStmt]
-                                      ) [MultiStmtList]
-                                      DesignStmt(
-                                        DesignatorAssign(
-                                          DesignatorBasic(
-                                           i
-                                          ) [DesignatorBasic]
-                                          AssignOper(
-                                          ) [AssignOper]
-                                          BasicExprr(
-                                            NoMinus(
-                                            ) [NoMinus]
-                                            TermExpr(
-                                              FactorTerm(
-                                                FunctionCall(
-                                                  DesignatorBasic(
-                                                   inkrement
-                                                  ) [DesignatorBasic]
-                                                  ActualParamss(
-                                                    MultipleParams(
-                                                      OneParam(
-                                                        BasicExprr(
-                                                          NoMinus(
-                                                          ) [NoMinus]
-                                                          TermExpr(
-                                                            FactorTerm(
-                                                              Var(
-                                                                DesignatorBasic(
-                                                                 i
-                                                                ) [DesignatorBasic]
-                                                              ) [Var]
-                                                            ) [FactorTerm]
-                                                          ) [TermExpr]
-                                                        ) [BasicExprr]
-                                                      ) [OneParam]
-                                                      BasicExprr(
-                                                        NoMinus(
-                                                        ) [NoMinus]
-                                                        TermExpr(
-                                                          FactorTerm(
-                                                            NumberConst(
-                                                             1
-                                                            ) [NumberConst]
-                                                          ) [FactorTerm]
-                                                        ) [TermExpr]
-                                                      ) [BasicExprr]
-                                                    ) [MultipleParams]
-                                                  ) [ActualParamss]
-                                                ) [FunctionCall]
-                                              ) [FactorTerm]
-                                            ) [TermExpr]
-                                          ) [BasicExprr]
-                                        ) [DesignatorAssign]
-                                      ) [DesignStmt]
-                                    ) [MultiStmtList]
-                                  ) [BasicStmt]
-                                  Condition(
-                                    CondSimple(
-                                      CondTerm(
-                                        CondTermSimple(
-                                          CondRelop(
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  Var(
-                                                    DesignatorBasic(
-                                                     i
-                                                    ) [DesignatorBasic]
-                                                  ) [Var]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                            LessOper(
-                                            ) [LessOper]
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  NumberConst(
-                                                   10
-                                                  ) [NumberConst]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                          ) [CondRelop]
-                                        ) [CondTermSimple]
-                                      ) [CondTerm]
-                                    ) [CondSimple]
-                                  ) [Condition]
-                                ) [DoWhileStmt]
-                              ) [MultiStmtList]
-                              IfElseMatchedStmt(
-                                Condition(
-                                  CondSimple(
-                                    CondTerm(
-                                      AndCond(
-                                        CondTermSimple(
-                                          CondRelop(
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  Var(
-                                                    DesignatorBasic(
-                                                     i
-                                                    ) [DesignatorBasic]
-                                                  ) [Var]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                            EqualsOper(
-                                            ) [EqualsOper]
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  NumberConst(
-                                                   3
-                                                  ) [NumberConst]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                          ) [CondRelop]
-                                        ) [CondTermSimple]
-                                        CondExpr(
-                                          BasicExprr(
-                                            NoMinus(
-                                            ) [NoMinus]
-                                            TermExpr(
-                                              FactorTerm(
-                                                FunctionCall(
-                                                  DesignatorBasic(
-                                                   verify
-                                                  ) [DesignatorBasic]
-                                                  NoActualParams(
-                                                  ) [NoActualParams]
-                                                ) [FunctionCall]
-                                              ) [FactorTerm]
-                                            ) [TermExpr]
-                                          ) [BasicExprr]
-                                        ) [CondExpr]
-                                      ) [AndCond]
-                                    ) [CondTerm]
-                                  ) [CondSimple]
-                                ) [Condition]
-                                PrintStmt(
-                                  BasicExprr(
-                                    Minus(
-                                    ) [Minus]
-                                    TermExpr(
-                                      FactorTerm(
-                                        NumberConst(
-                                         4
-                                        ) [NumberConst]
-                                      ) [FactorTerm]
-                                    ) [TermExpr]
-                                  ) [BasicExprr]
-                                ) [PrintStmt]
-                                ElseStatmt(
-                                  PrintStmt(
-                                    BasicExprr(
-                                      NoMinus(
-                                      ) [NoMinus]
-                                      TermExpr(
-                                        FactorTerm(
-                                          NumberConst(
-                                           4
-                                          ) [NumberConst]
-                                        ) [FactorTerm]
-                                      ) [TermExpr]
-                                    ) [BasicExprr]
-                                  ) [PrintStmt]
-                                ) [ElseStatmt]
-                              ) [IfElseMatchedStmt]
-                            ) [MultiStmtList]
-                            ReadStmt(
-                              DesignatorArray(
-                                DesignatorArrayName(
-                                 niz
-                                ) [DesignatorArrayName]
+                            NoStmt(
+                            ) [NoStmt]
+                            DesignStmt(
+                              DesignatorAssign(
+                                DesignatorBasic(
+                                 a
+                                ) [DesignatorBasic]
+                                AssignOper(
+                                ) [AssignOper]
                                 BasicExprr(
-                                  NoMinus(
-                                  ) [NoMinus]
+                                  Minus(
+                                  ) [Minus]
                                   TermExpr(
                                     FactorTerm(
                                       NumberConst(
-                                       0
+                                       1
                                       ) [NumberConst]
                                     ) [FactorTerm]
                                   ) [TermExpr]
                                 ) [BasicExprr]
-                              ) [DesignatorArray]
-                            ) [ReadStmt]
+                              ) [DesignatorAssign]
+                            ) [DesignStmt]
                           ) [MultiStmtList]
-                          ReadStmt(
-                            DesignatorArray(
-                              DesignatorArrayName(
-                               niz
-                              ) [DesignatorArrayName]
+                          DesignStmt(
+                            DesignatorAssign(
+                              DesignatorBasic(
+                               b
+                              ) [DesignatorBasic]
+                              AssignOper(
+                              ) [AssignOper]
                               BasicExprr(
-                                NoMinus(
-                                ) [NoMinus]
+                                Minus(
+                                ) [Minus]
                                 TermExpr(
                                   FactorTerm(
                                     NumberConst(
@@ -1437,79 +297,258 @@ INFO  13:42:15,169 - Program(
                                   ) [FactorTerm]
                                 ) [TermExpr]
                               ) [BasicExprr]
-                            ) [DesignatorArray]
-                          ) [ReadStmt]
+                            ) [DesignatorAssign]
+                          ) [DesignStmt]
                         ) [MultiStmtList]
-                        ReadStmt(
-                          DesignatorArray(
-                            DesignatorArrayName(
-                             niz
-                            ) [DesignatorArrayName]
+                        DesignStmt(
+                          DesignatorAssign(
+                            DesignatorBasic(
+                             c
+                            ) [DesignatorBasic]
+                            AssignOper(
+                            ) [AssignOper]
                             BasicExprr(
-                              NoMinus(
-                              ) [NoMinus]
+                              Minus(
+                              ) [Minus]
                               TermExpr(
                                 FactorTerm(
                                   NumberConst(
-                                   2
+                                   1
                                   ) [NumberConst]
                                 ) [FactorTerm]
                               ) [TermExpr]
                             ) [BasicExprr]
-                          ) [DesignatorArray]
-                        ) [ReadStmt]
+                          ) [DesignatorAssign]
+                        ) [DesignStmt]
                       ) [MultiStmtList]
-                      PrintStmt(
+                      DesignStmt(
+                        DesignatorAssign(
+                          DesignatorBasic(
+                           i
+                          ) [DesignatorBasic]
+                          AssignOper(
+                          ) [AssignOper]
+                          BasicExprr(
+                            NoMinus(
+                            ) [NoMinus]
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 1
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [BasicExprr]
+                        ) [DesignatorAssign]
+                      ) [DesignStmt]
+                    ) [MultiStmtList]
+                    DesignStmt(
+                      DesignatorAssign(
+                        DesignatorBasic(
+                         arr
+                        ) [DesignatorBasic]
+                        AssignOper(
+                        ) [AssignOper]
                         BasicExprr(
                           NoMinus(
                           ) [NoMinus]
                           TermExpr(
                             FactorTerm(
-                              Var(
-                                DesignatorBasic(
-                                 eol
-                                ) [DesignatorBasic]
-                              ) [Var]
+                              NewArray(
+                                Type(
+                                 int
+                                ) [Type]
+                                BasicExprr(
+                                  NoMinus(
+                                  ) [NoMinus]
+                                  TermExpr(
+                                    FactorTerm(
+                                      NumberConst(
+                                       5
+                                      ) [NumberConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExprr]
+                              ) [NewArray]
                             ) [FactorTerm]
                           ) [TermExpr]
                         ) [BasicExprr]
-                      ) [PrintStmt]
-                    ) [MultiStmtList]
-                    PrintStmt(
+                      ) [DesignatorAssign]
+                    ) [DesignStmt]
+                  ) [MultiStmtList]
+                  DesignStmt(
+                    DesignatorAssign(
+                      DesignatorArray(
+                        DesArrName(
+                         arr
+                        ) [DesArrName]
+                        BasicExprr(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermExpr(
+                            FactorTerm(
+                              NumberConst(
+                               0
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [BasicExprr]
+                      ) [DesignatorArray]
+                      AssignOper(
+                      ) [AssignOper]
+                      BasicExprr(
+                        Minus(
+                        ) [Minus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [DesignatorAssign]
+                  ) [DesignStmt]
+                ) [MultiStmtList]
+                DesignStmt(
+                  DesignatorAssign(
+                    DesignatorArray(
+                      DesArrName(
+                       arr
+                      ) [DesArrName]
                       BasicExprr(
                         NoMinus(
                         ) [NoMinus]
                         TermExpr(
                           FactorTerm(
-                            FunctionCall(
-                              DesignatorBasic(
-                               sum
-                              ) [DesignatorBasic]
-                              ActualParamss(
-                                MultipleParams(
-                                  OneParam(
-                                    BasicExprr(
-                                      NoMinus(
-                                      ) [NoMinus]
-                                      TermExpr(
-                                        FactorTerm(
-                                          FunctionCall(
-                                            DesignatorBasic(
-                                             sum
-                                            ) [DesignatorBasic]
-                                            ActualParamss(
-                                              MultipleParams(
-                                                OneParam(
-                                                  BasicExprr(
-                                                    NoMinus(
-                                                    ) [NoMinus]
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [DesignatorArray]
+                    AssignOper(
+                    ) [AssignOper]
+                    BasicExprr(
+                      Minus(
+                      ) [Minus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [DesignatorAssign]
+                ) [DesignStmt]
+              ) [MultiStmtList]
+              DesignStmt(
+                DesignatorAssign(
+                  DesignatorArray(
+                    DesArrName(
+                     arr
+                    ) [DesArrName]
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [DesignatorArray]
+                  AssignOper(
+                  ) [AssignOper]
+                  BasicExprr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         1
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExprr]
+                ) [DesignatorAssign]
+              ) [DesignStmt]
+            ) [MultiStmtList]
+            DesignStmt(
+              DesignatorAssign(
+                DesignatorBasic(
+                 i
+                ) [DesignatorBasic]
+                AssignOper(
+                ) [AssignOper]
+                BasicExprr(
+                  Minus(
+                  ) [Minus]
+                  AddExpr(
+                    TermExpr(
+                      FactorTerm(
+                        FactExpr(
+                          BasicExprr(
+                            Minus(
+                            ) [Minus]
+                            AddExpr(
+                              AddExpr(
+                                TermExpr(
+                                  FactorTerm(
+                                    Var(
+                                      DesignatorArray(
+                                        DesArrName(
+                                         arr
+                                        ) [DesArrName]
+                                        BasicExprr(
+                                          Minus(
+                                          ) [Minus]
+                                          TermExpr(
+                                            FactorTerm(
+                                              FunctionCall(
+                                                DesignatorBasic(
+                                                 m
+                                                ) [DesignatorBasic]
+                                                NoActualParams(
+                                                ) [NoActualParams]
+                                              ) [FunctionCall]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [BasicExprr]
+                                      ) [DesignatorArray]
+                                    ) [Var]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                                SubOper(
+                                ) [SubOper]
+                                MulopTerm(
+                                  FactorTerm(
+                                    FactExpr(
+                                      BasicExprr(
+                                        Minus(
+                                        ) [Minus]
+                                        TermExpr(
+                                          FactorTerm(
+                                            Var(
+                                              DesignatorArray(
+                                                DesArrName(
+                                                 arr
+                                                ) [DesArrName]
+                                                BasicExprr(
+                                                  Minus(
+                                                  ) [Minus]
+                                                  AddExpr(
                                                     TermExpr(
                                                       FactorTerm(
                                                         Var(
                                                           DesignatorArray(
-                                                            DesignatorArrayName(
-                                                             niz
-                                                            ) [DesignatorArrayName]
+                                                            DesArrName(
+                                                             arr
+                                                            ) [DesArrName]
                                                             BasicExprr(
                                                               NoMinus(
                                                               ) [NoMinus]
@@ -1525,181 +564,216 @@ INFO  13:42:15,169 - Program(
                                                         ) [Var]
                                                       ) [FactorTerm]
                                                     ) [TermExpr]
-                                                  ) [BasicExprr]
-                                                ) [OneParam]
-                                                BasicExprr(
-                                                  NoMinus(
-                                                  ) [NoMinus]
+                                                    AddOper(
+                                                    ) [AddOper]
+                                                    MulopTerm(
+                                                      FactorTerm(
+                                                        FunctionCall(
+                                                          DesignatorBasic(
+                                                           m
+                                                          ) [DesignatorBasic]
+                                                          NoActualParams(
+                                                          ) [NoActualParams]
+                                                        ) [FunctionCall]
+                                                      ) [FactorTerm]
+                                                      MulOper(
+                                                      ) [MulOper]
+                                                      NumberConst(
+                                                       2
+                                                      ) [NumberConst]
+                                                    ) [MulopTerm]
+                                                  ) [AddExpr]
+                                                ) [BasicExprr]
+                                              ) [DesignatorArray]
+                                            ) [Var]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [BasicExprr]
+                                    ) [FactExpr]
+                                  ) [FactorTerm]
+                                  MulOper(
+                                  ) [MulOper]
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [MulopTerm]
+                              ) [AddExpr]
+                              SubOper(
+                              ) [SubOper]
+                              FactorTerm(
+                                Var(
+                                  DesignatorArray(
+                                    DesArrName(
+                                     arr
+                                    ) [DesArrName]
+                                    BasicExprr(
+                                      Minus(
+                                      ) [Minus]
+                                      AddExpr(
+                                        AddExpr(
+                                          AddExpr(
+                                            TermExpr(
+                                              FactorTerm(
+                                                Var(
+                                                  DesignatorArray(
+                                                    DesArrName(
+                                                     arr
+                                                    ) [DesArrName]
+                                                    BasicExprr(
+                                                      NoMinus(
+                                                      ) [NoMinus]
+                                                      TermExpr(
+                                                        FactorTerm(
+                                                          NumberConst(
+                                                           2
+                                                          ) [NumberConst]
+                                                        ) [FactorTerm]
+                                                      ) [TermExpr]
+                                                    ) [BasicExprr]
+                                                  ) [DesignatorArray]
+                                                ) [Var]
+                                              ) [FactorTerm]
+                                            ) [TermExpr]
+                                            AddOper(
+                                            ) [AddOper]
+                                            MulopTerm(
+                                              FactorTerm(
+                                                NumberConst(
+                                                 1
+                                                ) [NumberConst]
+                                              ) [FactorTerm]
+                                              MulOper(
+                                              ) [MulOper]
+                                              NumberConst(
+                                               2
+                                              ) [NumberConst]
+                                            ) [MulopTerm]
+                                          ) [AddExpr]
+                                          SubOper(
+                                          ) [SubOper]
+                                          FactorTerm(
+                                            NumberConst(
+                                             3
+                                            ) [NumberConst]
+                                          ) [FactorTerm]
+                                        ) [AddExpr]
+                                        AddOper(
+                                        ) [AddOper]
+                                        FactorTerm(
+                                          FactExpr(
+                                            BasicExprr(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              AddExpr(
+                                                AddExpr(
                                                   TermExpr(
-                                                    FactorTerm(
+                                                    MulopTerm(
+                                                      FactorTerm(
+                                                        NumberConst(
+                                                         5
+                                                        ) [NumberConst]
+                                                      ) [FactorTerm]
+                                                      MulOper(
+                                                      ) [MulOper]
                                                       Var(
                                                         DesignatorArray(
-                                                          DesignatorArrayName(
-                                                           niz
-                                                          ) [DesignatorArrayName]
+                                                          DesArrName(
+                                                           arr
+                                                          ) [DesArrName]
                                                           BasicExprr(
                                                             NoMinus(
                                                             ) [NoMinus]
                                                             TermExpr(
                                                               FactorTerm(
                                                                 NumberConst(
-                                                                 1
+                                                                 2
                                                                 ) [NumberConst]
                                                               ) [FactorTerm]
                                                             ) [TermExpr]
                                                           ) [BasicExprr]
                                                         ) [DesignatorArray]
                                                       ) [Var]
-                                                    ) [FactorTerm]
+                                                    ) [MulopTerm]
                                                   ) [TermExpr]
-                                                ) [BasicExprr]
-                                              ) [MultipleParams]
-                                            ) [ActualParamss]
-                                          ) [FunctionCall]
+                                                  SubOper(
+                                                  ) [SubOper]
+                                                  FactorTerm(
+                                                    NumberConst(
+                                                     1
+                                                    ) [NumberConst]
+                                                  ) [FactorTerm]
+                                                ) [AddExpr]
+                                                SubOper(
+                                                ) [SubOper]
+                                                MulopTerm(
+                                                  FactorTerm(
+                                                    NumberConst(
+                                                     1
+                                                    ) [NumberConst]
+                                                  ) [FactorTerm]
+                                                  MulOper(
+                                                  ) [MulOper]
+                                                  NumberConst(
+                                                   1
+                                                  ) [NumberConst]
+                                                ) [MulopTerm]
+                                              ) [AddExpr]
+                                            ) [BasicExprr]
+                                          ) [FactExpr]
+                                        ) [FactorTerm]
+                                      ) [AddExpr]
+                                    ) [BasicExprr]
+                                  ) [DesignatorArray]
+                                ) [Var]
+                              ) [FactorTerm]
+                            ) [AddExpr]
+                          ) [BasicExprr]
+                        ) [FactExpr]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                    AddOper(
+                    ) [AddOper]
+                    FactorTerm(
+                      Var(
+                        DesignatorArray(
+                          DesArrName(
+                           arr
+                          ) [DesArrName]
+                          BasicExprr(
+                            Minus(
+                            ) [Minus]
+                            TermExpr(
+                              FactorTerm(
+                                Var(
+                                  DesignatorArray(
+                                    DesArrName(
+                                     arr
+                                    ) [DesArrName]
+                                    BasicExprr(
+                                      Minus(
+                                      ) [Minus]
+                                      TermExpr(
+                                        FactorTerm(
+                                          Var(
+                                            DesignatorBasic(
+                                             a
+                                            ) [DesignatorBasic]
+                                          ) [Var]
                                         ) [FactorTerm]
                                       ) [TermExpr]
                                     ) [BasicExprr]
-                                  ) [OneParam]
-                                  BasicExprr(
-                                    NoMinus(
-                                    ) [NoMinus]
-                                    TermExpr(
-                                      FactorTerm(
-                                        Var(
-                                          DesignatorArray(
-                                            DesignatorArrayName(
-                                             niz
-                                            ) [DesignatorArrayName]
-                                            BasicExprr(
-                                              NoMinus(
-                                              ) [NoMinus]
-                                              TermExpr(
-                                                FactorTerm(
-                                                  NumberConst(
-                                                   2
-                                                  ) [NumberConst]
-                                                ) [FactorTerm]
-                                              ) [TermExpr]
-                                            ) [BasicExprr]
-                                          ) [DesignatorArray]
-                                        ) [Var]
-                                      ) [FactorTerm]
-                                    ) [TermExpr]
-                                  ) [BasicExprr]
-                                ) [MultipleParams]
-                              ) [ActualParamss]
-                            ) [FunctionCall]
-                          ) [FactorTerm]
-                        ) [TermExpr]
-                      ) [BasicExprr]
-                    ) [PrintStmt]
-                  ) [MultiStmtList]
-                  PrintStmt(
-                    BasicExprr(
-                      NoMinus(
-                      ) [NoMinus]
-                      TermExpr(
-                        FactorTerm(
-                          Var(
-                            DesignatorBasic(
-                             eol
-                            ) [DesignatorBasic]
-                          ) [Var]
-                        ) [FactorTerm]
-                      ) [TermExpr]
-                    ) [BasicExprr]
-                  ) [PrintStmt]
-                ) [MultiStmtList]
-                PrintStmt(
-                  BasicExprr(
-                    NoMinus(
-                    ) [NoMinus]
-                    TermExpr(
-                      FactorTerm(
-                        FunctionCall(
-                          DesignatorBasic(
-                           inkrement
-                          ) [DesignatorBasic]
-                          ActualParamss(
-                            MultipleParams(
-                              OneParam(
-                                BasicExprr(
-                                  NoMinus(
-                                  ) [NoMinus]
-                                  TermExpr(
-                                    FactorTerm(
-                                      Var(
-                                        DesignatorArray(
-                                          DesignatorArrayName(
-                                           niz
-                                          ) [DesignatorArrayName]
-                                          BasicExprr(
-                                            NoMinus(
-                                            ) [NoMinus]
-                                            TermExpr(
-                                              FactorTerm(
-                                                NumberConst(
-                                                 2
-                                                ) [NumberConst]
-                                              ) [FactorTerm]
-                                            ) [TermExpr]
-                                          ) [BasicExprr]
-                                        ) [DesignatorArray]
-                                      ) [Var]
-                                    ) [FactorTerm]
-                                  ) [TermExpr]
-                                ) [BasicExprr]
-                              ) [OneParam]
-                              BasicExprr(
-                                NoMinus(
-                                ) [NoMinus]
-                                TermExpr(
-                                  FactorTerm(
-                                    NumberConst(
-                                     2
-                                    ) [NumberConst]
-                                  ) [FactorTerm]
-                                ) [TermExpr]
-                              ) [BasicExprr]
-                            ) [MultipleParams]
-                          ) [ActualParamss]
-                        ) [FunctionCall]
-                      ) [FactorTerm]
-                    ) [TermExpr]
-                  ) [BasicExprr]
-                ) [PrintStmt]
-              ) [MultiStmtList]
-              PrintStmt(
-                BasicExprr(
-                  NoMinus(
-                  ) [NoMinus]
-                  TermExpr(
-                    FactorTerm(
-                      Var(
-                        DesignatorBasic(
-                         eol
-                        ) [DesignatorBasic]
+                                  ) [DesignatorArray]
+                                ) [Var]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [BasicExprr]
+                        ) [DesignatorArray]
                       ) [Var]
                     ) [FactorTerm]
-                  ) [TermExpr]
+                  ) [AddExpr]
                 ) [BasicExprr]
-              ) [PrintStmt]
-            ) [MultiStmtList]
-            PrintStmt(
-              BasicExprr(
-                NoMinus(
-                ) [NoMinus]
-                TermExpr(
-                  FactorTerm(
-                    Var(
-                      DesignatorBasic(
-                       i
-                      ) [DesignatorBasic]
-                    ) [Var]
-                  ) [FactorTerm]
-                ) [TermExpr]
-              ) [BasicExprr]
-            ) [PrintStmt]
+              ) [DesignatorAssign]
+            ) [DesignStmt]
           ) [MultiStmtList]
           PrintStmt(
             BasicExprr(
@@ -1709,13 +783,113 @@ INFO  13:42:15,169 - Program(
                 FactorTerm(
                   Var(
                     DesignatorBasic(
-                     eol
+                     i
                     ) [DesignatorBasic]
                   ) [Var]
                 ) [FactorTerm]
               ) [TermExpr]
             ) [BasicExprr]
           ) [PrintStmt]
+        ) [MultiStmtList]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          DoWhileStmt(
+            DoStmt(
+            ) [DoStmt]
+            BasicStmt(
+              MultiStmtList(
+                MultiStmtList(
+                  NoStmt(
+                  ) [NoStmt]
+                  PrintStmt(
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          Var(
+                            DesignatorBasic(
+                             i
+                            ) [DesignatorBasic]
+                          ) [Var]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [PrintStmt]
+                ) [MultiStmtList]
+                DesignStmt(
+                  VariableInc(
+                    DesignatorBasic(
+                     i
+                    ) [DesignatorBasic]
+                  ) [VariableInc]
+                ) [DesignStmt]
+              ) [MultiStmtList]
+            ) [BasicStmt]
+            Condition(
+              CondSimple(
+                CondTerm(
+                  CondTermSimple(
+                    CondRelop(
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            Var(
+                              DesignatorBasic(
+                               i
+                              ) [DesignatorBasic]
+                            ) [Var]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                      LessOper(
+                      ) [LessOper]
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [CondRelop]
+                  ) [CondTermSimple]
+                ) [CondTerm]
+              ) [CondSimple]
+            ) [Condition]
+          ) [DoWhileStmt]
         ) [MultiStmtList]
         PrintStmt(
           BasicExprr(
@@ -1725,7 +899,7 @@ INFO  13:42:15,169 - Program(
               FactorTerm(
                 Var(
                   DesignatorBasic(
-                   j
+                   i
                   ) [DesignatorBasic]
                 ) [Var]
               ) [FactorTerm]
@@ -1736,5 +910,37 @@ INFO  13:42:15,169 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  13:42:15,198 - ===================================
-INFO  13:42:20,311 - ===================================
+INFO  23:44:11,705 - ===================================
+INFO  23:44:11,708 - --SingleConstAssignInt nula= 0 na liniji 5
+INFO  23:44:11,708 - --SingleConstAssignInt jedan= 1 na liniji 6
+INFO  23:44:11,708 - --SingleConstAssignInt pet= 5 na liniji 7
+INFO  23:44:11,708 - --VarDeclArray niz na liniji 9
+INFO  23:44:11,708 - --VarDeclArray nizch na liniji 10
+INFO  23:44:11,709 - --MethodTypeName k na liniji 13
+INFO  23:44:11,709 - --FormParam a u metodi k na liniji 13
+INFO  23:44:11,709 - --FormParam b u metodi k na liniji 13
+INFO  23:44:11,709 - --MethodTypeName m na liniji 17
+INFO  23:44:11,709 - --MethodTypeName test2 na liniji 19
+INFO  23:44:11,710 - --VarDeclExt b na liniji 19
+INFO  23:44:11,710 - --VarDeclExt c na liniji 19
+INFO  23:44:11,710 - --VarDeclaration a na liniji 19
+INFO  23:44:11,710 - --VarDeclArrayExt arr na liniji 19
+INFO  23:44:11,710 - --VarDeclaration i na liniji 19
+INFO  23:44:11,710 - --Varijabla dobija vrednost  na liniji 20
+INFO  23:44:11,710 - --Varijabla dobija vrednost  na liniji 21
+INFO  23:44:11,710 - --Varijabla dobija vrednost  na liniji 22
+INFO  23:44:11,710 - --Varijabla dobija vrednost  na liniji 24
+INFO  23:44:11,710 - --NewArray  na liniji 26
+INFO  23:44:11,710 - --Varijabla dobija vrednost  na liniji 26
+INFO  23:44:11,711 - --Varijabla dobija vrednost  na liniji 28
+INFO  23:44:11,711 - --Varijabla dobija vrednost  na liniji 29
+INFO  23:44:11,711 - --Varijabla dobija vrednost  na liniji 30
+INFO  23:44:11,711 - --FunctionCall m  na liniji 32
+INFO  23:44:11,711 - --FunctionCall m  na liniji 32
+INFO  23:44:11,711 - --Varijabla dobija vrednost  na liniji 32
+INFO  23:44:11,711 - --MethodTypeName main na liniji 38
+INFO  23:44:11,711 - --VarDeclExt i na liniji 39
+INFO  23:44:11,711 - --VarDeclaration bodovi na liniji 39
+INFO  23:44:11,712 - --Varijabla i INC  na liniji 41
+INFO  23:44:11,712 - --Uslov u ifu ok,  na liniji 30
+INFO  23:44:11,712 - ===================================

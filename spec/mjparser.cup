@@ -58,9 +58,9 @@ terminal LSQUARE, RSQUARE;
 terminal QUESTION, DDOT;
 terminal DEFAULT, YIELD, GOTO;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName, MethodDecl, MethodTypeName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Statement, DesignatorStatement, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName, MethodDecl, MethodTypeName, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodRetType;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Statement, DesignatorStatement;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, BasicExpr;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition,CondTermList, CondTerm, Term, CondFactList, CondFact;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CaseList, CaseStmt;
@@ -69,10 +69,10 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor;
 nonterminal ParamDecl;
 nonterminal ConstDecl, ConstAssign, Constant, Value;
 nonterminal VarDecl, VarDeclExtension, VarDeclList;
-nonterminal MethodDeclList, OptionalFormPars, MethodRetType;
+nonterminal MethodDeclList, OptionalFormPars;
 nonterminal FormParams, FormParamDecl;
 nonterminal OptionalMinus, DoStmt, ElseStmt, StmtList, Label, ActualParams, ActPars;
-nonterminal SwitchExpr, DefaultStmt;
+nonterminal SwitchExpr, DefaultStmt, YieldStatement;
 nonterminal Assignop, Relop, Addop, Mulop;
 
 precedence left ELSE;
@@ -163,7 +163,7 @@ Statement ::=   (DesignStmt) DesignatorStatement SEMI
                 |
                 (DoWhileStmt) DoStmt Statement WHILE LPAREN Condition RPAREN SEMI
                 |
-                (YieldStmt) YIELD Expr SEMI
+                (YieldStmt) YieldStatement Expr SEMI
                 |
                 (BreakStmt) BREAK SEMI
                 |
@@ -186,11 +186,11 @@ Statement ::=   (DesignStmt) DesignatorStatement SEMI
 
 DesignatorStatement ::= (DesignatorAssign) Designator:varName Assignop Expr:val
                         |
-                        (ProcedureCall) Designator:procName LPAREN ActualParams RPAREN
+                        (ProcCall) Designator:procName LPAREN ActualParams RPAREN
                         |
-                        (VarInc) Designator:varName INC
+                        (VariableInc) Designator:varName INC
                         |
-                        (VarDec) Designator:varName DEC
+                        (VariableDec) Designator:varName DEC
                         ;
 
 Designator ::=  (DesignatorBasic) IDENT:varName
@@ -198,11 +198,11 @@ Designator ::=  (DesignatorBasic) IDENT:varName
                 (DesignatorArray) DesignatorArrayName LSQUARE Expr:arrayIndex RSQUARE
                 ;
 
-DesignatorArrayName ::= (DesignatorArrayName) IDENT:varName;
+DesignatorArrayName ::= (DesArrName) IDENT:varName;
 
 Expr ::= (BasicExprr) OptionalMinus BasicExpr:basicExpr
         |
-        (SwitchExpretion) SwitchExpr LPAREN Expr:condVal RPAREN LBRACE CaseList RBRACE
+        (SwitchExp) SwitchExpr LPAREN Expr:condVal RPAREN LBRACE CaseList RBRACE
         ;
 
 BasicExpr ::=   (AddExpr) BasicExpr:basicExprTerm Addop Term:term
@@ -277,6 +277,8 @@ CaseList ::=    (MultiCaseList) CaseList CaseStmt
                 ;
 
 DefaultStmt ::= (DefaultStmt) DEFAULT;
+
+YieldStatement ::= (YieldStatmnt) YIELD;
 
 Factor ::=  (Var) Designator:varName
             |

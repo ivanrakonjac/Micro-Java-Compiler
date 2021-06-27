@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 13:46:58
+// 27/5/2021 22:50:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,6 +8,7 @@ package rs.ac.bg.etf.pp1.ast;
 public abstract class VisitorAdaptor implements Visitor { 
 
     public void visit(Mulop Mulop) { }
+    public void visit(Constant Constant) { }
     public void visit(Relop Relop) { }
     public void visit(Assignop Assignop) { }
     public void visit(CondTermList CondTermList) { }
@@ -20,6 +21,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Designator Designator) { }
     public void visit(Term Term) { }
     public void visit(CaseList CaseList) { }
+    public void visit(Value Value) { }
     public void visit(FormParams FormParams) { }
     public void visit(ActualParams ActualParams) { }
     public void visit(StmtList StmtList) { }
@@ -27,12 +29,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDeclExtension VarDeclExtension) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(Expr Expr) { }
+    public void visit(YieldStatement YieldStatement) { }
     public void visit(ActPars ActPars) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(BasicExpr BasicExpr) { }
     public void visit(ConstAssign ConstAssign) { }
     public void visit(Statement Statement) { }
     public void visit(VarDecl VarDecl) { }
+    public void visit(DesignatorArrayName DesignatorArrayName) { }
     public void visit(CondFact CondFact) { }
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(ParamDecl ParamDecl) { }
@@ -57,6 +61,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NumberConst NumberConst) { visit(); }
     public void visit(FunctionCall FunctionCall) { visit(); }
     public void visit(Var Var) { visit(); }
+    public void visit(YieldStatmnt YieldStatmnt) { visit(); }
     public void visit(DefaultStmt DefaultStmt) { visit(); }
     public void visit(NoCase NoCase) { visit(); }
     public void visit(MultiCaseList MultiCaseList) { visit(); }
@@ -87,14 +92,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Minus Minus) { visit(); }
     public void visit(TermExpr TermExpr) { visit(); }
     public void visit(AddExpr AddExpr) { visit(); }
-    public void visit(SwitchExpretion SwitchExpretion) { visit(); }
+    public void visit(SwitchExp SwitchExp) { visit(); }
     public void visit(BasicExprr BasicExprr) { visit(); }
-    public void visit(DesignatorArrayName DesignatorArrayName) { visit(); }
+    public void visit(DesArrName DesArrName) { visit(); }
     public void visit(DesignatorArray DesignatorArray) { visit(); }
     public void visit(DesignatorBasic DesignatorBasic) { visit(); }
-    public void visit(VarDec VarDec) { visit(); }
-    public void visit(VarInc VarInc) { visit(); }
-    public void visit(ProcedureCall ProcedureCall) { visit(); }
+    public void visit(VariableDec VariableDec) { visit(); }
+    public void visit(VariableInc VariableInc) { visit(); }
+    public void visit(ProcCall ProcCall) { visit(); }
     public void visit(DesignatorAssign DesignatorAssign) { visit(); }
     public void visit(GotoStmt GotoStmt) { visit(); }
     public void visit(BasicStmt BasicStmt) { visit(); }
@@ -131,12 +136,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDeclDerived1 VarDeclDerived1) { visit(); }
     public void visit(VarDeclArray VarDeclArray) { visit(); }
     public void visit(VarDeclaration VarDeclaration) { visit(); }
-    public void visit(MultiBoolConst MultiBoolConst) { visit(); }
-    public void visit(SingleBoolConst SingleBoolConst) { visit(); }
-    public void visit(MultiCharConst MultiCharConst) { visit(); }
-    public void visit(SingleCharConst SingleCharConst) { visit(); }
-    public void visit(MultiNumberConst MultiNumberConst) { visit(); }
-    public void visit(SingleNumberConst SingleNumberConst) { visit(); }
+    public void visit(BoolConstValue BoolConstValue) { visit(); }
+    public void visit(CharConstValue CharConstValue) { visit(); }
+    public void visit(NumConstValue NumConstValue) { visit(); }
+    public void visit(SingleConstAssign SingleConstAssign) { visit(); }
+    public void visit(OneConstAssign OneConstAssign) { visit(); }
+    public void visit(ConstAssignList ConstAssignList) { visit(); }
     public void visit(ConstDecl ConstDecl) { visit(); }
     public void visit(ProgramName ProgramName) { visit(); }
     public void visit(NoParamDecl NoParamDecl) { visit(); }

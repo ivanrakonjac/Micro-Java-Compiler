@@ -32,8 +32,17 @@ public class RuleVisitor extends VisitorAdaptor {
 	
 	boolean returnFound = false;
 	
+	List<List<Struct>> actualParams = new ArrayList<List<Struct>>();
+	List<Obj> calledMethodsList = new ArrayList<Obj>();
 	
+	
+	boolean switchDefaultFound = false;
+	boolean switchYieldFound = false;
+	List<Integer> switchCaseValues = new ArrayList<Integer>();
+	Struct switchReturnValue;
 
+	boolean inTheLoop = false;
+	boolean inTheSwitch = false;
 
 	public RuleVisitor() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
@@ -297,8 +306,7 @@ public class RuleVisitor extends VisitorAdaptor {
 	public void visit(FormParamArray formParamArray) {
 		Obj checkArrayParam = Tab.currentScope.findSymbol(formParamArray.getParamName());
 		if(checkArrayParam != null) {
-			report_error("Semanticka greska: Varijabla " +formParamArray.getParamName() + " je vec deklarisana!", null);	
-			return;	
+			
 		}
 		else {
 			report_info("--FormParamArray " + formParamArray.getParamName() + " u metodi " + currentMethod.getName(), formParamArray);
@@ -308,4 +316,538 @@ public class RuleVisitor extends VisitorAdaptor {
 	}
 	
 	/***************************************** FormParams - end ******************************************/
+	
+	/***************************************** ActPars ******************************************/
+	
+	public void visit(MultipleParams multipleParams) {
+		this.actualParams.get(0).add(multipleParams.getExpr().struct);
+	}
+	
+	public void visit(OneParam oneParam) {
+		this.actualParams.get(0).add(oneParam.getExpr().struct);
+	}
+	
+	/***************************************** ActPars - end ******************************************/
+	
+	/***************************************** DesignatorStatement ******************************************/
+	
+	public void visit(DesignatorAssign designatorAssign) {
+		boolean isVar = designatorAssign.getDesignator().obj.getKind() == Obj.Var;
+		boolean isArrayElem = designatorAssign.getDesignator().obj.getKind() == Obj.Elem;
+		
+		if(!( isArrayElem || isVar )) {
+			report_error("Semanticka greska na liniji: " + designatorAssign.getLine() + ". Simbol moze biti samo varijabla ili elem niza!", null);	
+			return;	
+		}
+		
+		boolean isAssignableTo = designatorAssign.getExpr().struct.assignableTo(designatorAssign.getDesignator().obj.getType());
+		
+		if(isAssignableTo) {
+			report_info("--Varijabla dobija vrednost ", designatorAssign);
+		}
+		else {
+			report_error("Semanticka greska na liniji: " + designatorAssign.getLine() + ". Tipovi nisu kompatibilni!", null);	
+			return;	
+		}
+	}
+	
+	public void visit(ProcCall procCall) {
+		Obj procDesignatorObj = procCall.getDesignator().obj;
+		
+		if(procDesignatorObj.getKind() != Obj.Meth) {
+			procCall.struct = Tab.noType;
+			report_error("Semanticka greska na liniji: " + procCall.getLine() + ". Pozvano ime: "+ procDesignatorObj.getName() + " NIJE funkcija!", null);	
+			return;	
+		}
+		else {
+			report_info("--ProcCall " + procDesignatorObj.getName() + " na liniji " + procCall.getLine(), null);
+			procCall.struct = procDesignatorObj.getType();
+			
+			int formParsNum = 0;
+			for(Obj o : procDesignatorObj.getLocalSymbols()) {
+				formParsNum = formParsNum + o.getFpPos();
+			}
+			
+			if(actualParams.get(0).size() != formParsNum) {
+				report_error("Semanticka greska na liniji: " + procCall.getLine() + ". Broj prosledjenih parametara nije dobar!", null);	
+				return;
+			}
+			int i = 0;
+			for(Obj o : procDesignatorObj.getLocalSymbols()) {
+				if(o.getFpPos() == 0) continue;
+				if(this.actualParams.get(0).get(i++) != o.getType()) {
+					report_error("Semanticka greska:  prosledjeni parametri funkcije " + this.calledMethodsList.get(0).getName() + " se ne slazu sa formalnim parametrima funkcije ", procCall);
+					break;
+				}
+			}
+			
+			this.calledMethodsList.remove(0);
+			this.actualParams.remove(0);
+		}
+	}
+	
+	
+	public void visit(VariableInc variableInc) {
+	
+		boolean isNotArrElem = variableInc.getDesignator().obj.getKind() != Obj.Elem;
+		boolean isNotVar = variableInc.getDesignator().obj.getType().getKind() != Obj.Var;
+		
+		if(isNotArrElem && isNotVar) {
+			report_error("Semanticka greska na liniji: " + variableInc.getLine() + " : simbol mora biti VARIJABLA ili ELEMENT NIZA!", null);
+		}
+		else if(variableInc.getDesignator().obj.getType() != Tab.intType) {
+			report_error("Semanticka greska na liniji: " + variableInc.getLine() + " varijabla mora biti INT", null);
+		}
+		else {
+			report_info("--Varijabla " + variableInc.getDesignator().obj.getName() + " INC ", variableInc);
+		}
+	}
+	
+	public void visit(VariableDec variableDec) {
+		
+		boolean isNotArrElem = variableDec.getDesignator().obj.getKind() != Obj.Elem;
+		boolean isNotVar = variableDec.getDesignator().obj.getType().getKind() != Obj.Var;
+		
+		if(isNotArrElem && isNotVar) {
+			report_error("Semanticka greska na liniji: " + variableDec.getLine() + " : simbol mora biti VARIJABLA ili ELEMENT NIZA!", null);
+		}
+		else if(variableDec.getDesignator().obj.getType() != Tab.intType) {
+			report_error("Semanticka greska na liniji: " + variableDec.getLine() + " varijabla mora biti INT", null);
+		}
+		else {
+			report_info("--Varijabla " + variableDec.getDesignator().obj.getName() + " DEC ", variableDec);
+		}
+	}
+	
+	/***************************************** DesignatorStatement - end ******************************************/
+	
+	/***************************************** Designator ******************************************/
+	
+	public void visit(DesignatorBasic designatorBasic) {
+		Obj desObj = Tab.find(designatorBasic.getVarName());
+		
+		if(desObj == Tab.noObj) {
+			report_error("Semanticka greska na liniji: " + designatorBasic.getLine() + ". Naziv: " + designatorBasic.getVarName() + " nije deklarisan!", null);	
+			return;
+		}
+		else if (desObj.getKind() == Obj.Meth) {
+			this.calledMethodsList.add(0, desObj);
+			this.actualParams.add(0, new ArrayList<Struct>());	
+		}
+		
+		designatorBasic.obj = desObj;
+		
+	}
+	
+	public void visit(DesignatorArray designatorArray) {
+		if(designatorArray.getDesignatorArrayName().obj == Tab.noObj) {
+			designatorArray.obj = Tab.noObj;
+			return;
+		}
+		else if(designatorArray.getDesignatorArrayName().obj.getKind() == Obj.Meth) {
+			this.calledMethodsList.add(0, designatorArray.getDesignatorArrayName().obj);
+			this.actualParams.add(0, new ArrayList<Struct>());
+		}
+		
+		if(designatorArray.getExpr().struct != Tab.intType) {
+			report_error("Semanticka greska na liniji: " + designatorArray.getLine() + ". Indeks niza mora biti int!", designatorArray);	
+			designatorArray.obj = Tab.noObj;
+			return;
+		}
+		else {
+			designatorArray.obj = new Obj(Obj.Elem, "", designatorArray.getDesignatorArrayName().obj.getType().getElemType());
+		}
+	}
+	
+	public void visit(DesArrName desArrName) {
+		Obj arrTypeObj = Tab.find(desArrName.getVarName());
+		
+		if(arrTypeObj == Tab.noObj) {
+			report_error("Semanticka greska na liniji: " + desArrName.getLine() + ". Niz nije deklarisan!", desArrName);	
+			desArrName.obj=  Tab.noObj;
+			return;
+		}
+		else if(arrTypeObj.getType().getKind() != Struct.Array) {
+			report_error("Semanticka greska na liniji: " + desArrName.getLine() + ". Tip mora biti niz!", desArrName);	
+			desArrName.obj=  Tab.noObj;
+			return;
+		}
+		
+		desArrName.obj = arrTypeObj;
+	}
+	
+	/***************************************** Designator - end ******************************************/
+	
+	/***************************************** Factor ******************************************/
+	
+	public void visit(Var var) {
+		var.struct = var.getDesignator().obj.getType();
+	}
+	
+	public void visit(FunctionCall functionCall) {
+		Obj funcObj = functionCall.getDesignator().obj;
+		
+		if(funcObj.getKind() != Obj.Meth) {
+			report_error("Semanticka greska: na liniji " + functionCall.getLine() + ", FunctionCall: " + funcObj.getName() + " nije funkcija!", null);
+			functionCall.struct = Tab.noType;
+		}
+		else {
+			
+			
+			report_info("--FunctionCall " + funcObj.getName() + " ", functionCall);
+			functionCall.struct = funcObj.getType();
+			
+			int paramsNum = 0;
+			for(Obj o : funcObj.getLocalSymbols()) {
+				paramsNum = paramsNum +  o.getFpPos();
+			}
+			
+			if(this.actualParams.get(0).size() != paramsNum) {
+				report_error("Semanticka greska: " + " broj prosledjenih parametara u pozivu funkcije " + funcObj.getName() + " nije dobar, ", functionCall);	
+				return;
+			}
+			
+			int i = 0;
+			for(Obj o : funcObj.getLocalSymbols()) {
+				if(o.getFpPos() == 0) continue;
+				if(actualParams.get(0).get(i++) != o.getType()) {
+					report_error("Semanticka greska: " + "prosledjeni parametri funkcije " + calledMethodsList.get(0).getName() + " se ne slazu sa formalnim parametrima, ", functionCall);	
+					break;
+					
+				}
+			}
+			
+			calledMethodsList.remove(0);
+			actualParams.remove(0);
+		}
+	}
+	
+	public void visit(NumberConst numberConst) {
+		numberConst.struct = Tab.intType;
+	}
+	
+	public void visit(CharConst charConst) {
+		charConst.struct = Tab.charType;
+	}
+	
+	public void visit(BoolConst boolConst) {
+		boolConst.struct = boolType;
+	}
+	
+	public void visit(NewOp newOp) {
+		if(newOp.getType().struct.getKind() != Struct.Class) {
+			report_error("Semanticka greska: na liniji " + newOp.getLine() + ": promenljiva uz operator NEW mora biti klasa!", null);
+			return;
+		}
+		newOp.struct = new Struct(Struct.Class, newOp.getType().struct);
+	}
+	
+	public void visit(NewArray newArray) {
+		if(newArray.getExpr().struct != Tab.intType) {
+			report_error("Semanticka greska: na liniji " + newArray.getLine() + ". Duzina niza mora biti INT!", null);
+			return;
+		}
+		else {
+			report_info("--NewArray ", newArray);
+			newArray.struct = new Struct(Struct.Array, newArray.getType().struct);
+		}
+	}
+	
+	public void visit(FactExpr expr) {
+		expr.struct = expr.getExpr().struct;
+	}
+	
+	/***************************************** Factor - end ******************************************/
+	
+	/***************************************** Term ******************************************/
+	
+	public void visit(FactorTerm term) {
+		term.struct = term.getFactor().struct;
+	}
+	
+	public void visit(MulopTerm mulopTerm) {
+		Struct term = mulopTerm.getTerm().struct;
+		Struct factor = mulopTerm.getFactor().struct;
+		
+		if(term == Tab.intType && term.equals(factor)) {
+			mulopTerm.struct = factor;
+		}
+		else {
+			report_error("Semanticka greska: na liniji " + mulopTerm.getLine() + ", tipovi NISU kompatibilni!", null);
+			mulopTerm.struct = Tab.noType;
+		}
+	}
+	
+	/***************************************** Term - end ******************************************/
+	
+	/***************************************** BasicExpr ******************************************/
+	
+	public void visit(AddExpr addExpr) {
+		Struct basicExprTerm = addExpr.getBasicExpr().struct;
+		Struct term = addExpr.getTerm().struct;
+		
+		if(term == Tab.intType && basicExprTerm.equals(term)) {
+			addExpr.struct = term;
+		} 
+		else {
+			report_error("Semanticka greska: na liniji " + addExpr.getLine() + ", tipovi NISU kompatibilni!", null);
+			addExpr.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(TermExpr termExpr) {
+		termExpr.struct = termExpr.getTerm().struct;
+	}
+	/***************************************** BasicExpr - end ******************************************/
+	
+	/***************************************** Expr ******************************************/
+	
+	public void visit(BasicExprr basicExprr) {
+		
+		boolean isInstanceofMinus = basicExprr.getOptionalMinus() instanceof Minus;
+		boolean isInt = basicExprr.getBasicExpr().struct.equals(Tab.intType);
+		
+		if( isInstanceofMinus && !isInt) {
+			report_error("Semanticka greska: na liniji " + basicExprr.getLine() + ", imamo minus ali tip NIJE int!", null);
+			basicExprr.struct = Tab.noType;
+			return;
+		}
+		else
+			basicExprr.struct = basicExprr.getBasicExpr().struct;
+	}
+	
+	public void visit(SwitchExp switchExp) {
+		if(switchExp.getExpr().struct != Tab.intType) {
+			report_error("Semanticka greska: na linji " + switchExp.getLine() + ". Switch prima samo INT! ", null);
+			switchExp.struct = Tab.noType;
+			return;
+		}
+		else {
+			switchExp.struct = switchReturnValue;
+		}
+		
+		if(!switchDefaultFound) {
+			report_error("Semanticka greska: nije pronadjena DEFAULT labela ", switchExp);
+		}
+		
+		if(!switchYieldFound) {
+			report_error("Semanticka greska: nije pronadjena YIELD labela ", switchExp);
+		}
+		
+		switchDefaultFound = false;
+		switchYieldFound = false;
+		inTheLoop = false;
+		switchCaseValues.clear();
+	}
+	
+	public void visit(SwitchExpr expr) {
+		this.inTheSwitch = true;
+		this.switchCaseValues.clear();
+	}
+	
+	public void visit(CaseStmt caseStmt) {
+		if(switchCaseValues.contains(caseStmt.getN1())) {
+			report_error("Semanticka greska: ne moze u vise caseova ista vrednost!; Nadjena vrednost: " + caseStmt.getN1() + " ", caseStmt);
+			return;
+		}
+		else {
+			switchCaseValues.add(caseStmt.getN1());
+		}
+	}
+	
+	public void visit(DefaultStmt stmt) {
+		switchDefaultFound = true;
+	}
+	
+	/***************************************** Expr - end ******************************************/
+	
+	/***************************************** Statement ******************************************/
+	
+	public void visit(DoWhileStmt stmt) {
+		inTheLoop = false;
+	}
+	
+	public void visit(DoStmt stmt) {
+		inTheLoop = true;
+	}
+	
+	public void visit(BreakStmt breakStmt) {
+		if(!inTheLoop) {
+			report_error("Semanticka greska : break moze samo unutar petlji, ", breakStmt);
+		}
+	}
+	
+	public void visit(ContinueStmt continueStmt) {
+		if(!inTheLoop) {
+			report_error("Semanticka greska : continue moze samo unutar petlji, ", continueStmt);
+		}
+	}
+	
+	public void visit(ReturnStmt returnStmt) {
+		returnFound = true;
+		
+		Struct exprStruct = returnStmt.getExpr().struct;
+		
+		if(!currentMethod.getType().compatibleWith(exprStruct)) {
+			report_error("Semanticka greska : return val metode " + currentMethod.getName() + " se ne poklapa sa return tipom, ", returnStmt);
+		}
+	}
+	
+	public void visit(ReturnNoValStmt returnNoValStmt) {
+		returnFound = false;
+		if(!currentMethod.getType().compatibleWith(Tab.noType)) {
+			report_error("Semanticka greska : metoda " + currentMethod.getName() + " MORA imati neki povratni parametar, ", returnNoValStmt);
+		}
+	}
+	
+	public void visit(ReadStmt readStmt) {
+		
+		boolean isNotArrElem = readStmt.getDesignator().obj.getKind() != Obj.Elem;
+		boolean isNotVar = readStmt.getDesignator().obj.getKind() != Obj.Var;
+		
+		if( isNotArrElem && isNotVar) {
+			report_error("Semanticka greska: Simbol nije element niza ili varijabla, ", readStmt);	
+			return;
+		}
+		
+		boolean isInt = readStmt.getDesignator().obj.getType() == Tab.intType;
+		boolean isChar = readStmt.getDesignator().obj.getType() == Tab.charType;
+		boolean isBool = readStmt.getDesignator().obj.getType() == boolType;
+		
+		if(!( isInt || isChar || isBool)) {
+			report_error("Semanticka greska : parametar READ mora biti int, char ili bool, ", readStmt);
+			return;
+		}
+	}
+	
+	public void visit(PrintStmt printStmt) {
+		
+		boolean isInt = printStmt.getExpr().struct.equals(Tab.intType);
+		boolean isChar = printStmt.getExpr().struct.equals(Tab.charType);
+		boolean isBool = printStmt.getExpr().struct.equals(boolType);
+		
+		if(!( isInt || isChar || isBool )) {
+			report_error("Semanticka greska : parametar PRINT funkcije mora biti int, char ili bool, ", printStmt);
+		}
+	}
+	
+	public void visit(PrintExprStmt printExprStmt) {
+		
+		boolean isInt = printExprStmt.getExpr().struct.equals(Tab.intType);
+		boolean isChar = printExprStmt.getExpr().struct.equals(Tab.charType);
+		boolean isBool = printExprStmt.getExpr().struct.equals(boolType);
+		
+		if(!( isInt || isChar || isBool )) {
+			report_error("Semanticka greska : parametar PRINT funkcije mora biti int, char ili bool, ", printExprStmt);
+		}
+	}
+	
+	public void visit(YieldStmt yieldStmt) {
+		if(!inTheSwitch) {
+			report_error("Semanticka greska : YIELD moze samo unutar switcha,  ", yieldStmt);
+			yieldStmt.struct = Tab.noType;
+			return;
+		}
+		else {
+			yieldStmt.struct = yieldStmt.getExpr().struct;
+			switchReturnValue = yieldStmt.struct;
+		}
+	}
+	
+	public void visit(YieldStatmnt yieldStatmnt) {
+		if(switchDefaultFound) {
+			switchYieldFound = true;
+		}
+	}
+	
+	/***************************************** Statement - end ******************************************/
+	
+	/***************************************** Condition ******************************************/
+	
+	public void visit(Condition condition) {
+		condition.struct = condition.getCondTermList().struct;
+	}
+	
+	public void visit(OrCond orCond) {
+		Struct condTypeFirst = orCond.getCondTermList().struct;
+		Struct condTypeSecond = orCond.getCondTerm().struct;
+		
+		boolean is1Bool = condTypeFirst.getKind() == boolType.getKind();
+		boolean is2Bool = condTypeSecond.getKind() == boolType.getKind();
+		
+		if( is1Bool && is2Bool ) {
+			orCond.struct = boolType;
+			report_info("--Uslov u ifu ok ", orCond);
+		}
+		else {
+			orCond.struct = Tab.noType;
+			report_error("Semanticka greska: izraz u if-i NIJE bool tipa, ", orCond);
+		}
+	}
+	
+	public void visit(CondSimple condSimple) {
+		
+		boolean isNotBool = condSimple.getCondTerm().struct.getKind() != boolType.getKind();
+		
+		if(isNotBool) {
+			report_error("Semanticka greska: Uslov u if naredbi NIJE bool tipa, ", condSimple);
+			condSimple.struct = Tab.noType;
+			return;
+		}
+		else {
+			report_info("--Uslov u ifu ok, ", condSimple);
+			condSimple.struct = boolType;
+		}
+	}
+	
+	public void visit(CondTerm condTerm) {
+		condTerm.struct = condTerm.getCondFactList().struct;
+	}
+	
+	public void visit(AndCond andCond) {
+		Struct condFirst = andCond.getCondFactList().struct;
+		Struct condSecond = andCond.getCondFact().struct;
+		
+		boolean iscond1Bool = condFirst.getKind() == boolType.getKind();
+		boolean iscond2Bool = condSecond.getKind() == boolType.getKind();
+		
+		if(!(iscond1Bool && iscond2Bool )) {
+			report_error("Semanticka greska: Uslovi nisu BOOL tipa, ", andCond);
+			andCond.struct = Tab.noType;
+			return;
+		}
+		else {
+			andCond.struct = boolType;
+		}
+	}
+	
+	public void visit(CondTermSimple condTermSimple) {
+		condTermSimple.struct = condTermSimple.getCondFact().struct;
+	}
+	
+	public void visit(CondExpr condExpr) {
+		condExpr.struct = condExpr.getExpr().struct;
+	}
+	
+	public void visit(CondRelop condRelop) {
+		Struct exprFirst = condRelop.getExpr().struct;
+		Struct exprSecond = condRelop.getExpr1().struct;
+		
+		boolean iscompatibleWith = exprFirst.compatibleWith(exprSecond);
+		
+		if(!iscompatibleWith) {
+			report_error("Semanticka greska: tipovi expr nisu kompatibilni, ", condRelop);
+			condRelop.struct = Tab.noType;
+			return;
+		}
+		else {
+			condRelop.struct = boolType;
+		}
+	}
+	
+	/***************************************** Condition - end ******************************************/
+
+	public boolean passed(){
+    	return !errorDetected;
+    }
 }
