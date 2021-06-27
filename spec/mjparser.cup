@@ -67,7 +67,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct CaseList, CaseStmt;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor;
 
 nonterminal ParamDecl;
-nonterminal ConstDecl, ConstAssign;
+nonterminal ConstDecl, ConstAssign, Constant, Value;
 nonterminal VarDecl, VarDeclExtension, VarDeclList;
 nonterminal MethodDeclList, OptionalFormPars, MethodRetType;
 nonterminal FormParams, FormParamDecl;
@@ -91,18 +91,17 @@ ProgramName ::= (ProgramName) IDENT:programName;
 
 ConstDecl ::= (ConstDecl) CONST Type:constType ConstAssign SEMI;
             
-ConstAssign ::= (SingleNumberConst) IDENT:constName EQUAL NUMBER:constVal
+ConstAssign ::= (ConstAssignList) ConstAssign COMMA Constant
                 |
-                (MultiNumberConst) ConstAssign COMMA IDENT:constName EQUAL NUMBER:constVal
-                |
-                (SingleCharConst) IDENT:constName EQUAL CHARCONST:constVal
-                |
-                (MultiCharConst) ConstAssign COMMA IDENT:constName EQUAL CHARCONST:constVal
-                |
-                (SingleBoolConst )IDENT:constName EQUAL BOOLCONST:constVal
-                |
-                (MultiBoolConst) ConstAssign COMMA IDENT:constName EQUAL BOOLCONST:constVal
-                ;
+                (OneConstAssign) Constant;
+
+Constant ::= (SingleConstAssign) IDENT:constName EQUAL Value;
+
+Value ::=   (NumConstValue) NUMBER:constVal 
+            |
+            (CharConstValue) CHARCONST:constVal 
+            |
+            (BoolConstValue) BOOLCONST:constVal;
 
 VarDecl     ::= (VarDeclaration) Type:varType IDENT:varName VarDeclExtension SEMI
                 |
