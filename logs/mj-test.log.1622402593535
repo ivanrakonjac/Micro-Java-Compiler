@@ -1,8 +1,0 @@
-INFO  21:06:31,972 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
-INFO  21:06:31,984 - #12 program
-INFO  21:06:31,984 - #15 MJProgram
-INFO  21:06:31,985 - #13 {
-INFO  21:06:31,985 - #14 }
-INFO  21:06:31,988 - *** Ime programa *** - rs.ac.bg.etf.pp1.ast.Program@38082d64
-INFO  21:06:31,988 - ===================================
-INFO  21:06:31,990 -  Program count calls = 1

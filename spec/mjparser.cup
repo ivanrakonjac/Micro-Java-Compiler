@@ -6,9 +6,10 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
+	boolean errorDetected = false;
+
 	Logger log = Logger.getLogger(getClass());
-   
-   
+	
     // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
@@ -25,100 +26,299 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
+    	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
         log.error(msg.toString());
     }
-
-
 :}
 
-scan with {:
-	Symbol s = this.getScanner().next_token();
-	if (s != null && s.value != null) 
-		log.info(s.toString() + " " + s.value.toString());
-	return s;
-:}
-
-terminal PRINT, RETURN, NUMBER, PLUS, EQUAL, COMMA, SEMI, LPAREN, RPAREN, VOID; 
-
-terminal PROG, LBRACE, RBRACE;
+terminal Integer NUMBER;
+terminal Character CHARCONST;
+terminal String BOOLCONST;
 terminal String IDENT;
 
-nonterminal Program, Type;
-nonterminal VarDeclList, VarDecl;
-nonterminal MethodDecl, FormPars, FormalParamList, FormalParamDecl, MethodDeclList;
-nonterminal Statement, Designator, Expr, Addop, Term, Factor, StatementList, ActualPars, ActualParamList;
+terminal PROG;
+terminal BREAK, RETURN, CONTINUE;
+terminal CONST, VOID;
+terminal CLASS, EXTENDS, NEW;
+terminal ELSE, IF, SWITCH, CASE, DO, WHILE;
+terminal PRINT, READ;
+terminal ADD, SUB;
+terminal MUL, DIV, MOD;
+terminal EQUALLY, NOTEQUALLY, GREATER, GREATEREQ, LESS, LESSEQ;
+terminal AND, OR;
+terminal EQUAL;
+terminal INC, DEC;
+terminal SEMI, COMMA, DOT;
+terminal LPAREN, RPAREN;
+terminal LBRACE, RBRACE;
+terminal LSQUARE, RSQUARE;
+terminal QUESTION, DDOT;
+terminal DEFAULT, YIELD, GOTO;
 
-Program ::= (Program) PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName, MethodDecl, MethodTypeName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Statement, DesignatorStatement, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, BasicExpr;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition,CondTermList, CondTerm, Term, CondFactList, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CaseList, CaseStmt;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor;
 
-VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
-			|
-			(NoVarDecl) /* epsilon */
-			;
+nonterminal ParamDecl;
+nonterminal ConstDecl, ConstAssign;
+nonterminal VarDecl, VarDeclExtension, VarDeclList;
+nonterminal MethodDeclList, OptionalFormPars, MethodRetType;
+nonterminal FormParams, FormParamDecl;
+nonterminal OptionalMinus, DoStmt, ElseStmt, StmtList, Label, ActualParams, ActPars;
+nonterminal SwitchExpr, DefaultStmt;
+nonterminal Assignop, Relop, Addop, Mulop;
 
-VarDecl ::= (VarDecl) Type:varType IDENT:varName SEMI;
+precedence left ELSE;
 
-MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
-				|
-				(NoMethodDecl) /* epsilon */
-				;
 
-MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
+Program ::= (Program) PROG ProgramName:p ParamDecl LBRACE MethodDeclList RBRACE;
 
-FormPars ::= (FormParams) FormalParamList
-			  |
-			  (NoFormParam) /* epsilon */
-			  ;
-		  
-FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
-					|
-					(SingleFormalParamDecl) FormalParamDecl
-					;
-					
-FormalParamDecl ::= (FormalParamDecl) Type:varType IDENT:varName;
+ParamDecl ::= (ConstParamDecl) ParamDecl ConstDecl
+            |
+            (VarParamDecl) ParamDecl VarDecl
+            |
+            (NoParamDecl) /* Epsilon */
+            ;
 
-Type ::= (Type) IDENT:typeName;
+ProgramName ::= (ProgramName) IDENT:programName;
 
-StatementList ::= (Statements) StatementList Statement
-				|
-				(NoStmt) /* epsilon */
-				;
+ConstDecl ::= (ConstDecl) CONST Type:constType ConstAssign SEMI;
+            
+ConstAssign ::= (SingleNumberConst) IDENT:constName EQUAL NUMBER:constVal
+                |
+                (MultiNumberConst) ConstAssign COMMA IDENT:constName EQUAL NUMBER:constVal
+                |
+                (SingleCharConst) IDENT:constName EQUAL CHARCONST:constVal
+                |
+                (MultiCharConst) ConstAssign COMMA IDENT:constName EQUAL CHARCONST:constVal
+                |
+                (SingleBoolConst )IDENT:constName EQUAL BOOLCONST:constVal
+                |
+                (MultiBoolConst) ConstAssign COMMA IDENT:constName EQUAL BOOLCONST:constVal
+                ;
 
-Statement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
-				|
-				(PrintStmt) PRINT LPAREN Expr RPAREN SEMI
-		    	|
-			  	(ReturnExpr) RETURN Expr:t SEMI
-			  	|
-			  	(ReturnNoExpr) RETURN SEMI
-				;
+VarDecl     ::= (VarDeclaration) Type:varType IDENT:varName VarDeclExtension SEMI
+                |
+                (VarDeclArray) Type:varType IDENT:variableName LSQUARE RSQUARE VarDeclExtension SEMI
+                |
+                error SEMI:l
+                {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+                |
+                error COMMA:l
+                {: parser.report_error("Izvrsen oporavak do , u liniji " + lleft, null);  :}
+                ;
 
-Expr ::= (AddExpr) Expr:te Addop Term:t
-	 |
-	 (TermExpr) Term:t
-	 ;
-	 
-Term ::= (Term) Factor:t;
-		
-Factor ::= (Const) NUMBER
-		|
-		(Var) Designator:d
-		| 
-		(FuncCall) Designator:func LPAREN ActualPars RPAREN
-		;
-		
-ActualPars ::= (Actuals) ActualParamList
-			|
-			(NoActuals) /* epsilon */
-			;
+VarDeclExtension ::= (VarDeclExt) VarDeclExtension COMMA IDENT:varName
+                    |
+                    (VarDeclArrayExt) VarDeclExtension COMMA IDENT:varName LSQUARE RSQUARE
+                    |
+                    (NoVarDeclMore) /* Epsilon */
+                    ;
 
-ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
-				|
-				(ActualParam) Expr
-				;
+VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
+                |
+                (NoVarDecl) /* Epsilon */
+                ; 
 
-Designator ::= (Designator) IDENT:name;
+MethodDeclList ::=  (MethodDeclarationList) MethodDeclList MethodDecl
+                    |
+                    (NoMethodDeclarations)
+                    ;
 
-Addop ::= (Addop) PLUS;
+MethodDecl ::= (MethodDecl) MethodTypeName LPAREN OptionalFormPars RPAREN VarDeclList LBRACE StmtList RBRACE;
+
+MethodTypeName ::= (MethodTypeName) MethodRetType:returnType IDENT:methName;
+
+OptionalFormPars ::= (OptionalFormalParams) FormParams
+                    |
+                    (NoFormPars)
+                    ;
+
+MethodRetType ::=  (MethodReturnType) Type:type
+                    |
+                    (VoidRetType) VOID:type
+                    ;
+
+FormParams ::= (FormParamss) FormParams COMMA FormParamDecl
+            |
+            (NoFormParams) FormParamDecl
+            ;
+
+FormParamDecl ::= (FormParam) Type:paramType IDENT:paramName    
+                |
+                (FormParamArray) Type:paramType IDENT:paramName LSQUARE RSQUARE 
+                ;
+
+Type ::= (Type) IDENT:type;
+
+Statement ::=   (DesignStmt) DesignatorStatement SEMI
+                |
+                (IfElseMatchedStmt) IF LPAREN Condition RPAREN Statement ElseStmt
+                |
+                (DoWhileStmt) DoStmt Statement WHILE LPAREN Condition RPAREN SEMI
+                |
+                (YieldStmt) YIELD Expr SEMI
+                |
+                (BreakStmt) BREAK SEMI
+                |
+                (ContinueStmt) CONTINUE SEMI
+                |
+                (ReturnStmt) RETURN Expr:retVal SEMI
+                |
+                (ReturnNoValStmt) RETURN SEMI
+                |
+                (ReadStmt) READ LPAREN Designator RPAREN SEMI
+                |
+                (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+                |
+                (PrintExprStmt) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
+                |
+                (BasicStmt) LBRACE StmtList RBRACE
+                |
+                (GotoStmt) GOTO IDENT:labelname SEMI
+                ;
+
+DesignatorStatement ::= (DesignatorAssign) Designator:varName Assignop Expr:val
+                        |
+                        (ProcedureCall) Designator:procName LPAREN ActualParams RPAREN
+                        |
+                        (VarInc) Designator:varName INC
+                        |
+                        (VarDec) Designator:varName DEC
+                        ;
+
+Designator ::=  (DesignatorBasic) IDENT:varName
+                |
+                (DesignatorArray) DesignatorArrayName LSQUARE Expr:arrayIndex RSQUARE
+                ;
+
+DesignatorArrayName ::= (DesignatorArrayName) IDENT:varName;
+
+Expr ::= (BasicExprr) OptionalMinus BasicExpr:basicExpr
+        |
+        (SwitchExpretion) SwitchExpr LPAREN Expr:condVal RPAREN LBRACE CaseList RBRACE
+        ;
+
+BasicExpr ::=   (AddExpr) BasicExpr:basicExprTerm Addop Term:term
+                |
+                (TermExpr)  Term:term
+                ;
+
+OptionalMinus ::=   (Minus) SUB
+                    |
+                    (NoMinus) /* Epsilon */
+                    ;
+
+DoStmt ::= (DoStmt) DO;
+
+Condition ::= (Condition) CondTermList; 
+
+CondTermList ::=    (OrCond) CondTermList:condFirst OR CondTerm:condSecond
+                    |
+                    (CondSimple) CondTerm:cond
+                    ;
+
+CondTerm ::= (CondTerm) CondFactList;
+
+Term ::=    (MulopTerm) Term:term Mulop Factor:factor
+            |
+            (FactorTerm) Factor:factor
+            ;
+
+
+CondFactList ::= (AndCond) CondFactList:condFirst AND CondFact:condSecond
+                |
+                (CondTermSimple) CondFact:cond
+                ;
+
+
+CondFact ::= (CondExpr) Expr:expr
+            |
+            (CondRelop) Expr:exprFirst Relop Expr:exprSecond
+            ;
+
+ElseStmt ::=    (ElseStatmt) ELSE Statement
+                |
+                (NoElseStmt) /* Epsilon */
+                ;
+
+StmtList ::=    (MultiStmtList) StmtList Statement
+                |
+                (MultiStmtListLabel) StmtList Label Statement
+                |
+                (NoStmt) /* Epsilon */
+                ;
+
+Label ::= (Label) IDENT:labelName DDOT;
+
+ActualParams ::=  (ActualParamss) ActPars
+                |
+                (NoActualParams) /* Epsilon */
+                ;
+
+ActPars ::= (MultipleParams) ActPars COMMA Expr:paramName
+            |
+            (OneParam) Expr:paramName
+            ;
+
+SwitchExpr ::= (SwitchExpr) SWITCH;
+
+CaseStmt ::= (CaseStmt) CASE NUMBER DDOT StmtList;
+
+CaseList ::=    (MultiCaseList) CaseList CaseStmt
+                |
+                (NoCase) /* Epsilon */
+                ;
+
+DefaultStmt ::= (DefaultStmt) DEFAULT;
+
+Factor ::=  (Var) Designator:varName
+            |
+            (FunctionCall) Designator:functionName LPAREN ActualParams RPAREN
+            |
+            (NumberConst) NUMBER:numConst
+            |
+            (CharConst) CHARCONST:charConst
+            |
+            (BoolConst) BOOLCONST:boolConst
+            |
+            (NewOp) NEW Type:varType
+            |
+            (NewArray) NEW Type:varType LSQUARE Expr:elemNum RSQUARE
+            |
+            (FactExpr) LPAREN Expr RPAREN
+            ;
+
+Assignop ::= (AssignOper) EQUAL;
+
+Relop ::= (EqualsOper) EQUALLY
+        |
+        (NotEqualsOper) NOTEQUALLY
+        |
+        (GreaterOper) GREATER
+        |
+        (GreaterEqOper) GREATEREQ
+        |
+        (LessOper) LESS
+        |
+        (LessEqOper) LESSEQ
+        ;
+
+Addop ::= (AddOper) ADD
+        |
+        (SubOper) SUB
+        ;
+
+Mulop ::= (MulOper) MUL 
+        |
+        (DivOper) DIV
+        |
+        (ModOper) MOD
+        ;
