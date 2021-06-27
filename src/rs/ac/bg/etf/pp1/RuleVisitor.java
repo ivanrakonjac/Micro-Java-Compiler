@@ -28,6 +28,10 @@ public class RuleVisitor extends VisitorAdaptor {
 	char lastConstChar;
 	int lastConstBool;
 	
+	Obj currentMethod = null;
+	
+	boolean returnFound = false;
+	
 	
 
 
@@ -71,7 +75,7 @@ public class RuleVisitor extends VisitorAdaptor {
 	
 	public void visit(Program program) {
 		
-		/*Obj mainMethod = Tab.find("main");
+		Obj mainMethod = Tab.find("main");
 		
 		if(mainMethod == Tab.noObj) {
 			report_error("Semanticka greska: morate dodati main fju!", null);
@@ -91,7 +95,7 @@ public class RuleVisitor extends VisitorAdaptor {
 			}
 		}
 		
-		nVars = Tab.currentScope.getnVars();*/
+		nVars = Tab.currentScope.getnVars();
 		Tab.chainLocalSymbols(program.getProgramName().obj);
 		Tab.closeScope();
 		
@@ -234,4 +238,74 @@ public class RuleVisitor extends VisitorAdaptor {
 	}
 	
 	/***************************************** ConstDecl - end ******************************************/
+	
+	/***************************************** MethodDecl ******************************************/
+	
+	public void visit(MethodDecl methodDecl) {
+		if(!returnFound && currentMethod.getType() != Tab.noType) {
+			report_error("Semanticka greska: Metodi " + currentMethod.getName() + " fali RETURN iskaz!", null);	
+			return;
+		}
+		
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		
+		returnFound = false;
+		currentMethod = null;
+	}
+	 
+	public void visit(MethodTypeName methodTypeName) {
+		if(Tab.currentScope.findSymbol(methodTypeName.getMethName()) != null) {
+			report_error("Semanticka greska: Metod " + methodTypeName.getMethName() + " je vec deklarisan!", null);	
+			return;
+		}
+		else {
+			report_info("--MethodTypeName " + methodTypeName.getMethName(), methodTypeName);
+		}
+		
+		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), methodTypeName.getMethodRetType().struct);
+		methodTypeName.obj = currentMethod;
+		Tab.openScope();
+	}
+	
+	public void visit(MethodReturnType methodReturnType) {
+		methodReturnType.struct = methodReturnType.getType().struct;
+	}
+	
+	public void visit(VoidRetType voidRetType) {
+		voidRetType.struct = Tab.noType;
+	}
+	
+	
+	/***************************************** MethodDecl - end ******************************************/
+	
+	/***************************************** FormParams ******************************************/
+	
+	public void visit(FormParam formParam) {
+		Obj checkParam = Tab.currentScope.findSymbol(formParam.getParamName());
+		if(checkParam != null) {
+			report_error("Semanticka greska: Varijabla " +formParam.getParamName() + " je vec deklarisana!", null);	
+			return;
+		}
+		else {
+			report_info("--FormParam " + formParam.getParamName() + " u metodi " + currentMethod.getName(), formParam);
+			Obj insertedParam = Tab.insert(Obj.Var, formParam.getParamName(), formParam.getType().struct);
+			insertedParam.setFpPos(1);
+		}
+	}
+	
+	public void visit(FormParamArray formParamArray) {
+		Obj checkArrayParam = Tab.currentScope.findSymbol(formParamArray.getParamName());
+		if(checkArrayParam != null) {
+			report_error("Semanticka greska: Varijabla " +formParamArray.getParamName() + " je vec deklarisana!", null);	
+			return;	
+		}
+		else {
+			report_info("--FormParamArray " + formParamArray.getParamName() + " u metodi " + currentMethod.getName(), formParamArray);
+			Obj insertedParam = Tab.insert(Obj.Var, formParamArray.getParamName(), new Struct(Struct.Array, formParamArray.getType().struct));
+			insertedParam.setFpPos(1);
+		}
+	}
+	
+	/***************************************** FormParams - end ******************************************/
 }
