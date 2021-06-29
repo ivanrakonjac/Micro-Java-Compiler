@@ -1,11 +1,17 @@
 
 package rs.ac.bg.etf.pp1;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import java_cup.runtime.Symbol;
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
 
 %%
 
 %{
+	List<CompilerError> compilerErrors = new ArrayList<CompilerError>();
 
 	//ukljucivanje informacije o poziciji tokena
 	private Symbol new_symbol(int type) {
@@ -15,6 +21,15 @@ import java_cup.runtime.Symbol;
 	//ukljucivanje infromacije o poziciji tokena
 	private Symbol new_symbol(int type, Object value) {
 		return new Symbol(type, yyline + 1, yycolumn, value);
+	}
+	
+	private void reportError(int line, String message) {
+		CompilerError ce = new CompilerError(line, message, CompilerErrorType.LEXICAL_ERROR);
+		compilerErrors.add(ce);
+	}
+	
+	public List<CompilerError> getErrors() {
+		return compilerErrors;
 	}
 
 %}

@@ -1,0 +1,54 @@
+INFO  22:58:20,289 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  22:58:20,417 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesignStmt(
+          ProcCall(
+            DesignatorBasic(
+             ord
+            ) [DesignatorBasic]
+            ActualParamss(
+              OneParam(
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      CharConst(
+                       A
+                      ) [CharConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [OneParam]
+            ) [ActualParamss]
+          ) [ProcCall]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  22:58:20,419 - ===================================
+INFO  22:58:20,426 - --MethodTypeName main na liniji 7
+INFO  22:58:20,427 - --ProcCall ord na liniji 7
+INFO  22:58:20,428 - ===================================
+INFO  22:58:20,435 - Parsiranje uspesno zavrseno!

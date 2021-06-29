@@ -8,6 +8,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.*;
 
@@ -43,6 +45,17 @@ public class RuleVisitor extends VisitorAdaptor {
 
 	boolean inTheLoop = false;
 	boolean inTheSwitch = false;
+	
+	List<CompilerError> compilerErrors = new ArrayList<CompilerError>();
+	
+	private void reportError(int line, String message) {
+		CompilerError ce = new CompilerError(line, message, CompilerErrorType.SEMANTIC_ERROR);
+		compilerErrors.add(ce);
+	}
+	
+	public List<CompilerError> getErrors() {
+		return compilerErrors;
+	}
 
 	public RuleVisitor() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));

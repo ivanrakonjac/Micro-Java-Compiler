@@ -15,6 +15,37 @@ import rs.etf.pp1.symboltable.concepts.*;
 
 public class CodeGenerator extends VisitorAdaptor {
 	
+	public CodeGenerator(){
+		Obj chr = Tab.find("chr");
+		Code.pc = Code.pc + 6;
+		chr.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(1);
+		Code.put(1);
+		Code.put(Code.load_n);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+		Obj ord = Tab.find("ord");
+		ord.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(1);
+		Code.put(1);
+		Code.put(Code.load_n);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+		Obj len = Tab.find("len");
+		len.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(1);
+		Code.put(1);
+		Code.put(Code.load_n);
+		Code.put(Code.arraylength);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
 	Logger log = Logger.getLogger(getClass());
 	
 	public void report_info(String message, SyntaxNode info) {
@@ -176,6 +207,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(FunctionCall functionCall) {
 		Obj functionObj = functionCall.getDesignator().obj;
+		
+		if(functionObj.getName().equals("ord")) {
+			int i = 0;
+			i++;
+		}
+		
 		int dest_adr = functionObj.getAdr() - Code.pc;
 		
 		Code.put(Code.call);
@@ -192,7 +229,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	/***************************************** Designator - end *****************************************/
 	
-	public void visit(DesignatorArrayName designatorArrayName) {
+	public void visit(DesArrName designatorArrayName) {
 		Code.load(designatorArrayName.obj);
 	}
 	
@@ -509,33 +546,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	/***************************************** Util *****************************************/
 	
 	private void ordChrLenMethodsInitialization() {
-		Obj ord = Tab.find("ord");
-		ord.setAdr(Code.pc);
-		Code.put(Code.enter);
-		Code.put(1);
-		Code.put(1);
-		Code.put(Code.load_n);
-		Code.put(Code.exit);
-		Code.put(Code.return_);
 		
-		Obj chr = Tab.find("chr");
-		chr.setAdr(Code.pc);
-		Code.put(Code.enter);
-		Code.put(1);
-		Code.put(1);
-		Code.put(Code.load_n);
-		Code.put(Code.exit);
-		Code.put(Code.return_);
-		
-		Obj len = Tab.find("len");
-		len.setAdr(Code.pc);
-		Code.put(Code.enter);
-		Code.put(1);
-		Code.put(1);
-		Code.put(Code.load_n);
-		Code.put(Code.arraylength);
-		Code.put(Code.exit);
-		Code.put(Code.return_);
 	}
 	
 	private int getRelOp(Relop relop) {

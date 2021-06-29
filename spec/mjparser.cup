@@ -1,16 +1,32 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.List;
+import java.util.ArrayList;
+
 import java_cup.runtime.*;
 import org.apache.log4j.*;
 import rs.ac.bg.etf.pp1.ast.*;
 
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
+
 parser code {:
+    List<CompilerError> compilerErrors = new ArrayList<CompilerError>();
 
 	boolean errorDetected = false;
 
 	Logger log = Logger.getLogger(getClass());
 	
     // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+
+    private void reportError(int line, String message) {
+        CompilerError ce = new CompilerError(line, message, CompilerErrorType.SYNTAX_ERROR);
+        compilerErrors.add(ce);
+    }
+    
+    public List<CompilerError> getErrors() {
+        return compilerErrors;
+    }
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
