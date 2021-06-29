@@ -1,0 +1,33 @@
+INFO  12:49:33,748 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  12:49:33,806 - #6 program
+INFO  12:49:33,807 - #2 Program
+INFO  12:49:33,807 - #10 const
+INFO  12:49:33,808 - #2 int
+INFO  12:49:33,808 - #2 x
+INFO  12:49:33,809 - #36 =
+INFO  12:49:33,809 - #3 5
+INFO  12:49:33,809 - #39 ;
+INFO  12:49:33,809 - #44 {
+INFO  12:49:33,810 - #45 }
+INFO  12:49:33,816 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      SingleNumberConst(
+       x
+       5
+      ) [SingleNumberConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  12:49:33,839 - ===================================
+INFO  12:49:33,842 - ===================================

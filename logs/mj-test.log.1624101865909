@@ -1,0 +1,110 @@
+INFO  13:23:50,233 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  13:23:50,273 - #6 program
+INFO  13:23:50,273 - #2 Program
+INFO  13:23:50,273 - #2 int
+INFO  13:23:50,274 - #2 x
+INFO  13:23:50,275 - #27 ,
+INFO  13:23:50,276 - #2 z
+INFO  13:23:50,276 - #26 ;
+INFO  13:23:50,276 - #2 int
+INFO  13:23:50,277 - #2 y
+INFO  13:23:50,277 - #26 ;
+INFO  13:23:50,277 - #24 {
+INFO  13:23:50,277 - #10 void
+INFO  13:23:50,277 - #2 main
+INFO  13:23:50,278 - #33 (
+INFO  13:23:50,278 - #34 )
+INFO  13:23:50,278 - #24 {
+INFO  13:23:50,279 - #2 y
+INFO  13:23:50,279 - #38 =
+INFO  13:23:50,279 - #3 5
+INFO  13:23:50,280 - #26 ;
+INFO  13:23:50,281 - #25 }
+INFO  13:23:50,282 - #25 }
+INFO  13:23:50,298 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamVar(
+    ParamVar(
+      NoDecl(
+      ) [NoDecl]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       x
+        NoSquares(
+        ) [NoSquares]
+        MultiBasicVarDecl(
+          NoBasicVarDecl(
+          ) [NoBasicVarDecl]
+         z
+          NoSquares(
+          ) [NoSquares]
+        ) [MultiBasicVarDecl]
+      ) [VarDeclaration]
+    ) [ParamVar]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     y
+      NoSquares(
+      ) [NoSquares]
+      NoBasicVarDecl(
+      ) [NoBasicVarDecl]
+    ) [VarDeclaration]
+  ) [ParamVar]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethDecl(
+      VoidMethType(
+      ) [VoidMethType]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmts(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          DesStmt(
+            DesignatorStatementDerived1(
+              DesAsign(
+                DesBasic(
+                 y
+                ) [DesBasic]
+                AssignOperator(
+                ) [AssignOperator]
+                BasicExpretion(
+                  TermExp(
+                    NoOptMin(
+                    ) [NoOptMin]
+                    BasicExpTerm(
+                      BasicTerm(
+                        FactNum(
+                         5
+                        ) [FactNum]
+                      ) [BasicTerm]
+                    ) [BasicExpTerm]
+                  ) [TermExp]
+                ) [BasicExpretion]
+              ) [DesAsign]
+            ) [DesignatorStatementDerived1]
+          ) [DesStmt]
+        ) [MatchedStmt]
+      ) [MultiStmts]
+    ) [MethDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  13:23:50,298 - ===================================
+ERROR 13:23:50,300 - Deklarisan novi tip int u tabeli simbola
+INFO  13:23:50,300 - Deklarisana promenljiva z na liniji 5
+INFO  13:23:50,300 - Deklarisana promenljiva x na liniji 2
+ERROR 13:23:50,300 - Deklarisan novi tip int u tabeli simbola
+INFO  13:23:50,301 - Deklarisana promenljiva y na liniji 3
+INFO  13:23:50,301 -  Deklarisanih promenljivih ima = 3
+INFO  13:23:50,301 - ===================================

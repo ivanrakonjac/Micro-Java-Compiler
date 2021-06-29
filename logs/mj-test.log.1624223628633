@@ -1,0 +1,347 @@
+INFO  23:12:08,046 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  23:12:08,220 - #6 program
+INFO  23:12:08,220 - #2 Program
+INFO  23:12:08,220 - #2 int
+INFO  23:12:08,224 - #2 x
+INFO  23:12:08,226 - #27 ,
+INFO  23:12:08,232 - #2 y
+INFO  23:12:08,232 - #27 ,
+INFO  23:12:08,232 - #2 z
+INFO  23:12:08,232 - #26 ;
+INFO  23:12:08,232 - #2 char
+INFO  23:12:08,232 - #2 c
+INFO  23:12:08,232 - #26 ;
+INFO  23:12:08,232 - #2 char
+INFO  23:12:08,233 - #2 b
+INFO  23:12:08,233 - #27 ,
+INFO  23:12:08,233 - #2 a
+INFO  23:12:08,233 - #26 ;
+INFO  23:12:08,233 - #24 {
+INFO  23:12:08,233 - #2 int
+INFO  23:12:08,235 - #2 k
+INFO  23:12:08,235 - #33 (
+INFO  23:12:08,237 - #34 )
+INFO  23:12:08,241 - #2 int
+INFO  23:12:08,242 - #2 c
+INFO  23:12:08,242 - #26 ;
+INFO  23:12:08,242 - #24 {
+INFO  23:12:08,243 - #2 c
+INFO  23:12:08,244 - #38 =
+INFO  23:12:08,244 - #3 2
+INFO  23:12:08,251 - #26 ;
+INFO  23:12:08,252 - #21 return
+INFO  23:12:08,252 - #2 c
+INFO  23:12:08,252 - #26 ;
+INFO  23:12:08,254 - #25 }
+INFO  23:12:08,254 - #2 int
+INFO  23:12:08,256 - #2 main
+INFO  23:12:08,256 - #33 (
+INFO  23:12:08,256 - #34 )
+INFO  23:12:08,256 - #24 {
+INFO  23:12:08,256 - #23 print
+INFO  23:12:08,256 - #33 (
+INFO  23:12:08,257 - #3 1
+INFO  23:12:08,257 - #34 )
+INFO  23:12:08,257 - #26 ;
+INFO  23:12:08,257 - #2 x
+INFO  23:12:08,257 - #38 =
+INFO  23:12:08,257 - #2 y
+INFO  23:12:08,257 - #45 +
+INFO  23:12:08,257 - #3 5
+INFO  23:12:08,260 - #45 +
+INFO  23:12:08,261 - #3 3
+INFO  23:12:08,261 - #26 ;
+INFO  23:12:08,261 - #23 print
+INFO  23:12:08,261 - #33 (
+INFO  23:12:08,261 - #3 2
+INFO  23:12:08,261 - #34 )
+INFO  23:12:08,261 - #26 ;
+INFO  23:12:08,261 - #2 k
+INFO  23:12:08,261 - #33 (
+INFO  23:12:08,261 - #34 )
+INFO  23:12:08,263 - #26 ;
+INFO  23:12:08,264 - #25 }
+INFO  23:12:08,264 - #25 }
+INFO  23:12:08,280 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamVar(
+    ParamVar(
+      ParamVar(
+        NoDecl(
+        ) [NoDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         x
+          NoSquares(
+          ) [NoSquares]
+          MultiBasicVarDecl(
+            MultiBasicVarDecl(
+              NoBasicVarDecl(
+              ) [NoBasicVarDecl]
+             y
+              NoSquares(
+              ) [NoSquares]
+            ) [MultiBasicVarDecl]
+           z
+            NoSquares(
+            ) [NoSquares]
+          ) [MultiBasicVarDecl]
+        ) [VarDeclaration]
+      ) [ParamVar]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+       c
+        NoSquares(
+        ) [NoSquares]
+        NoBasicVarDecl(
+        ) [NoBasicVarDecl]
+      ) [VarDeclaration]
+    ) [ParamVar]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+     b
+      NoSquares(
+      ) [NoSquares]
+      MultiBasicVarDecl(
+        NoBasicVarDecl(
+        ) [NoBasicVarDecl]
+       a
+        NoSquares(
+        ) [NoSquares]
+      ) [MultiBasicVarDecl]
+    ) [VarDeclaration]
+  ) [ParamVar]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeName(
+          CustomMethType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethType]
+         k
+        ) [MethodTypeName]
+        NoFormPars(
+        ) [NoFormPars]
+        MultiVarDecl(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           c
+            NoSquares(
+            ) [NoSquares]
+            NoBasicVarDecl(
+            ) [NoBasicVarDecl]
+          ) [VarDeclaration]
+        ) [MultiVarDecl]
+        MultiStmts(
+          MultiStmts(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              DesStmt(
+                DesignatorStatementDerived1(
+                  DesAsign(
+                    DesBasic(
+                     c
+                    ) [DesBasic]
+                    AssignOperator(
+                    ) [AssignOperator]
+                    BasicExpretion(
+                      TermExp(
+                        NoOptMin(
+                        ) [NoOptMin]
+                        BasicExpTerm(
+                          BasicTerm(
+                            FactNum(
+                             2
+                            ) [FactNum]
+                          ) [BasicTerm]
+                        ) [BasicExpTerm]
+                      ) [TermExp]
+                    ) [BasicExpretion]
+                  ) [DesAsign]
+                ) [DesignatorStatementDerived1]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [MultiStmts]
+          MatchedStmt(
+            RetStmt(
+              RetVal(
+                BasicExpretion(
+                  TermExp(
+                    NoOptMin(
+                    ) [NoOptMin]
+                    BasicExpTerm(
+                      BasicTerm(
+                        FactorDes(
+                          DesBasic(
+                           c
+                          ) [DesBasic]
+                          NoFactDes(
+                          ) [NoFactDes]
+                        ) [FactorDes]
+                      ) [BasicTerm]
+                    ) [BasicExpTerm]
+                  ) [TermExp]
+                ) [BasicExpretion]
+              ) [RetVal]
+            ) [RetStmt]
+          ) [MatchedStmt]
+        ) [MultiStmts]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        CustomMethType(
+          Type(
+           int
+          ) [Type]
+        ) [CustomMethType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmts(
+        MultiStmts(
+          MultiStmts(
+            MultiStmts(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                PrintStmt(
+                  SinglePrintExpr(
+                    BasicExpretion(
+                      TermExp(
+                        NoOptMin(
+                        ) [NoOptMin]
+                        BasicExpTerm(
+                          BasicTerm(
+                            FactNum(
+                             1
+                            ) [FactNum]
+                          ) [BasicTerm]
+                        ) [BasicExpTerm]
+                      ) [TermExp]
+                    ) [BasicExpretion]
+                  ) [SinglePrintExpr]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [MultiStmts]
+            MatchedStmt(
+              DesStmt(
+                DesignatorStatementDerived1(
+                  DesAsign(
+                    DesBasic(
+                     x
+                    ) [DesBasic]
+                    AssignOperator(
+                    ) [AssignOperator]
+                    BasicExpretion(
+                      TermExp(
+                        NoOptMin(
+                        ) [NoOptMin]
+                        BasicExp(
+                          BasicExp(
+                            BasicExpTerm(
+                              BasicTerm(
+                                FactorDes(
+                                  DesBasic(
+                                   y
+                                  ) [DesBasic]
+                                  NoFactDes(
+                                  ) [NoFactDes]
+                                ) [FactorDes]
+                              ) [BasicTerm]
+                            ) [BasicExpTerm]
+                            AddOperator(
+                            ) [AddOperator]
+                            BasicTerm(
+                              FactNum(
+                               5
+                              ) [FactNum]
+                            ) [BasicTerm]
+                          ) [BasicExp]
+                          AddOperator(
+                          ) [AddOperator]
+                          BasicTerm(
+                            FactNum(
+                             3
+                            ) [FactNum]
+                          ) [BasicTerm]
+                        ) [BasicExp]
+                      ) [TermExp]
+                    ) [BasicExpretion]
+                  ) [DesAsign]
+                ) [DesignatorStatementDerived1]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [MultiStmts]
+          MatchedStmt(
+            PrintStmt(
+              SinglePrintExpr(
+                BasicExpretion(
+                  TermExp(
+                    NoOptMin(
+                    ) [NoOptMin]
+                    BasicExpTerm(
+                      BasicTerm(
+                        FactNum(
+                         2
+                        ) [FactNum]
+                      ) [BasicTerm]
+                    ) [BasicExpTerm]
+                  ) [TermExp]
+                ) [BasicExpretion]
+              ) [SinglePrintExpr]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [MultiStmts]
+        MatchedStmt(
+          DesStmt(
+            DesStatActPars(
+              DesBasic(
+               k
+              ) [DesBasic]
+              NoFactDesAP(
+              ) [NoFactDesAP]
+            ) [DesStatActPars]
+          ) [DesStmt]
+        ) [MatchedStmt]
+      ) [MultiStmts]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:12:08,281 - ===================================
+ERROR 23:12:08,283 - Deklarisan novi tip int u tabeli simbola
+INFO  23:12:08,283 - Deklarisana promenljiva y na liniji 4
+INFO  23:12:08,283 - Deklarisana promenljiva z na liniji 4
+INFO  23:12:08,288 - Deklarisana promenljiva x na liniji 2
+ERROR 23:12:08,288 - Deklarisan novi tip char u tabeli simbola
+INFO  23:12:08,288 - Deklarisana promenljiva c na liniji 3
+ERROR 23:12:08,288 - Deklarisan novi tip char u tabeli simbola
+INFO  23:12:08,288 - Deklarisana promenljiva a na liniji 5
+INFO  23:12:08,288 - Deklarisana promenljiva b na liniji 4
+ERROR 23:12:08,288 - Deklarisan novi tip int u tabeli simbola
+INFO  23:12:08,288 - Obradjuje se funkcija k na liniji 6
+ERROR 23:12:08,289 - Deklarisan novi tip int u tabeli simbola
+INFO  23:12:08,289 - Deklarisana promenljiva c na liniji 6
+ERROR 23:12:08,289 - Deklarisan novi tip int u tabeli simbola
+INFO  23:12:08,289 - Obradjuje se funkcija main na liniji 11
+INFO  23:12:08,289 - ===================================

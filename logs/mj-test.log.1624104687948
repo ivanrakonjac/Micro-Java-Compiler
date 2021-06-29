@@ -1,0 +1,134 @@
+INFO  14:09:44,633 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:09:44,670 - #6 program
+INFO  14:09:44,670 - #2 Program
+INFO  14:09:44,670 - #2 int
+INFO  14:09:44,671 - #2 x
+INFO  14:09:44,672 - #27 ,
+INFO  14:09:44,673 - #2 z
+INFO  14:09:44,673 - #26 ;
+INFO  14:09:44,673 - #2 int
+INFO  14:09:44,674 - #2 y
+INFO  14:09:44,674 - #26 ;
+INFO  14:09:44,674 - #2 kitica
+INFO  14:09:44,674 - #2 kita
+INFO  14:09:44,674 - #26 ;
+INFO  14:09:44,674 - #2 char
+INFO  14:09:44,674 - #2 stojko
+INFO  14:09:44,674 - #26 ;
+INFO  14:09:44,674 - #2 char
+INFO  14:09:44,674 - #2 kurcicic
+INFO  14:09:44,674 - #36 [
+INFO  14:09:44,674 - #37 ]
+INFO  14:09:44,674 - #26 ;
+INFO  14:09:44,675 - #24 {
+INFO  14:09:44,675 - #10 void
+INFO  14:09:44,676 - #2 main
+INFO  14:09:44,676 - #33 (
+INFO  14:09:44,676 - #34 )
+INFO  14:09:44,677 - #24 {
+INFO  14:09:44,677 - #25 }
+INFO  14:09:44,678 - #25 }
+INFO  14:09:44,694 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamVar(
+    ParamVar(
+      ParamVar(
+        ParamVar(
+          ParamVar(
+            NoDecl(
+            ) [NoDecl]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             x
+              NoSquares(
+              ) [NoSquares]
+              MultiBasicVarDecl(
+                NoBasicVarDecl(
+                ) [NoBasicVarDecl]
+               z
+                NoSquares(
+                ) [NoSquares]
+              ) [MultiBasicVarDecl]
+            ) [VarDeclaration]
+          ) [ParamVar]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           y
+            NoSquares(
+            ) [NoSquares]
+            NoBasicVarDecl(
+            ) [NoBasicVarDecl]
+          ) [VarDeclaration]
+        ) [ParamVar]
+        VarDeclaration(
+          Type(
+           kitica
+          ) [Type]
+         kita
+          NoSquares(
+          ) [NoSquares]
+          NoBasicVarDecl(
+          ) [NoBasicVarDecl]
+        ) [VarDeclaration]
+      ) [ParamVar]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+       stojko
+        NoSquares(
+        ) [NoSquares]
+        NoBasicVarDecl(
+        ) [NoBasicVarDecl]
+      ) [VarDeclaration]
+    ) [ParamVar]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+     kurcicic
+      Squares(
+      ) [Squares]
+      NoBasicVarDecl(
+      ) [NoBasicVarDecl]
+    ) [VarDeclaration]
+  ) [ParamVar]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        VoidMethType(
+        ) [VoidMethType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:09:44,694 - ===================================
+ERROR 14:09:44,696 - Deklarisan novi tip int u tabeli simbola
+INFO  14:09:44,696 - Deklarisana promenljiva z na liniji 5
+INFO  14:09:44,696 - Deklarisana promenljiva x na liniji 2
+ERROR 14:09:44,696 - Deklarisan novi tip int u tabeli simbola
+INFO  14:09:44,697 - Deklarisana promenljiva y na liniji 3
+ERROR 14:09:44,697 - Nije pronadjen tip kitica u tabeli simbola
+INFO  14:09:44,697 - Deklarisana promenljiva kita na liniji 4
+ERROR 14:09:44,697 - Deklarisan novi tip char u tabeli simbola
+INFO  14:09:44,697 - Deklarisana promenljiva stojko na liniji 5
+ERROR 14:09:44,697 - Deklarisan novi tip char u tabeli simbola
+INFO  14:09:44,697 - Deklarisana promenljiva kurcicic na liniji 6
+INFO  14:09:44,697 - Obradjuje se funkcija main na liniji 8
+INFO  14:09:44,697 -  Deklarisanih promenljivih ima = 6
+INFO  14:09:44,697 - ===================================

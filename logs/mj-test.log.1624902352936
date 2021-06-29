@@ -1,0 +1,132 @@
+INFO  19:16:33,563 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  19:16:33,729 - Program(
+  ProgramName(
+   testSemantika
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          OneConstAssign(
+            SingleConstAssign(
+             nula
+              NumConstValue(
+               0
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [OneConstAssign]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           jedan
+            NumConstValue(
+             1
+            ) [NumConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         pet
+          NumConstValue(
+           5
+          ) [NumConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorBasic(
+               i
+              ) [DesignatorBasic]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     1
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        PrintStmt(
+          BasicExprr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorBasic(
+                   i
+                  ) [DesignatorBasic]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExprr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  19:16:33,733 - ===================================
+INFO  19:16:33,740 - --SingleConstAssignInt nula= 0 na liniji 4
+INFO  19:16:33,740 - --SingleConstAssignInt jedan= 1 na liniji 5
+INFO  19:16:33,740 - --SingleConstAssignInt pet= 5 na liniji 6
+INFO  19:16:33,740 - --MethodTypeName main na liniji 11
+INFO  19:16:33,741 - --VarDeclExt i na liniji 12
+INFO  19:16:33,741 - --VarDeclaration bodovi na liniji 12
+INFO  19:16:33,743 - --Varijabla dobija vrednost  na liniji 14
+INFO  19:16:33,743 - ===================================
+INFO  19:16:33,750 - Parsiranje uspesno zavrseno!

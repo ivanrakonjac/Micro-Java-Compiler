@@ -1,0 +1,16 @@
+INFO  21:37:17,533 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:37:17,578 - #6 program
+INFO  21:37:17,578 - #2 Program
+INFO  21:37:17,578 - #44 {
+INFO  21:37:17,579 - #45 }
+INFO  21:37:17,597 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  21:37:17,597 - ===================================
+INFO  21:37:17,602 - ===================================

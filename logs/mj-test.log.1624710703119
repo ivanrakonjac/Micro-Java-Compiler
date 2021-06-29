@@ -1,0 +1,141 @@
+INFO  14:28:17,013 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:28:17,062 - #6 program
+INFO  14:28:17,062 - #2 VezbaGenerisanje
+INFO  14:28:17,062 - #10 const
+INFO  14:28:17,063 - #2 int
+INFO  14:28:17,063 - #2 jedan
+INFO  14:28:17,063 - #36 =
+INFO  14:28:17,063 - #3 1
+INFO  14:28:17,063 - #39 ;
+INFO  14:28:17,064 - #2 int
+INFO  14:28:17,064 - #2 g
+INFO  14:28:17,065 - #39 ;
+INFO  14:28:17,065 - #44 {
+INFO  14:28:17,065 - #11 void
+INFO  14:28:17,066 - #2 main
+INFO  14:28:17,066 - #42 (
+INFO  14:28:17,067 - #43 )
+INFO  14:28:17,068 - #2 int
+INFO  14:28:17,068 - #2 a
+INFO  14:28:17,068 - #40 ,
+INFO  14:28:17,068 - #2 b
+INFO  14:28:17,068 - #39 ;
+INFO  14:28:17,068 - #2 int
+INFO  14:28:17,070 - #2 arr
+INFO  14:28:17,070 - #46 [
+INFO  14:28:17,071 - #47 ]
+INFO  14:28:17,071 - #39 ;
+INFO  14:28:17,071 - #44 {
+INFO  14:28:17,071 - #22 read
+INFO  14:28:17,072 - #42 (
+INFO  14:28:17,072 - #2 a
+INFO  14:28:17,072 - #43 )
+INFO  14:28:17,072 - #39 ;
+INFO  14:28:17,072 - #21 print
+INFO  14:28:17,072 - #42 (
+INFO  14:28:17,073 - #2 a
+INFO  14:28:17,074 - #43 )
+INFO  14:28:17,074 - #39 ;
+INFO  14:28:17,074 - #45 }
+INFO  14:28:17,075 - #45 }
+INFO  14:28:17,093 - Program(
+  ProgName(
+   VezbaGenerisanje
+  ) [ProgName]
+  VarParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         jedan
+         1
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     g
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           a
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             b
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclarationArray(
+          Type(
+           int
+          ) [Type]
+         arr
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclarationArray]
+      ) [VarDeclarations]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          ReadStmt(
+            DesBasic(
+             a
+            ) [DesBasic]
+          ) [ReadStmt]
+        ) [MultiStmtList]
+        PrintStmt(
+          BasicExpr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesBasic(
+                   a
+                  ) [DesBasic]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExpr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:28:17,093 - ===================================
+INFO  14:28:17,096 - Deklarisana je nova konstanta jedan na liniji 2
+INFO  14:28:17,097 - Deklarisana je promenljiva g na liniji 3
+INFO  14:28:17,097 - Obradjuje se funkcija main na liniji 7
+INFO  14:28:17,097 - Deklarisana je promenljiva b na liniji 7
+INFO  14:28:17,097 - Deklarisana je promenljiva a na liniji 7
+INFO  14:28:17,097 - Deklarisana je promenljiva arr na liniji 7
+INFO  14:28:17,097 - ===================================
+INFO  14:28:17,100 - Parsiranje uspesno zavrseno!

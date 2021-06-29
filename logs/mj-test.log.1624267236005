@@ -1,0 +1,125 @@
+INFO  11:18:39,928 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  11:18:39,983 - #6 program
+INFO  11:18:39,983 - #2 Program
+INFO  11:18:39,983 - #44 {
+INFO  11:18:39,984 - #2 int
+INFO  11:18:39,986 - #2 k
+INFO  11:18:39,986 - #42 (
+INFO  11:18:39,987 - #43 )
+INFO  11:18:39,988 - #44 {
+INFO  11:18:39,989 - #8 return
+INFO  11:18:39,990 - #3 0
+INFO  11:18:39,991 - #39 ;
+INFO  11:18:39,991 - #45 }
+INFO  11:18:39,992 - #2 int
+INFO  11:18:39,992 - #2 main
+INFO  11:18:39,993 - #42 (
+INFO  11:18:39,993 - #43 )
+INFO  11:18:39,993 - #2 int
+INFO  11:18:39,993 - #2 c
+INFO  11:18:39,993 - #39 ;
+INFO  11:18:39,994 - #44 {
+INFO  11:18:39,995 - #8 return
+INFO  11:18:40,024 - #3 1
+INFO  11:18:40,024 - #39 ;
+INFO  11:18:40,024 - #45 }
+INFO  11:18:40,024 - #45 }
+INFO  11:18:40,029 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          MethodRetType(
+            Type(
+             int
+            ) [Type]
+          ) [MethodRetType]
+         k
+        ) [MethodTypeName]
+        NoFormPars(
+        ) [NoFormPars]
+        NoVarDecl(
+        ) [NoVarDecl]
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            RetStmt(
+              BasicExpr(
+                TermExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  FactorTerm(
+                    NumConst(
+                     0
+                    ) [NumConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExpr]
+            ) [RetStmt]
+          ) [MatchedStmt]
+        ) [MultiStmtList]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         c
+          NoSquares(
+          ) [NoSquares]
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          RetStmt(
+            BasicExpr(
+              TermExpr(
+                NoMinus(
+                ) [NoMinus]
+                FactorTerm(
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExpr]
+          ) [RetStmt]
+        ) [MatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:18:40,029 - ===================================
+INFO  11:18:40,032 - Obradjuje se funkcija k na liniji 4
+ERROR 11:18:40,032 - Greska na liniji 2 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije k
+INFO  11:18:40,032 - Obradjuje se funkcija main na liniji 8
+INFO  11:18:40,032 - Deklarisana promenljiva c na liniji 8
+ERROR 11:18:40,032 - Greska na liniji 2 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+INFO  11:18:40,032 - ===================================
+ERROR 11:18:40,032 - Parsiranje NIJE uspesno zavrseno!

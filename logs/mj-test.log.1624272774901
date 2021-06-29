@@ -1,0 +1,42 @@
+INFO  12:52:39,642 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  12:52:39,694 - #6 program
+INFO  12:52:39,694 - #2 Program
+INFO  12:52:39,694 - #10 const
+INFO  12:52:39,695 - #2 int
+INFO  12:52:39,696 - #2 x
+INFO  12:52:39,696 - #36 =
+INFO  12:52:39,696 - #3 5
+INFO  12:52:39,696 - #40 ,
+INFO  12:52:39,697 - #2 z
+INFO  12:52:39,697 - #36 =
+INFO  12:52:39,697 - #3 2
+INFO  12:52:39,697 - #39 ;
+INFO  12:52:39,697 - #44 {
+INFO  12:52:39,698 - #45 }
+INFO  12:52:39,702 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      MultiNumberConst(
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+       z
+       2
+      ) [MultiNumberConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  12:52:39,722 - ===================================
+INFO  12:52:39,725 - Definisana je nova konstanta x sa vrednoscu 5
+INFO  12:52:39,725 - ===================================

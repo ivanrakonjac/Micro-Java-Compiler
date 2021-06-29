@@ -1,16 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 22:50:50
+// 29/5/2021 20:25:30
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class SwitchExpr implements SyntaxNode {
+public abstract class SwitchExpr implements SyntaxNode {
 
     private SyntaxNode parent;
+
     private int line;
-    public SwitchExpr () {
-    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -28,28 +27,11 @@ public class SwitchExpr implements SyntaxNode {
         this.line=line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void childrenAccept(Visitor visitor) {
-    }
-
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("SwitchExpr(\n");
-
-        buffer.append(tab);
-        buffer.append(") [SwitchExpr]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }

@@ -1,0 +1,19 @@
+INFO  15:18:36,413 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+ERROR 15:18:36,510 - 
+Sintaksna greska na liniji 4
+ERROR 15:18:36,512 - Izvrsen oporavak do ; u liniji 4
+INFO  15:18:36,523 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  VarParamDecl(
+    NoParamDecl(
+    ) [NoParamDecl]
+    VarDeclDerived1(
+    ) [VarDeclDerived1]
+  ) [VarParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  15:18:36,523 - ===================================
+INFO  15:18:36,526 - ===================================

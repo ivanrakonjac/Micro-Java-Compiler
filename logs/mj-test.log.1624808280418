@@ -1,0 +1,60 @@
+INFO  17:37:45,151 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+ERROR 17:37:45,260 - 
+Sintaksna greska na liniji 5
+ERROR 17:37:45,262 - Izvrsen oporavak do ; u liniji 5
+INFO  17:37:45,277 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    VarParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                NumConstValue(
+                 5
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              NumConstValue(
+               3
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [VarParamDecl]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  17:37:45,281 - ===================================
+INFO  17:37:45,286 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  17:37:45,287 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  17:37:45,287 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  17:37:45,288 - ===================================

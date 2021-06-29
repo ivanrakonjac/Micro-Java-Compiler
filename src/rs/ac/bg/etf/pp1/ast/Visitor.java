@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 22:50:50
+// 29/5/2021 20:25:30
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,7 +16,9 @@ public interface Visitor {
     public void visit(ElseStmt ElseStmt);
     public void visit(FormParamDecl FormParamDecl);
     public void visit(Addop Addop);
+    public void visit(CaseLine CaseLine);
     public void visit(Factor Factor);
+    public void visit(CasesAndDefault CasesAndDefault);
     public void visit(CondFactList CondFactList);
     public void visit(Designator Designator);
     public void visit(Term Term);
@@ -27,20 +29,23 @@ public interface Visitor {
     public void visit(StmtList StmtList);
     public void visit(OptionalFormPars OptionalFormPars);
     public void visit(VarDeclExtension VarDeclExtension);
+    public void visit(ElseTerminal ElseTerminal);
     public void visit(VarDeclList VarDeclList);
     public void visit(Expr Expr);
     public void visit(YieldStatement YieldStatement);
     public void visit(ActPars ActPars);
     public void visit(DesignatorStatement DesignatorStatement);
+    public void visit(SwitchExpr SwitchExpr);
     public void visit(BasicExpr BasicExpr);
     public void visit(ConstAssign ConstAssign);
     public void visit(Statement Statement);
     public void visit(VarDecl VarDecl);
     public void visit(DesignatorArrayName DesignatorArrayName);
     public void visit(CondFact CondFact);
+    public void visit(CaseColon CaseColon);
     public void visit(MethodDeclList MethodDeclList);
-    public void visit(ParamDecl ParamDecl);
     public void visit(OptionalMinus OptionalMinus);
+    public void visit(ParamDecl ParamDecl);
     public void visit(ModOper ModOper);
     public void visit(DivOper DivOper);
     public void visit(MulOper MulOper);
@@ -63,10 +68,13 @@ public interface Visitor {
     public void visit(Var Var);
     public void visit(YieldStatmnt YieldStatmnt);
     public void visit(DefaultStmt DefaultStmt);
+    public void visit(CaseCol CaseCol);
+    public void visit(SingleCaseLine SingleCaseLine);
+    public void visit(CaseStmt CaseStmt);
     public void visit(NoCase NoCase);
     public void visit(MultiCaseList MultiCaseList);
-    public void visit(CaseStmt CaseStmt);
-    public void visit(SwitchExpr SwitchExpr);
+    public void visit(CaseesAndDef CaseesAndDef);
+    public void visit(SwitchTerm SwitchTerm);
     public void visit(OneParam OneParam);
     public void visit(MultipleParams MultipleParams);
     public void visit(NoActualParams NoActualParams);
@@ -75,6 +83,7 @@ public interface Visitor {
     public void visit(NoStmt NoStmt);
     public void visit(MultiStmtListLabel MultiStmtListLabel);
     public void visit(MultiStmtList MultiStmtList);
+    public void visit(ElseTerm ElseTerm);
     public void visit(NoElseStmt NoElseStmt);
     public void visit(ElseStatmt ElseStatmt);
     public void visit(CondRelop CondRelop);
@@ -101,6 +110,7 @@ public interface Visitor {
     public void visit(VariableInc VariableInc);
     public void visit(ProcCall ProcCall);
     public void visit(DesignatorAssign DesignatorAssign);
+    public void visit(IfStmt IfStmt);
     public void visit(GotoStmt GotoStmt);
     public void visit(BasicStmt BasicStmt);
     public void visit(PrintExprStmt PrintExprStmt);

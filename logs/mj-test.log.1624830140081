@@ -1,0 +1,73 @@
+INFO  23:41:00,828 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  23:41:00,971 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclArray(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclArray]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesignStmt(
+          DesignatorAssign(
+            DesignatorArray(
+              DesArrName(
+               bodovi
+              ) [DesArrName]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     0
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorArray]
+            AssignOper(
+            ) [AssignOper]
+            BasicExprr(
+              NoMinus(
+              ) [NoMinus]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   1
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExprr]
+          ) [DesignatorAssign]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:41:00,971 - ===================================
+INFO  23:41:00,996 - --MethodTypeName main na liniji 6
+INFO  23:41:00,996 - --VarDeclArray bodovi na liniji 7

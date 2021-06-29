@@ -1,0 +1,181 @@
+INFO  14:58:26,976 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  14:58:27,035 - #6 program
+INFO  14:58:27,035 - #2 Program
+INFO  14:58:27,036 - #10 const
+INFO  14:58:27,037 - #2 int
+INFO  14:58:27,037 - #2 x
+INFO  14:58:27,038 - #36 =
+INFO  14:58:27,038 - #3 5
+INFO  14:58:27,038 - #39 ;
+INFO  14:58:27,038 - #10 const
+INFO  14:58:27,039 - #2 char
+INFO  14:58:27,039 - #2 c
+INFO  14:58:27,039 - #36 =
+INFO  14:58:27,039 - #4 c
+INFO  14:58:27,039 - #40 ,
+INFO  14:58:27,039 - #2 b
+INFO  14:58:27,040 - #36 =
+INFO  14:58:27,040 - #4 b
+INFO  14:58:27,040 - #39 ;
+INFO  14:58:27,040 - #10 const
+INFO  14:58:27,040 - #2 bool
+INFO  14:58:27,040 - #2 cond
+INFO  14:58:27,065 - #36 =
+INFO  14:58:27,065 - #5 true
+INFO  14:58:27,065 - #39 ;
+INFO  14:58:27,065 - #2 int
+INFO  14:58:27,066 - #2 m
+INFO  14:58:27,066 - #39 ;
+INFO  14:58:27,067 - #2 int
+INFO  14:58:27,067 - #2 q
+INFO  14:58:27,067 - #40 ,
+INFO  14:58:27,067 - #2 p
+INFO  14:58:27,067 - #39 ;
+INFO  14:58:27,067 - #2 bool
+INFO  14:58:27,067 - #2 asd
+INFO  14:58:27,067 - #39 ;
+INFO  14:58:27,067 - #2 int
+INFO  14:58:27,067 - #2 niz
+INFO  14:58:27,067 - #46 [
+INFO  14:58:27,068 - #47 ]
+INFO  14:58:27,068 - #39 ;
+INFO  14:58:27,068 - #2 char
+INFO  14:58:27,068 - #2 niz1
+INFO  14:58:27,068 - #46 [
+INFO  14:58:27,068 - #47 ]
+INFO  14:58:27,068 - #39 ;
+INFO  14:58:27,068 - #44 {
+INFO  14:58:27,068 - #11 void
+INFO  14:58:27,069 - #2 main
+INFO  14:58:27,070 - #42 (
+INFO  14:58:27,071 - #43 )
+INFO  14:58:27,071 - #44 {
+INFO  14:58:27,072 - #45 }
+INFO  14:58:27,072 - #45 }
+INFO  14:58:27,078 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          VarParam(
+            ConstParam(
+              ConstParam(
+                ConstParam(
+                  ParamDeclDerived1(
+                  ) [ParamDeclDerived1]
+                  ConstDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleNumberConst(
+                     x
+                     5
+                    ) [SingleNumberConst]
+                  ) [ConstDecl]
+                ) [ConstParam]
+                ConstDecl(
+                  Type(
+                   char
+                  ) [Type]
+                  MultiCharConst(
+                    SingleCharConst(
+                     c
+                     c
+                    ) [SingleCharConst]
+                   b
+                   b
+                  ) [MultiCharConst]
+                ) [ConstDecl]
+              ) [ConstParam]
+              ConstDecl(
+                Type(
+                 bool
+                ) [Type]
+                SingleBoolConst(
+                 cond
+                 true
+                ) [SingleBoolConst]
+              ) [ConstDecl]
+            ) [ConstParam]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             m
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+            ) [VarDeclaration]
+          ) [VarParam]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           q
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             p
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+         asd
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclarationArray(
+        Type(
+         int
+        ) [Type]
+       niz
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclarationArray]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       char
+      ) [Type]
+     niz1
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:58:27,078 - ===================================
+INFO  14:58:27,080 - Deklarisana je nova konstanta x na liniji 2
+INFO  14:58:27,081 - Deklarisana je nova konstanta c na liniji 3
+INFO  14:58:27,081 - Deklarisana je nova konstanta b na liniji 3
+INFO  14:58:27,081 - Deklarisana je nova konstanta cond na liniji 4
+INFO  14:58:27,081 - Deklarisana je promenljiva m na liniji 5
+INFO  14:58:27,081 - Deklarisana je promenljiva p na liniji 6
+INFO  14:58:27,081 - Deklarisana je promenljiva q na liniji 6
+INFO  14:58:27,081 - Deklarisana je promenljiva asd na liniji 7
+INFO  14:58:27,081 - Deklarisana je promenljiva niz na liniji 8
+INFO  14:58:27,081 - Deklarisana je promenljiva niz1 na liniji 9
+INFO  14:58:27,081 - Obradjuje se funkcija main na liniji 11
+INFO  14:58:27,081 - ===================================

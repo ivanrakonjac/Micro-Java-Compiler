@@ -57,7 +57,7 @@ public class MJParserTest {
 			log.info("===================================");
 			Tab.dump();
 			
-			/*if(!p.errorDetected && v.passed()){
+			if(!p.errorDetected && v.passed()){
 				File objFile = new File("test/program.obj");
 				if(objFile.exists()) objFile.delete();
 				
@@ -70,7 +70,7 @@ public class MJParserTest {
 				log.info("Parsiranje uspesno zavrseno!");
 			}else{
 				log.error("Parsiranje NIJE uspesno zavrseno!");
-			}*/
+			}
 		}
 		finally {
 			if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }

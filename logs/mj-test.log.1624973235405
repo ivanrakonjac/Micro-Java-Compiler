@@ -1,0 +1,122 @@
+INFO  15:19:01,254 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  15:19:01,393 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclArray(
+          Type(
+           int
+          ) [Type]
+         niz
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclArray]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          MultiStmtList(
+            NoStmt(
+            ) [NoStmt]
+            DesignStmt(
+              DesignatorAssign(
+                DesignatorBasic(
+                 i
+                ) [DesignatorBasic]
+                AssignOper(
+                ) [AssignOper]
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [DesignatorAssign]
+            ) [DesignStmt]
+          ) [MultiStmtList]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorBasic(
+               niz
+              ) [DesignatorBasic]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NewArray(
+                      Type(
+                       int
+                      ) [Type]
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [NewArray]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        PrintStmt(
+          BasicExprr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorBasic(
+                   i
+                  ) [DesignatorBasic]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExprr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:19:01,396 - ===================================
+INFO  15:19:01,402 - --MethodTypeName main na liniji 7
+INFO  15:19:01,402 - --VarDeclExt i na liniji 8
+INFO  15:19:01,402 - --VarDeclArray niz na liniji 8
+INFO  15:19:01,404 - --Varijabla dobija vrednost  na liniji 10
+INFO  15:19:01,404 - --NewArray  na liniji 11
+INFO  15:19:01,404 - --Varijabla dobija vrednost  na liniji 11
+INFO  15:19:01,404 - ===================================
+INFO  15:19:01,409 - --MethodTypeName main ret type = rs.etf.pp1.symboltable.concepts.Struct@2669b199 na liniji 7
+INFO  15:19:01,411 - Parsiranje uspesno zavrseno!

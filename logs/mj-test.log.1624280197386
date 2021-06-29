@@ -1,0 +1,159 @@
+INFO  14:56:30,305 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  14:56:30,364 - #6 program
+INFO  14:56:30,364 - #2 Program
+INFO  14:56:30,364 - #10 const
+INFO  14:56:30,366 - #2 int
+INFO  14:56:30,366 - #2 x
+INFO  14:56:30,367 - #36 =
+INFO  14:56:30,367 - #3 5
+INFO  14:56:30,367 - #39 ;
+INFO  14:56:30,367 - #10 const
+INFO  14:56:30,368 - #2 char
+INFO  14:56:30,368 - #2 c
+INFO  14:56:30,368 - #36 =
+INFO  14:56:30,368 - #4 c
+INFO  14:56:30,368 - #40 ,
+INFO  14:56:30,368 - #2 b
+INFO  14:56:30,368 - #36 =
+INFO  14:56:30,368 - #4 b
+INFO  14:56:30,369 - #39 ;
+INFO  14:56:30,369 - #10 const
+INFO  14:56:30,369 - #2 bool
+INFO  14:56:30,369 - #2 cond
+INFO  14:56:30,369 - #36 =
+INFO  14:56:30,369 - #5 true
+INFO  14:56:30,370 - #39 ;
+INFO  14:56:30,370 - #2 int
+INFO  14:56:30,370 - #2 m
+INFO  14:56:30,370 - #39 ;
+INFO  14:56:30,371 - #2 int
+INFO  14:56:30,371 - #2 q
+INFO  14:56:30,371 - #40 ,
+INFO  14:56:30,371 - #2 w
+INFO  14:56:30,371 - #39 ;
+INFO  14:56:30,371 - #2 bool
+INFO  14:56:30,371 - #2 asd
+INFO  14:56:30,371 - #39 ;
+INFO  14:56:30,371 - #2 int
+INFO  14:56:30,371 - #2 niz
+INFO  14:56:30,371 - #46 [
+INFO  14:56:30,371 - #47 ]
+INFO  14:56:30,372 - #39 ;
+INFO  14:56:30,372 - #2 char
+INFO  14:56:30,372 - #2 niz1
+INFO  14:56:30,372 - #46 [
+INFO  14:56:30,372 - #47 ]
+INFO  14:56:30,372 - #39 ;
+INFO  14:56:30,372 - #44 {
+INFO  14:56:30,372 - #45 }
+INFO  14:56:30,378 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          VarParam(
+            ConstParam(
+              ConstParam(
+                ConstParam(
+                  ParamDeclDerived1(
+                  ) [ParamDeclDerived1]
+                  ConstDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleNumberConst(
+                     x
+                     5
+                    ) [SingleNumberConst]
+                  ) [ConstDecl]
+                ) [ConstParam]
+                ConstDecl(
+                  Type(
+                   char
+                  ) [Type]
+                  MultiCharConst(
+                    SingleCharConst(
+                     c
+                     c
+                    ) [SingleCharConst]
+                   b
+                   b
+                  ) [MultiCharConst]
+                ) [ConstDecl]
+              ) [ConstParam]
+              ConstDecl(
+                Type(
+                 bool
+                ) [Type]
+                SingleBoolConst(
+                 cond
+                 true
+                ) [SingleBoolConst]
+              ) [ConstDecl]
+            ) [ConstParam]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             m
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+            ) [VarDeclaration]
+          ) [VarParam]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           q
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             w
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+         asd
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclarationArray(
+        Type(
+         int
+        ) [Type]
+       niz
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclarationArray]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       char
+      ) [Type]
+     niz1
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:56:30,378 - ===================================
+INFO  14:56:30,382 - Deklarisana je nova konstanta x na liniji 2
+INFO  14:56:30,382 - Deklarisana je nova konstanta c na liniji 3
+INFO  14:56:30,382 - Deklarisana je nova konstanta b na liniji 3
+INFO  14:56:30,382 - Deklarisana je nova konstanta cond na liniji 4
+INFO  14:56:30,382 - Deklarisana je promenljiva m na liniji 5
+ERROR 14:56:30,382 - Greska: Promenljiva w je vec deklarisana
+INFO  14:56:30,382 - Deklarisana je promenljiva q na liniji 6
+INFO  14:56:30,382 - Deklarisana je promenljiva asd na liniji 7
+INFO  14:56:30,382 - Deklarisana je promenljiva niz na liniji 8
+INFO  14:56:30,382 - Deklarisana je promenljiva niz1 na liniji 9
+INFO  14:56:30,382 - ===================================

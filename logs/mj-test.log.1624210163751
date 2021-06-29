@@ -1,0 +1,1489 @@
+INFO  19:28:03,208 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  19:28:03,383 - #6 program
+INFO  19:28:03,383 - #2 Program
+INFO  19:28:03,383 - #2 int
+INFO  19:28:03,387 - #2 x
+INFO  19:28:03,389 - #40 ,
+INFO  19:28:03,394 - #2 z
+INFO  19:28:03,394 - #36 =
+ERROR 19:28:03,394 - 
+Sintaksna greska na liniji 2
+INFO  19:28:03,394 - #3 3
+INFO  19:28:03,394 - #40 ,
+INFO  19:28:03,394 - #2 y
+INFO  19:28:03,395 - #39 ;
+INFO  19:28:03,395 - #12 class
+INFO  19:28:03,395 - #2 A
+INFO  19:28:03,395 - #44 {
+ERROR 19:28:03,395 - Izvrsen oporavak do ; u liniji 2
+INFO  19:28:03,397 - #2 int
+INFO  19:28:03,399 - #2 x
+INFO  19:28:03,399 - #46 [
+INFO  19:28:03,399 - #47 ]
+INFO  19:28:03,399 - #40 ,
+INFO  19:28:03,402 - #2 y
+INFO  19:28:03,402 - #46 [
+INFO  19:28:03,402 - #47 ]
+INFO  19:28:03,402 - #39 ;
+INFO  19:28:03,402 - #45 }
+INFO  19:28:03,404 - #10 const
+INFO  19:28:03,404 - #2 int
+INFO  19:28:03,404 - #2 pi
+INFO  19:28:03,404 - #36 =
+INFO  19:28:03,404 - #3 3
+INFO  19:28:03,404 - #40 ,
+INFO  19:28:03,406 - #2 e
+INFO  19:28:03,406 - #36 =
+INFO  19:28:03,406 - #3 2
+INFO  19:28:03,406 - #39 ;
+INFO  19:28:03,407 - #12 class
+INFO  19:28:03,409 - #2 B
+INFO  19:28:03,409 - #13 extends
+INFO  19:28:03,409 - #2 A
+INFO  19:28:03,409 - #44 {
+INFO  19:28:03,409 - #2 int
+INFO  19:28:03,409 - #2 i
+INFO  19:28:03,409 - #39 ;
+INFO  19:28:03,409 - #44 {
+INFO  19:28:03,409 - #2 int
+INFO  19:28:03,411 - #2 getValue
+INFO  19:28:03,411 - #42 (
+INFO  19:28:03,413 - #2 int
+INFO  19:28:03,413 - #2 a
+INFO  19:28:03,413 - #36 =
+ERROR 19:28:03,413 - 
+Sintaksna greska na liniji 8
+INFO  19:28:03,413 - #3 5
+INFO  19:28:03,413 - #40 ,
+INFO  19:28:03,414 - #2 int
+INFO  19:28:03,414 - #2 b
+INFO  19:28:03,414 - #40 ,
+ERROR 19:28:03,414 - Izvrsen oporavak do ) u liniji 8
+INFO  19:28:03,418 - #2 int
+INFO  19:28:03,418 - #2 x
+INFO  19:28:03,418 - #43 )
+INFO  19:28:03,418 - #2 int
+INFO  19:28:03,418 - #2 b
+INFO  19:28:03,418 - #39 ;
+INFO  19:28:03,418 - #2 bool
+INFO  19:28:03,419 - #2 c
+INFO  19:28:03,419 - #39 ;
+INFO  19:28:03,419 - #44 {
+INFO  19:28:03,419 - #8 return
+INFO  19:28:03,426 - #2 this
+INFO  19:28:03,431 - #41 .
+INFO  19:28:03,431 - #2 i
+INFO  19:28:03,431 - #23 +
+INFO  19:28:03,431 - #2 this
+INFO  19:28:03,435 - #41 .
+INFO  19:28:03,435 - #2 x
+INFO  19:28:03,435 - #46 [
+INFO  19:28:03,435 - #3 0
+INFO  19:28:03,435 - #47 ]
+INFO  19:28:03,435 - #23 +
+INFO  19:28:03,435 - #2 a
+INFO  19:28:03,435 - #39 ;
+INFO  19:28:03,435 - #45 }
+INFO  19:28:03,436 - #11 void
+INFO  19:28:03,438 - #2 m
+INFO  19:28:03,440 - #42 (
+INFO  19:28:03,440 - #43 )
+INFO  19:28:03,442 - #44 {
+INFO  19:28:03,442 - #45 }
+INFO  19:28:03,442 - #45 }
+INFO  19:28:03,442 - #45 }
+INFO  19:28:03,442 - #12 class
+INFO  19:28:03,442 - #2 C
+INFO  19:28:03,442 - #13 extends
+INFO  19:28:03,442 - #2 B
+INFO  19:28:03,442 - #44 {
+INFO  19:28:03,442 - #2 A
+INFO  19:28:03,442 - #2 theA
+INFO  19:28:03,443 - #39 ;
+INFO  19:28:03,443 - #2 int
+INFO  19:28:03,443 - #2 a
+INFO  19:28:03,443 - #39 ;
+INFO  19:28:03,443 - #45 }
+INFO  19:28:03,443 - #44 {
+INFO  19:28:03,443 - #11 void
+INFO  19:28:03,443 - #2 main
+INFO  19:28:03,443 - #42 (
+INFO  19:28:03,443 - #43 )
+INFO  19:28:03,443 - #2 A
+INFO  19:28:03,443 - #2 a
+INFO  19:28:03,443 - #39 ;
+INFO  19:28:03,443 - #2 C
+INFO  19:28:03,443 - #2 c
+INFO  19:28:03,443 - #39 ;
+INFO  19:28:03,443 - #2 int
+INFO  19:28:03,443 - #2 i
+INFO  19:28:03,444 - #39 ;
+INFO  19:28:03,444 - #2 int
+INFO  19:28:03,444 - #2 x
+INFO  19:28:03,444 - #46 [
+INFO  19:28:03,444 - #47 ]
+INFO  19:28:03,444 - #39 ;
+INFO  19:28:03,444 - #2 char
+INFO  19:28:03,444 - #2 ch
+INFO  19:28:03,444 - #39 ;
+INFO  19:28:03,444 - #2 int
+INFO  19:28:03,444 - #2 result
+INFO  19:28:03,444 - #39 ;
+INFO  19:28:03,444 - #44 {
+INFO  19:28:03,444 - #2 i
+INFO  19:28:03,444 - #36 =
+INFO  19:28:03,444 - #3 0
+INFO  19:28:03,448 - #39 ;
+INFO  19:28:03,449 - #2 i
+INFO  19:28:03,449 - #36 =
+INFO  19:28:03,449 - #39 ;
+ERROR 19:28:03,449 - 
+Sintaksna greska na liniji 18
+INFO  19:28:03,449 - #2 result
+INFO  19:28:03,449 - #36 =
+INFO  19:28:03,449 - #17 switch
+INFO  19:28:03,451 - #42 (
+INFO  19:28:03,451 - #2 i
+INFO  19:28:03,451 - #43 )
+INFO  19:28:03,451 - #44 {
+INFO  19:28:03,451 - #18 case
+INFO  19:28:03,453 - #3 0
+INFO  19:28:03,453 - #49 :
+INFO  19:28:03,453 - #51 yield
+INFO  19:28:03,453 - #3 1
+INFO  19:28:03,453 - #39 ;
+INFO  19:28:03,453 - #18 case
+INFO  19:28:03,453 - #3 1
+INFO  19:28:03,453 - #49 :
+INFO  19:28:03,453 - #51 yield
+INFO  19:28:03,453 - #3 0
+INFO  19:28:03,454 - #39 ;
+INFO  19:28:03,454 - #50 default
+INFO  19:28:03,454 - #49 :
+INFO  19:28:03,454 - #51 yield
+INFO  19:28:03,454 - #3 5
+INFO  19:28:03,454 - #39 ;
+INFO  19:28:03,454 - #45 }
+INFO  19:28:03,456 - #39 ;
+INFO  19:28:03,456 - #2 a
+INFO  19:28:03,456 - #36 =
+INFO  19:28:03,456 - #14 new
+INFO  19:28:03,456 - #2 A
+INFO  19:28:03,456 - #39 ;
+INFO  19:28:03,456 - #2 a
+INFO  19:28:03,456 - #41 .
+INFO  19:28:03,456 - #2 x
+INFO  19:28:03,456 - #36 =
+INFO  19:28:03,456 - #14 new
+INFO  19:28:03,457 - #2 int
+INFO  19:28:03,457 - #46 [
+INFO  19:28:03,457 - #3 5
+INFO  19:28:03,457 - #47 ]
+INFO  19:28:03,457 - #39 ;
+INFO  19:28:03,457 - #2 a
+INFO  19:28:03,457 - #41 .
+INFO  19:28:03,457 - #2 y
+INFO  19:28:03,457 - #36 =
+INFO  19:28:03,457 - #14 new
+INFO  19:28:03,457 - #2 int
+INFO  19:28:03,457 - #46 [
+INFO  19:28:03,457 - #3 5
+INFO  19:28:03,457 - #47 ]
+INFO  19:28:03,457 - #39 ;
+INFO  19:28:03,457 - #2 c
+INFO  19:28:03,457 - #36 =
+INFO  19:28:03,457 - #14 new
+INFO  19:28:03,457 - #2 C
+INFO  19:28:03,457 - #39 ;
+INFO  19:28:03,457 - #2 c
+INFO  19:28:03,458 - #41 .
+INFO  19:28:03,458 - #2 theA
+INFO  19:28:03,458 - #36 =
+INFO  19:28:03,458 - #2 a
+INFO  19:28:03,458 - #39 ;
+INFO  19:28:03,458 - #2 c
+INFO  19:28:03,458 - #41 .
+INFO  19:28:03,458 - #2 x
+INFO  19:28:03,458 - #36 =
+INFO  19:28:03,458 - #14 new
+INFO  19:28:03,458 - #2 int
+INFO  19:28:03,458 - #46 [
+INFO  19:28:03,458 - #3 5
+INFO  19:28:03,458 - #47 ]
+INFO  19:28:03,458 - #39 ;
+INFO  19:28:03,458 - #2 x
+INFO  19:28:03,458 - #36 =
+INFO  19:28:03,458 - #14 new
+INFO  19:28:03,458 - #2 int
+INFO  19:28:03,458 - #46 [
+INFO  19:28:03,458 - #3 3
+INFO  19:28:03,458 - #47 ]
+INFO  19:28:03,458 - #39 ;
+INFO  19:28:03,458 - #22 read
+INFO  19:28:03,458 - #42 (
+INFO  19:28:03,458 - #2 c
+INFO  19:28:03,458 - #41 .
+INFO  19:28:03,458 - #2 i
+INFO  19:28:03,458 - #43 )
+INFO  19:28:03,458 - #39 ;
+INFO  19:28:03,458 - #2 i
+INFO  19:28:03,459 - #36 =
+INFO  19:28:03,459 - #3 0
+INFO  19:28:03,459 - #39 ;
+INFO  19:28:03,459 - #19 do
+INFO  19:28:03,459 - #44 {
+INFO  19:28:03,459 - #22 read
+INFO  19:28:03,459 - #42 (
+INFO  19:28:03,459 - #2 c
+INFO  19:28:03,459 - #41 .
+INFO  19:28:03,459 - #2 x
+INFO  19:28:03,459 - #46 [
+INFO  19:28:03,459 - #2 i
+INFO  19:28:03,459 - #47 ]
+INFO  19:28:03,459 - #43 )
+INFO  19:28:03,459 - #39 ;
+INFO  19:28:03,459 - #22 read
+INFO  19:28:03,459 - #42 (
+INFO  19:28:03,459 - #2 c
+INFO  19:28:03,459 - #41 .
+INFO  19:28:03,459 - #2 theA
+INFO  19:28:03,459 - #41 .
+INFO  19:28:03,459 - #2 x
+INFO  19:28:03,459 - #46 [
+INFO  19:28:03,459 - #2 i
+INFO  19:28:03,459 - #47 ]
+INFO  19:28:03,459 - #43 )
+INFO  19:28:03,459 - #39 ;
+INFO  19:28:03,459 - #2 i
+INFO  19:28:03,459 - #37 ++
+INFO  19:28:03,459 - #39 ;
+INFO  19:28:03,460 - #45 }
+INFO  19:28:03,460 - #20 while
+INFO  19:28:03,460 - #42 (
+INFO  19:28:03,460 - #2 i
+INFO  19:28:03,460 - #32 <
+INFO  19:28:03,460 - #3 5
+INFO  19:28:03,464 - #43 )
+INFO  19:28:03,464 - #39 ;
+INFO  19:28:03,464 - #21 print
+INFO  19:28:03,464 - #42 (
+INFO  19:28:03,464 - #2 c
+INFO  19:28:03,464 - #41 .
+INFO  19:28:03,464 - #2 getValue
+INFO  19:28:03,464 - #42 (
+INFO  19:28:03,464 - #2 c
+INFO  19:28:03,464 - #41 .
+INFO  19:28:03,464 - #2 theA
+INFO  19:28:03,464 - #41 .
+INFO  19:28:03,464 - #2 x
+INFO  19:28:03,464 - #46 [
+INFO  19:28:03,464 - #3 0
+INFO  19:28:03,465 - #47 ]
+INFO  19:28:03,465 - #43 )
+INFO  19:28:03,465 - #43 )
+INFO  19:28:03,465 - #39 ;
+INFO  19:28:03,465 - #2 c
+INFO  19:28:03,465 - #41 .
+INFO  19:28:03,465 - #2 m
+INFO  19:28:03,465 - #42 (
+INFO  19:28:03,465 - #43 )
+INFO  19:28:03,465 - #39 ;
+INFO  19:28:03,465 - #22 read
+INFO  19:28:03,465 - #42 (
+INFO  19:28:03,465 - #2 ch
+INFO  19:28:03,465 - #43 )
+INFO  19:28:03,465 - #39 ;
+INFO  19:28:03,465 - #16 if
+INFO  19:28:03,465 - #42 (
+INFO  19:28:03,465 - #3 5
+INFO  19:28:03,465 - #43 )
+INFO  19:28:03,465 - #44 {
+INFO  19:28:03,465 - #21 print
+INFO  19:28:03,466 - #42 (
+INFO  19:28:03,466 - #2 i
+INFO  19:28:03,466 - #43 )
+INFO  19:28:03,466 - #39 ;
+INFO  19:28:03,466 - #16 if
+INFO  19:28:03,466 - #42 (
+INFO  19:28:03,466 - #3 2
+INFO  19:28:03,466 - #43 )
+INFO  19:28:03,466 - #44 {
+INFO  19:28:03,466 - #45 }
+INFO  19:28:03,466 - #45 }
+INFO  19:28:03,466 - #15 else
+INFO  19:28:03,466 - #16 if
+INFO  19:28:03,466 - #42 (
+INFO  19:28:03,466 - #24 -
+INFO  19:28:03,466 - #3 5
+INFO  19:28:03,469 - #43 )
+INFO  19:28:03,469 - #44 {
+INFO  19:28:03,469 - #45 }
+INFO  19:28:03,469 - #15 else
+INFO  19:28:03,469 - #44 {
+INFO  19:28:03,469 - #21 print
+INFO  19:28:03,469 - #42 (
+INFO  19:28:03,469 - #3 2
+INFO  19:28:03,469 - #43 )
+INFO  19:28:03,469 - #39 ;
+INFO  19:28:03,469 - #16 if
+INFO  19:28:03,469 - #42 (
+INFO  19:28:03,469 - #3 2
+INFO  19:28:03,469 - #43 )
+INFO  19:28:03,470 - #44 {
+INFO  19:28:03,470 - #45 }
+INFO  19:28:03,470 - #15 else
+INFO  19:28:03,470 - #44 {
+INFO  19:28:03,470 - #45 }
+INFO  19:28:03,470 - #45 }
+INFO  19:28:03,470 - #16 if
+INFO  19:28:03,470 - #42 (
+INFO  19:28:03,470 - #2 x
+INFO  19:28:03,470 - #2 s
+ERROR 19:28:03,470 - 
+Sintaksna greska na liniji 60
+INFO  19:28:03,470 - #43 )
+INFO  19:28:03,470 - #44 {
+INFO  19:28:03,470 - #45 }
+INFO  19:28:03,470 - #15 else
+ERROR 19:28:03,470 - Izvrsen oporavak do ) u liniji 60
+ERROR 19:28:03,472 - 
+Sintaksna greska na liniji 62
+INFO  19:28:03,472 - #44 {
+INFO  19:28:03,472 - #45 }
+INFO  19:28:03,472 - #45 }
+INFO  19:28:03,472 - #45 }
+ERROR 19:28:03,472 - Izvrsen oporavak do ) u liniji 60
+INFO  19:28:03,497 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ClassParam(
+    ClassParam(
+      ConstParam(
+        ClassParam(
+          VarParam(
+            ParamDeclDerived1(
+            ) [ParamDeclDerived1]
+            VarDeclDerived1(
+            ) [VarDeclDerived1]
+          ) [VarParam]
+          BaseClassDecl(
+           A
+            VarDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               x
+                Squares(
+                ) [Squares]
+                VarDeclMore(
+                  NoVarDeclMore(
+                  ) [NoVarDeclMore]
+                 y
+                  Squares(
+                  ) [Squares]
+                ) [VarDeclMore]
+              ) [VarDeclaration]
+            ) [VarDeclarations]
+            NoClassMethods(
+            ) [NoClassMethods]
+          ) [BaseClassDecl]
+        ) [ClassParam]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+         pi
+          NumConstVal(
+           3
+          ) [NumConstVal]
+          ConstDeclMore(
+            NoConstDeclMore(
+            ) [NoConstDeclMore]
+           e
+            NumConstVal(
+             2
+            ) [NumConstVal]
+          ) [ConstDeclMore]
+        ) [ConstDecl]
+      ) [ConstParam]
+      ExtendedClass(
+       B
+        Type(
+         A
+        ) [Type]
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           i
+            NoSquares(
+            ) [NoSquares]
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        ClassMethodList(
+          MethodDeclarations(
+            MethodDeclarations(
+              NoMethodDeclarations(
+              ) [NoMethodDeclarations]
+              MethodDecl(
+                MethodTypeName(
+                  MethodRetType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [MethodRetType]
+                 getValue
+                ) [MethodTypeName]
+                OptFormParams(
+                  FormParamDeclDerived1(
+                  ) [FormParamDeclDerived1]
+                  FormParams(
+                    FormParams(
+                      NoFormParams(
+                      ) [NoFormParams]
+                      FormParam(
+                        Type(
+                         int
+                        ) [Type]
+                       b
+                        NoSquares(
+                        ) [NoSquares]
+                      ) [FormParam]
+                    ) [FormParams]
+                    FormParam(
+                      Type(
+                       int
+                      ) [Type]
+                     x
+                      NoSquares(
+                      ) [NoSquares]
+                    ) [FormParam]
+                  ) [FormParams]
+                ) [OptFormParams]
+                VarDeclarations(
+                  VarDeclarations(
+                    NoVarDecl(
+                    ) [NoVarDecl]
+                    VarDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     b
+                      NoSquares(
+                      ) [NoSquares]
+                      NoVarDeclMore(
+                      ) [NoVarDeclMore]
+                    ) [VarDeclaration]
+                  ) [VarDeclarations]
+                  VarDeclaration(
+                    Type(
+                     bool
+                    ) [Type]
+                   c
+                    NoSquares(
+                    ) [NoSquares]
+                    NoVarDeclMore(
+                    ) [NoVarDeclMore]
+                  ) [VarDeclaration]
+                ) [VarDeclarations]
+                MultiStmtList(
+                  NoStmt(
+                  ) [NoStmt]
+                  MatchedStmt(
+                    RetStmt(
+                      RetVal(
+                        BasicExpr(
+                          AddExpr(
+                            AddExpr(
+                              TermExpr(
+                                NoMinus(
+                                ) [NoMinus]
+                                FactorTerm(
+                                  Var(
+                                    DesObject(
+                                      DesBasic(
+                                       this
+                                      ) [DesBasic]
+                                     i
+                                    ) [DesObject]
+                                  ) [Var]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                              AddOperator(
+                              ) [AddOperator]
+                              FactorTerm(
+                                Var(
+                                  DesArray(
+                                    DesObject(
+                                      DesBasic(
+                                       this
+                                      ) [DesBasic]
+                                     x
+                                    ) [DesObject]
+                                    BasicExpr(
+                                      TermExpr(
+                                        NoMinus(
+                                        ) [NoMinus]
+                                        FactorTerm(
+                                          NumConst(
+                                           0
+                                          ) [NumConst]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [BasicExpr]
+                                  ) [DesArray]
+                                ) [Var]
+                              ) [FactorTerm]
+                            ) [AddExpr]
+                            AddOperator(
+                            ) [AddOperator]
+                            FactorTerm(
+                              Var(
+                                DesBasic(
+                                 a
+                                ) [DesBasic]
+                              ) [Var]
+                            ) [FactorTerm]
+                          ) [AddExpr]
+                        ) [BasicExpr]
+                      ) [RetVal]
+                    ) [RetStmt]
+                  ) [MatchedStmt]
+                ) [MultiStmtList]
+              ) [MethodDecl]
+            ) [MethodDeclarations]
+            MethodDecl(
+              MethodTypeName(
+                VoidRetType(
+                ) [VoidRetType]
+               m
+              ) [MethodTypeName]
+              NoFormPars(
+              ) [NoFormPars]
+              NoVarDecl(
+              ) [NoVarDecl]
+              NoStmt(
+              ) [NoStmt]
+            ) [MethodDecl]
+          ) [MethodDeclarations]
+        ) [ClassMethodList]
+      ) [ExtendedClass]
+    ) [ClassParam]
+    ExtendedClass(
+     C
+      Type(
+       B
+      ) [Type]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             A
+            ) [Type]
+           theA
+            NoSquares(
+            ) [NoSquares]
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         a
+          NoSquares(
+          ) [NoSquares]
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      NoClassMethods(
+      ) [NoClassMethods]
+    ) [ExtendedClass]
+  ) [ClassParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            VarDeclarations(
+              VarDeclarations(
+                VarDeclarations(
+                  NoVarDecl(
+                  ) [NoVarDecl]
+                  VarDeclaration(
+                    Type(
+                     A
+                    ) [Type]
+                   a
+                    NoSquares(
+                    ) [NoSquares]
+                    NoVarDeclMore(
+                    ) [NoVarDeclMore]
+                  ) [VarDeclaration]
+                ) [VarDeclarations]
+                VarDeclaration(
+                  Type(
+                   C
+                  ) [Type]
+                 c
+                  NoSquares(
+                  ) [NoSquares]
+                  NoVarDeclMore(
+                  ) [NoVarDeclMore]
+                ) [VarDeclaration]
+              ) [VarDeclarations]
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               i
+                NoSquares(
+                ) [NoSquares]
+                NoVarDeclMore(
+                ) [NoVarDeclMore]
+              ) [VarDeclaration]
+            ) [VarDeclarations]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             x
+              Squares(
+              ) [Squares]
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+            ) [VarDeclaration]
+          ) [VarDeclarations]
+          VarDeclaration(
+            Type(
+             char
+            ) [Type]
+           ch
+            NoSquares(
+            ) [NoSquares]
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         result
+          NoSquares(
+          ) [NoSquares]
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      MultiStmtList(
+        MultiStmtList(
+          MultiStmtList(
+            MultiStmtList(
+              MultiStmtList(
+                MultiStmtList(
+                  MultiStmtList(
+                    MultiStmtList(
+                      MultiStmtList(
+                        MultiStmtList(
+                          MultiStmtList(
+                            MultiStmtList(
+                              MultiStmtList(
+                                MultiStmtList(
+                                  MultiStmtList(
+                                    MultiStmtList(
+                                      MultiStmtList(
+                                        MultiStmtList(
+                                          MultiStmtList(
+                                            MultiStmtList(
+                                              NoStmt(
+                                              ) [NoStmt]
+                                              MatchedStmt(
+                                                DesStmt(
+                                                  DesAssign(
+                                                    Assign(
+                                                      DesBasic(
+                                                       i
+                                                      ) [DesBasic]
+                                                      AssignOperator(
+                                                      ) [AssignOperator]
+                                                      BasicExpr(
+                                                        TermExpr(
+                                                          NoMinus(
+                                                          ) [NoMinus]
+                                                          FactorTerm(
+                                                            NumConst(
+                                                             0
+                                                            ) [NumConst]
+                                                          ) [FactorTerm]
+                                                        ) [TermExpr]
+                                                      ) [BasicExpr]
+                                                    ) [Assign]
+                                                  ) [DesAssign]
+                                                ) [DesStmt]
+                                              ) [MatchedStmt]
+                                            ) [MultiStmtList]
+                                            MatchedStmt(
+                                              DesStmt(
+                                                DesAssign(
+                                                  AssignError(
+                                                  ) [AssignError]
+                                                ) [DesAssign]
+                                              ) [DesStmt]
+                                            ) [MatchedStmt]
+                                          ) [MultiStmtList]
+                                          MatchedStmt(
+                                            DesStmt(
+                                              DesAssign(
+                                                Assign(
+                                                  DesBasic(
+                                                   result
+                                                  ) [DesBasic]
+                                                  AssignOperator(
+                                                  ) [AssignOperator]
+                                                  SwitchExpretion(
+                                                    BasicExpr(
+                                                      TermExpr(
+                                                        NoMinus(
+                                                        ) [NoMinus]
+                                                        FactorTerm(
+                                                          Var(
+                                                            DesBasic(
+                                                             i
+                                                            ) [DesBasic]
+                                                          ) [Var]
+                                                        ) [FactorTerm]
+                                                      ) [TermExpr]
+                                                    ) [BasicExpr]
+                                                    CaseStmt(
+                                                      MultiCaseList(
+                                                        MultiCaseList(
+                                                          NoCase(
+                                                          ) [NoCase]
+                                                         0
+                                                          MultiStmtList(
+                                                            NoStmt(
+                                                            ) [NoStmt]
+                                                            MatchedStmt(
+                                                              YieldStmt(
+                                                                BasicExpr(
+                                                                  TermExpr(
+                                                                    NoMinus(
+                                                                    ) [NoMinus]
+                                                                    FactorTerm(
+                                                                      NumConst(
+                                                                       1
+                                                                      ) [NumConst]
+                                                                    ) [FactorTerm]
+                                                                  ) [TermExpr]
+                                                                ) [BasicExpr]
+                                                              ) [YieldStmt]
+                                                            ) [MatchedStmt]
+                                                          ) [MultiStmtList]
+                                                        ) [MultiCaseList]
+                                                       1
+                                                        MultiStmtList(
+                                                          NoStmt(
+                                                          ) [NoStmt]
+                                                          MatchedStmt(
+                                                            YieldStmt(
+                                                              BasicExpr(
+                                                                TermExpr(
+                                                                  NoMinus(
+                                                                  ) [NoMinus]
+                                                                  FactorTerm(
+                                                                    NumConst(
+                                                                     0
+                                                                    ) [NumConst]
+                                                                  ) [FactorTerm]
+                                                                ) [TermExpr]
+                                                              ) [BasicExpr]
+                                                            ) [YieldStmt]
+                                                          ) [MatchedStmt]
+                                                        ) [MultiStmtList]
+                                                      ) [MultiCaseList]
+                                                      BasicExpr(
+                                                        TermExpr(
+                                                          NoMinus(
+                                                          ) [NoMinus]
+                                                          FactorTerm(
+                                                            NumConst(
+                                                             5
+                                                            ) [NumConst]
+                                                          ) [FactorTerm]
+                                                        ) [TermExpr]
+                                                      ) [BasicExpr]
+                                                    ) [CaseStmt]
+                                                  ) [SwitchExpretion]
+                                                ) [Assign]
+                                              ) [DesAssign]
+                                            ) [DesStmt]
+                                          ) [MatchedStmt]
+                                        ) [MultiStmtList]
+                                        MatchedStmt(
+                                          DesStmt(
+                                            DesAssign(
+                                              Assign(
+                                                DesBasic(
+                                                 a
+                                                ) [DesBasic]
+                                                AssignOperator(
+                                                ) [AssignOperator]
+                                                BasicExpr(
+                                                  TermExpr(
+                                                    NoMinus(
+                                                    ) [NoMinus]
+                                                    FactorTerm(
+                                                      NewOp(
+                                                        Type(
+                                                         A
+                                                        ) [Type]
+                                                      ) [NewOp]
+                                                    ) [FactorTerm]
+                                                  ) [TermExpr]
+                                                ) [BasicExpr]
+                                              ) [Assign]
+                                            ) [DesAssign]
+                                          ) [DesStmt]
+                                        ) [MatchedStmt]
+                                      ) [MultiStmtList]
+                                      MatchedStmt(
+                                        DesStmt(
+                                          DesAssign(
+                                            Assign(
+                                              DesObject(
+                                                DesBasic(
+                                                 a
+                                                ) [DesBasic]
+                                               x
+                                              ) [DesObject]
+                                              AssignOperator(
+                                              ) [AssignOperator]
+                                              BasicExpr(
+                                                TermExpr(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  FactorTerm(
+                                                    NewArray(
+                                                      Type(
+                                                       int
+                                                      ) [Type]
+                                                      BasicExpr(
+                                                        TermExpr(
+                                                          NoMinus(
+                                                          ) [NoMinus]
+                                                          FactorTerm(
+                                                            NumConst(
+                                                             5
+                                                            ) [NumConst]
+                                                          ) [FactorTerm]
+                                                        ) [TermExpr]
+                                                      ) [BasicExpr]
+                                                    ) [NewArray]
+                                                  ) [FactorTerm]
+                                                ) [TermExpr]
+                                              ) [BasicExpr]
+                                            ) [Assign]
+                                          ) [DesAssign]
+                                        ) [DesStmt]
+                                      ) [MatchedStmt]
+                                    ) [MultiStmtList]
+                                    MatchedStmt(
+                                      DesStmt(
+                                        DesAssign(
+                                          Assign(
+                                            DesObject(
+                                              DesBasic(
+                                               a
+                                              ) [DesBasic]
+                                             y
+                                            ) [DesObject]
+                                            AssignOperator(
+                                            ) [AssignOperator]
+                                            BasicExpr(
+                                              TermExpr(
+                                                NoMinus(
+                                                ) [NoMinus]
+                                                FactorTerm(
+                                                  NewArray(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    BasicExpr(
+                                                      TermExpr(
+                                                        NoMinus(
+                                                        ) [NoMinus]
+                                                        FactorTerm(
+                                                          NumConst(
+                                                           5
+                                                          ) [NumConst]
+                                                        ) [FactorTerm]
+                                                      ) [TermExpr]
+                                                    ) [BasicExpr]
+                                                  ) [NewArray]
+                                                ) [FactorTerm]
+                                              ) [TermExpr]
+                                            ) [BasicExpr]
+                                          ) [Assign]
+                                        ) [DesAssign]
+                                      ) [DesStmt]
+                                    ) [MatchedStmt]
+                                  ) [MultiStmtList]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DesAssign(
+                                        Assign(
+                                          DesBasic(
+                                           c
+                                          ) [DesBasic]
+                                          AssignOperator(
+                                          ) [AssignOperator]
+                                          BasicExpr(
+                                            TermExpr(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              FactorTerm(
+                                                NewOp(
+                                                  Type(
+                                                   C
+                                                  ) [Type]
+                                                ) [NewOp]
+                                              ) [FactorTerm]
+                                            ) [TermExpr]
+                                          ) [BasicExpr]
+                                        ) [Assign]
+                                      ) [DesAssign]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [MultiStmtList]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DesAssign(
+                                      Assign(
+                                        DesObject(
+                                          DesBasic(
+                                           c
+                                          ) [DesBasic]
+                                         theA
+                                        ) [DesObject]
+                                        AssignOperator(
+                                        ) [AssignOperator]
+                                        BasicExpr(
+                                          TermExpr(
+                                            NoMinus(
+                                            ) [NoMinus]
+                                            FactorTerm(
+                                              Var(
+                                                DesBasic(
+                                                 a
+                                                ) [DesBasic]
+                                              ) [Var]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [BasicExpr]
+                                      ) [Assign]
+                                    ) [DesAssign]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [MultiStmtList]
+                              MatchedStmt(
+                                DesStmt(
+                                  DesAssign(
+                                    Assign(
+                                      DesObject(
+                                        DesBasic(
+                                         c
+                                        ) [DesBasic]
+                                       x
+                                      ) [DesObject]
+                                      AssignOperator(
+                                      ) [AssignOperator]
+                                      BasicExpr(
+                                        TermExpr(
+                                          NoMinus(
+                                          ) [NoMinus]
+                                          FactorTerm(
+                                            NewArray(
+                                              Type(
+                                               int
+                                              ) [Type]
+                                              BasicExpr(
+                                                TermExpr(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  FactorTerm(
+                                                    NumConst(
+                                                     5
+                                                    ) [NumConst]
+                                                  ) [FactorTerm]
+                                                ) [TermExpr]
+                                              ) [BasicExpr]
+                                            ) [NewArray]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [BasicExpr]
+                                    ) [Assign]
+                                  ) [DesAssign]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [MultiStmtList]
+                            MatchedStmt(
+                              DesStmt(
+                                DesAssign(
+                                  Assign(
+                                    DesBasic(
+                                     x
+                                    ) [DesBasic]
+                                    AssignOperator(
+                                    ) [AssignOperator]
+                                    BasicExpr(
+                                      TermExpr(
+                                        NoMinus(
+                                        ) [NoMinus]
+                                        FactorTerm(
+                                          NewArray(
+                                            Type(
+                                             int
+                                            ) [Type]
+                                            BasicExpr(
+                                              TermExpr(
+                                                NoMinus(
+                                                ) [NoMinus]
+                                                FactorTerm(
+                                                  NumConst(
+                                                   3
+                                                  ) [NumConst]
+                                                ) [FactorTerm]
+                                              ) [TermExpr]
+                                            ) [BasicExpr]
+                                          ) [NewArray]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [BasicExpr]
+                                  ) [Assign]
+                                ) [DesAssign]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [MultiStmtList]
+                          MatchedStmt(
+                            ReadStmt(
+                              DesObject(
+                                DesBasic(
+                                 c
+                                ) [DesBasic]
+                               i
+                              ) [DesObject]
+                            ) [ReadStmt]
+                          ) [MatchedStmt]
+                        ) [MultiStmtList]
+                        MatchedStmt(
+                          DesStmt(
+                            DesAssign(
+                              Assign(
+                                DesBasic(
+                                 i
+                                ) [DesBasic]
+                                AssignOperator(
+                                ) [AssignOperator]
+                                BasicExpr(
+                                  TermExpr(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    FactorTerm(
+                                      NumConst(
+                                       0
+                                      ) [NumConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExpr]
+                              ) [Assign]
+                            ) [DesAssign]
+                          ) [DesStmt]
+                        ) [MatchedStmt]
+                      ) [MultiStmtList]
+                      MatchedStmt(
+                        DoWhileStmt(
+                          MatchedStmt(
+                            BasicStmt(
+                              MultiStmtList(
+                                MultiStmtList(
+                                  MultiStmtList(
+                                    NoStmt(
+                                    ) [NoStmt]
+                                    MatchedStmt(
+                                      ReadStmt(
+                                        DesArray(
+                                          DesObject(
+                                            DesBasic(
+                                             c
+                                            ) [DesBasic]
+                                           x
+                                          ) [DesObject]
+                                          BasicExpr(
+                                            TermExpr(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              FactorTerm(
+                                                Var(
+                                                  DesBasic(
+                                                   i
+                                                  ) [DesBasic]
+                                                ) [Var]
+                                              ) [FactorTerm]
+                                            ) [TermExpr]
+                                          ) [BasicExpr]
+                                        ) [DesArray]
+                                      ) [ReadStmt]
+                                    ) [MatchedStmt]
+                                  ) [MultiStmtList]
+                                  MatchedStmt(
+                                    ReadStmt(
+                                      DesArray(
+                                        DesObject(
+                                          DesObject(
+                                            DesBasic(
+                                             c
+                                            ) [DesBasic]
+                                           theA
+                                          ) [DesObject]
+                                         x
+                                        ) [DesObject]
+                                        BasicExpr(
+                                          TermExpr(
+                                            NoMinus(
+                                            ) [NoMinus]
+                                            FactorTerm(
+                                              Var(
+                                                DesBasic(
+                                                 i
+                                                ) [DesBasic]
+                                              ) [Var]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [BasicExpr]
+                                      ) [DesArray]
+                                    ) [ReadStmt]
+                                  ) [MatchedStmt]
+                                ) [MultiStmtList]
+                                MatchedStmt(
+                                  DesStmt(
+                                    VarInc(
+                                      DesBasic(
+                                       i
+                                      ) [DesBasic]
+                                    ) [VarInc]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [MultiStmtList]
+                            ) [BasicStmt]
+                          ) [MatchedStmt]
+                          SimpleCond(
+                            SimpleCondTerm(
+                              CompareExpr(
+                                BasicExpr(
+                                  TermExpr(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    FactorTerm(
+                                      Var(
+                                        DesBasic(
+                                         i
+                                        ) [DesBasic]
+                                      ) [Var]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExpr]
+                                LessOperator(
+                                ) [LessOperator]
+                                BasicExpr(
+                                  TermExpr(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    FactorTerm(
+                                      NumConst(
+                                       5
+                                      ) [NumConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExpr]
+                              ) [CompareExpr]
+                            ) [SimpleCondTerm]
+                          ) [SimpleCond]
+                        ) [DoWhileStmt]
+                      ) [MatchedStmt]
+                    ) [MultiStmtList]
+                    MatchedStmt(
+                      PrintStmt(
+                        SinglePrintExpr(
+                          BasicExpr(
+                            TermExpr(
+                              NoMinus(
+                              ) [NoMinus]
+                              FactorTerm(
+                                FuncCall(
+                                  DesObject(
+                                    DesBasic(
+                                     c
+                                    ) [DesBasic]
+                                   getValue
+                                  ) [DesObject]
+                                  SingleParam(
+                                    BasicExpr(
+                                      TermExpr(
+                                        NoMinus(
+                                        ) [NoMinus]
+                                        FactorTerm(
+                                          Var(
+                                            DesArray(
+                                              DesObject(
+                                                DesObject(
+                                                  DesBasic(
+                                                   c
+                                                  ) [DesBasic]
+                                                 theA
+                                                ) [DesObject]
+                                               x
+                                              ) [DesObject]
+                                              BasicExpr(
+                                                TermExpr(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  FactorTerm(
+                                                    NumConst(
+                                                     0
+                                                    ) [NumConst]
+                                                  ) [FactorTerm]
+                                                ) [TermExpr]
+                                              ) [BasicExpr]
+                                            ) [DesArray]
+                                          ) [Var]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [BasicExpr]
+                                  ) [SingleParam]
+                                ) [FuncCall]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [BasicExpr]
+                        ) [SinglePrintExpr]
+                      ) [PrintStmt]
+                    ) [MatchedStmt]
+                  ) [MultiStmtList]
+                  MatchedStmt(
+                    DesStmt(
+                      DesFuncCallNoPars(
+                        DesObject(
+                          DesBasic(
+                           c
+                          ) [DesBasic]
+                         m
+                        ) [DesObject]
+                      ) [DesFuncCallNoPars]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [MultiStmtList]
+                MatchedStmt(
+                  ReadStmt(
+                    DesBasic(
+                     ch
+                    ) [DesBasic]
+                  ) [ReadStmt]
+                ) [MatchedStmt]
+              ) [MultiStmtList]
+              MatchedStmt(
+                MatchedIf(
+                  SimpleCond(
+                    SimpleCondTerm(
+                      CondExpr(
+                        BasicExpr(
+                          TermExpr(
+                            NoMinus(
+                            ) [NoMinus]
+                            FactorTerm(
+                              NumConst(
+                               5
+                              ) [NumConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [BasicExpr]
+                      ) [CondExpr]
+                    ) [SimpleCondTerm]
+                  ) [SimpleCond]
+                  BasicStmt(
+                    MultiStmtList(
+                      MultiStmtList(
+                        NoStmt(
+                        ) [NoStmt]
+                        MatchedStmt(
+                          PrintStmt(
+                            SinglePrintExpr(
+                              BasicExpr(
+                                TermExpr(
+                                  NoMinus(
+                                  ) [NoMinus]
+                                  FactorTerm(
+                                    Var(
+                                      DesBasic(
+                                       i
+                                      ) [DesBasic]
+                                    ) [Var]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [BasicExpr]
+                            ) [SinglePrintExpr]
+                          ) [PrintStmt]
+                        ) [MatchedStmt]
+                      ) [MultiStmtList]
+                      UnmatchedStmt(
+                        UnmatchedIf(
+                          SimpleCond(
+                            SimpleCondTerm(
+                              CondExpr(
+                                BasicExpr(
+                                  TermExpr(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    FactorTerm(
+                                      NumConst(
+                                       2
+                                      ) [NumConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExpr]
+                              ) [CondExpr]
+                            ) [SimpleCondTerm]
+                          ) [SimpleCond]
+                          MatchedStmt(
+                            BasicStmt(
+                              NoStmt(
+                              ) [NoStmt]
+                            ) [BasicStmt]
+                          ) [MatchedStmt]
+                        ) [UnmatchedIf]
+                      ) [UnmatchedStmt]
+                    ) [MultiStmtList]
+                  ) [BasicStmt]
+                  MatchedIf(
+                    SimpleCond(
+                      SimpleCondTerm(
+                        CondExpr(
+                          BasicExpr(
+                            TermExpr(
+                              Minus(
+                              ) [Minus]
+                              FactorTerm(
+                                NumConst(
+                                 5
+                                ) [NumConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [BasicExpr]
+                        ) [CondExpr]
+                      ) [SimpleCondTerm]
+                    ) [SimpleCond]
+                    BasicStmt(
+                      NoStmt(
+                      ) [NoStmt]
+                    ) [BasicStmt]
+                    BasicStmt(
+                      MultiStmtList(
+                        MultiStmtList(
+                          NoStmt(
+                          ) [NoStmt]
+                          MatchedStmt(
+                            PrintStmt(
+                              SinglePrintExpr(
+                                BasicExpr(
+                                  TermExpr(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    FactorTerm(
+                                      NumConst(
+                                       2
+                                      ) [NumConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [BasicExpr]
+                              ) [SinglePrintExpr]
+                            ) [PrintStmt]
+                          ) [MatchedStmt]
+                        ) [MultiStmtList]
+                        MatchedStmt(
+                          MatchedIf(
+                            SimpleCond(
+                              SimpleCondTerm(
+                                CondExpr(
+                                  BasicExpr(
+                                    TermExpr(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      FactorTerm(
+                                        NumConst(
+                                         2
+                                        ) [NumConst]
+                                      ) [FactorTerm]
+                                    ) [TermExpr]
+                                  ) [BasicExpr]
+                                ) [CondExpr]
+                              ) [SimpleCondTerm]
+                            ) [SimpleCond]
+                            BasicStmt(
+                              NoStmt(
+                              ) [NoStmt]
+                            ) [BasicStmt]
+                            BasicStmt(
+                              NoStmt(
+                              ) [NoStmt]
+                            ) [BasicStmt]
+                          ) [MatchedIf]
+                        ) [MatchedStmt]
+                      ) [MultiStmtList]
+                    ) [BasicStmt]
+                  ) [MatchedIf]
+                ) [MatchedIf]
+              ) [MatchedStmt]
+            ) [MultiStmtList]
+            UnmatchedStmt(
+              UnmatchedDerived1(
+              ) [UnmatchedDerived1]
+            ) [UnmatchedStmt]
+          ) [MultiStmtList]
+          MatchedStmt(
+            MatchedDerived1(
+            ) [MatchedDerived1]
+          ) [MatchedStmt]
+        ) [MultiStmtList]
+        MatchedStmt(
+          BasicStmt(
+            NoStmt(
+            ) [NoStmt]
+          ) [BasicStmt]
+        ) [MatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:28:03,499 - ===================================
+INFO  19:28:03,504 - ===================================

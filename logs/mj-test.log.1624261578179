@@ -1,0 +1,16 @@
+INFO  09:45:48,740 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  09:45:48,887 - #6 program
+INFO  09:45:48,888 - #2 Program
+INFO  09:45:48,888 - #44 {
+INFO  09:45:48,892 - #45 }
+INFO  09:45:48,903 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  09:45:48,903 - ===================================
+INFO  09:45:48,908 - ===================================

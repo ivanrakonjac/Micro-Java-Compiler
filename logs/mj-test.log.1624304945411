@@ -1,0 +1,279 @@
+INFO  20:51:13,755 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  20:51:13,803 - #6 program
+INFO  20:51:13,804 - #2 Program
+INFO  20:51:13,804 - #10 const
+INFO  20:51:13,805 - #2 int
+INFO  20:51:13,805 - #2 x
+INFO  20:51:13,806 - #36 =
+INFO  20:51:13,806 - #3 5
+INFO  20:51:13,806 - #39 ;
+INFO  20:51:13,806 - #10 const
+INFO  20:51:13,807 - #2 char
+INFO  20:51:13,807 - #2 c
+INFO  20:51:13,807 - #36 =
+INFO  20:51:13,807 - #4 c
+INFO  20:51:13,807 - #40 ,
+INFO  20:51:13,807 - #2 b
+INFO  20:51:13,807 - #36 =
+INFO  20:51:13,807 - #4 b
+INFO  20:51:13,808 - #39 ;
+INFO  20:51:13,808 - #10 const
+INFO  20:51:13,808 - #2 bool
+INFO  20:51:13,808 - #2 cond
+INFO  20:51:13,808 - #36 =
+INFO  20:51:13,808 - #5 true
+INFO  20:51:13,809 - #39 ;
+INFO  20:51:13,809 - #2 int
+INFO  20:51:13,809 - #2 m
+INFO  20:51:13,809 - #39 ;
+INFO  20:51:13,810 - #2 int
+INFO  20:51:13,810 - #2 q
+INFO  20:51:13,810 - #40 ,
+INFO  20:51:13,810 - #2 p
+INFO  20:51:13,810 - #39 ;
+INFO  20:51:13,810 - #2 bool
+INFO  20:51:13,810 - #2 asd
+INFO  20:51:13,811 - #39 ;
+INFO  20:51:13,811 - #2 int
+INFO  20:51:13,811 - #2 niz
+INFO  20:51:13,811 - #46 [
+INFO  20:51:13,811 - #47 ]
+INFO  20:51:13,811 - #39 ;
+INFO  20:51:13,811 - #2 char
+INFO  20:51:13,811 - #2 niz1
+INFO  20:51:13,811 - #46 [
+INFO  20:51:13,811 - #47 ]
+INFO  20:51:13,811 - #39 ;
+INFO  20:51:13,811 - #44 {
+INFO  20:51:13,812 - #11 void
+INFO  20:51:13,812 - #2 a
+INFO  20:51:13,813 - #42 (
+INFO  20:51:13,814 - #2 int
+INFO  20:51:13,814 - #2 bb
+INFO  20:51:13,814 - #43 )
+INFO  20:51:13,815 - #2 int
+INFO  20:51:13,815 - #2 b
+INFO  20:51:13,815 - #39 ;
+INFO  20:51:13,815 - #44 {
+INFO  20:51:13,816 - #45 }
+INFO  20:51:13,816 - #2 int
+INFO  20:51:13,817 - #2 main
+INFO  20:51:13,817 - #42 (
+INFO  20:51:13,817 - #43 )
+INFO  20:51:13,818 - #44 {
+INFO  20:51:13,818 - #2 niz
+INFO  20:51:13,818 - #36 =
+INFO  20:51:13,818 - #14 new
+INFO  20:51:13,820 - #2 int
+INFO  20:51:13,820 - #46 [
+INFO  20:51:13,820 - #3 10
+INFO  20:51:13,821 - #47 ]
+INFO  20:51:13,826 - #39 ;
+INFO  20:51:13,827 - #45 }
+INFO  20:51:13,827 - #45 }
+INFO  20:51:13,850 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          VarParam(
+            ConstParam(
+              ConstParam(
+                ConstParam(
+                  ParamDeclDerived1(
+                  ) [ParamDeclDerived1]
+                  ConstDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleNumberConst(
+                     x
+                     5
+                    ) [SingleNumberConst]
+                  ) [ConstDecl]
+                ) [ConstParam]
+                ConstDecl(
+                  Type(
+                   char
+                  ) [Type]
+                  MultiCharConst(
+                    SingleCharConst(
+                     c
+                     c
+                    ) [SingleCharConst]
+                   b
+                   b
+                  ) [MultiCharConst]
+                ) [ConstDecl]
+              ) [ConstParam]
+              ConstDecl(
+                Type(
+                 bool
+                ) [Type]
+                SingleBoolConst(
+                 cond
+                 true
+                ) [SingleBoolConst]
+              ) [ConstDecl]
+            ) [ConstParam]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             m
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+            ) [VarDeclaration]
+          ) [VarParam]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           q
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             p
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+         asd
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclarationArray(
+        Type(
+         int
+        ) [Type]
+       niz
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclarationArray]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       char
+      ) [Type]
+     niz1
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          VoidRetType(
+          ) [VoidRetType]
+         a
+        ) [MethodTypeName]
+        OptFormParams(
+          FormParam(
+            Type(
+             int
+            ) [Type]
+           bb
+          ) [FormParam]
+          NoFormParams(
+          ) [NoFormParams]
+        ) [OptFormParams]
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           b
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          DesStmt(
+            DesAssign(
+              Assign(
+                DesBasic(
+                 niz
+                ) [DesBasic]
+                AssignOperator(
+                ) [AssignOperator]
+                BasicExpr(
+                  TermExpr(
+                    NoMinus(
+                    ) [NoMinus]
+                    FactorTerm(
+                      NewArray(
+                        Type(
+                         int
+                        ) [Type]
+                        BasicExpr(
+                          TermExpr(
+                            NoMinus(
+                            ) [NoMinus]
+                            FactorTerm(
+                              NumConst(
+                               10
+                              ) [NumConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [BasicExpr]
+                      ) [NewArray]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [Assign]
+            ) [DesAssign]
+          ) [DesStmt]
+        ) [MatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:51:13,850 - ===================================
+INFO  20:51:13,853 - Deklarisana je nova konstanta x na liniji 2
+INFO  20:51:13,853 - Deklarisana je nova konstanta c na liniji 3
+INFO  20:51:13,853 - Deklarisana je nova konstanta b na liniji 3
+INFO  20:51:13,853 - Deklarisana je nova konstanta cond na liniji 4
+INFO  20:51:13,853 - Deklarisana je promenljiva m na liniji 5
+INFO  20:51:13,853 - Deklarisana je promenljiva p na liniji 6
+INFO  20:51:13,853 - Deklarisana je promenljiva q na liniji 6
+INFO  20:51:13,853 - Deklarisana je promenljiva asd na liniji 7
+INFO  20:51:13,853 - Deklarisana je promenljiva niz na liniji 8
+INFO  20:51:13,853 - Deklarisana je promenljiva niz1 na liniji 9
+INFO  20:51:13,853 - Obradjuje se funkcija a na liniji 11
+INFO  20:51:13,854 - Deklarisan je formalni parametar bb metode a na liniji 11
+INFO  20:51:13,854 - Deklarisana je promenljiva b na liniji 11
+INFO  20:51:13,854 - Obradjuje se funkcija main na liniji 15
+INFO  20:51:13,854 - Formiran novi niz  na liniji 16
+INFO  20:51:13,854 - ===================================

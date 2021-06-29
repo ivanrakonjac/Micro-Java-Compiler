@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 22:50:50
+// 29/5/2021 20:25:30
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,7 +16,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ElseStmt ElseStmt) { }
     public void visit(FormParamDecl FormParamDecl) { }
     public void visit(Addop Addop) { }
+    public void visit(CaseLine CaseLine) { }
     public void visit(Factor Factor) { }
+    public void visit(CasesAndDefault CasesAndDefault) { }
     public void visit(CondFactList CondFactList) { }
     public void visit(Designator Designator) { }
     public void visit(Term Term) { }
@@ -27,20 +29,23 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StmtList StmtList) { }
     public void visit(OptionalFormPars OptionalFormPars) { }
     public void visit(VarDeclExtension VarDeclExtension) { }
+    public void visit(ElseTerminal ElseTerminal) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(Expr Expr) { }
     public void visit(YieldStatement YieldStatement) { }
     public void visit(ActPars ActPars) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
+    public void visit(SwitchExpr SwitchExpr) { }
     public void visit(BasicExpr BasicExpr) { }
     public void visit(ConstAssign ConstAssign) { }
     public void visit(Statement Statement) { }
     public void visit(VarDecl VarDecl) { }
     public void visit(DesignatorArrayName DesignatorArrayName) { }
     public void visit(CondFact CondFact) { }
+    public void visit(CaseColon CaseColon) { }
     public void visit(MethodDeclList MethodDeclList) { }
-    public void visit(ParamDecl ParamDecl) { }
     public void visit(OptionalMinus OptionalMinus) { }
+    public void visit(ParamDecl ParamDecl) { }
     public void visit(ModOper ModOper) { visit(); }
     public void visit(DivOper DivOper) { visit(); }
     public void visit(MulOper MulOper) { visit(); }
@@ -63,10 +68,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Var Var) { visit(); }
     public void visit(YieldStatmnt YieldStatmnt) { visit(); }
     public void visit(DefaultStmt DefaultStmt) { visit(); }
+    public void visit(CaseCol CaseCol) { visit(); }
+    public void visit(SingleCaseLine SingleCaseLine) { visit(); }
+    public void visit(CaseStmt CaseStmt) { visit(); }
     public void visit(NoCase NoCase) { visit(); }
     public void visit(MultiCaseList MultiCaseList) { visit(); }
-    public void visit(CaseStmt CaseStmt) { visit(); }
-    public void visit(SwitchExpr SwitchExpr) { visit(); }
+    public void visit(CaseesAndDef CaseesAndDef) { visit(); }
+    public void visit(SwitchTerm SwitchTerm) { visit(); }
     public void visit(OneParam OneParam) { visit(); }
     public void visit(MultipleParams MultipleParams) { visit(); }
     public void visit(NoActualParams NoActualParams) { visit(); }
@@ -75,6 +83,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(MultiStmtListLabel MultiStmtListLabel) { visit(); }
     public void visit(MultiStmtList MultiStmtList) { visit(); }
+    public void visit(ElseTerm ElseTerm) { visit(); }
     public void visit(NoElseStmt NoElseStmt) { visit(); }
     public void visit(ElseStatmt ElseStatmt) { visit(); }
     public void visit(CondRelop CondRelop) { visit(); }
@@ -101,6 +110,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VariableInc VariableInc) { visit(); }
     public void visit(ProcCall ProcCall) { visit(); }
     public void visit(DesignatorAssign DesignatorAssign) { visit(); }
+    public void visit(IfStmt IfStmt) { visit(); }
     public void visit(GotoStmt GotoStmt) { visit(); }
     public void visit(BasicStmt BasicStmt) { visit(); }
     public void visit(PrintExprStmt PrintExprStmt) { visit(); }

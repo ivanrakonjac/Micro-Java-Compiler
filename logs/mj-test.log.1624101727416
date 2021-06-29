@@ -1,0 +1,57 @@
+INFO  13:21:16,572 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  13:21:16,611 - #6 program
+INFO  13:21:16,611 - #2 Program
+INFO  13:21:16,611 - #2 int
+INFO  13:21:16,612 - #2 x
+INFO  13:21:16,613 - #27 ,
+INFO  13:21:16,614 - #2 z
+INFO  13:21:16,614 - #26 ;
+INFO  13:21:16,614 - #2 int
+INFO  13:21:16,614 - #2 y
+INFO  13:21:16,614 - #26 ;
+INFO  13:21:16,614 - #24 {
+INFO  13:21:16,615 - #25 }
+INFO  13:21:16,630 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamVar(
+    ParamVar(
+      NoDecl(
+      ) [NoDecl]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       x
+        NoSquares(
+        ) [NoSquares]
+        MultiBasicVarDecl(
+          NoBasicVarDecl(
+          ) [NoBasicVarDecl]
+         z
+          NoSquares(
+          ) [NoSquares]
+        ) [MultiBasicVarDecl]
+      ) [VarDeclaration]
+    ) [ParamVar]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     y
+      NoSquares(
+      ) [NoSquares]
+      NoBasicVarDecl(
+      ) [NoBasicVarDecl]
+    ) [VarDeclaration]
+  ) [ParamVar]
+  NoMethodDecl(
+  ) [NoMethodDecl]
+) [Program]
+INFO  13:21:16,632 - ===================================
+INFO  13:21:16,635 - Deklarisana promenljiva z na liniji 5
+INFO  13:21:16,635 - Deklarisana promenljiva x na liniji 2
+INFO  13:21:16,635 - Deklarisana promenljiva y na liniji 3
+INFO  13:21:16,635 -  Deklarisanih promenljivih ima = 3
+INFO  13:21:16,635 - ===================================

@@ -1,0 +1,112 @@
+INFO  15:27:56,960 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+ERROR 15:27:57,081 - 
+Sintaksna greska na liniji 7
+ERROR 15:27:57,093 - Izvrsen oporavak do ; u liniji 6
+INFO  15:27:57,108 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodReturnType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodReturnType]
+       test1
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          MultiStmtList(
+            NoStmt(
+            ) [NoStmt]
+            DesignStmt(
+              DesignatorAssign(
+                DesignatorBasic(
+                 i
+                ) [DesignatorBasic]
+                AssignOper(
+                ) [AssignOper]
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [DesignatorAssign]
+            ) [DesignStmt]
+          ) [MultiStmtList]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorBasic(
+               niz
+              ) [DesignatorBasic]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NewArray(
+                      Type(
+                       int
+                      ) [Type]
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [NewArray]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        PrintStmt(
+          BasicExprr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorBasic(
+                   i
+                  ) [DesignatorBasic]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExprr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:27:57,109 - ===================================
+INFO  15:27:57,114 - --MethodTypeName test1 na liniji 6
+ERROR 15:27:57,115 - Semanticka greska na liniji: 12. Naziv: i nije deklarisan!

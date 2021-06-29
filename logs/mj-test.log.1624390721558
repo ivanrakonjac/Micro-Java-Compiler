@@ -1,0 +1,83 @@
+INFO  21:12:55,877 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:12:55,918 - #6 program
+INFO  21:12:55,918 - #2 Program
+INFO  21:12:55,918 - #10 const
+INFO  21:12:55,919 - #2 int
+INFO  21:12:55,919 - #2 x
+INFO  21:12:55,920 - #36 =
+INFO  21:12:55,920 - #3 5
+INFO  21:12:55,920 - #39 ;
+INFO  21:12:55,920 - #44 {
+INFO  21:12:55,921 - #11 void
+INFO  21:12:55,921 - #2 main
+INFO  21:12:55,922 - #42 (
+INFO  21:12:55,922 - #2 int
+INFO  21:12:55,922 - #2 j
+INFO  21:12:55,922 - #43 )
+INFO  21:12:55,923 - #2 test
+INFO  21:12:55,924 - #2 k
+INFO  21:12:55,924 - #39 ;
+INFO  21:12:55,924 - #44 {
+INFO  21:12:55,925 - #45 }
+INFO  21:12:55,925 - #45 }
+INFO  21:12:55,942 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      SingleNumberConst(
+       x
+       5
+      ) [SingleNumberConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      OptFormParams(
+        FormParam(
+          Type(
+           int
+          ) [Type]
+         j
+        ) [FormParam]
+        NoFormParams(
+        ) [NoFormParams]
+      ) [OptFormParams]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           test
+          ) [Type]
+         k
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:12:55,944 - ===================================
+INFO  21:12:55,949 - Deklarisana je nova konstanta x na liniji 2
+INFO  21:12:55,949 - Obradjuje se funkcija main na liniji 4
+INFO  21:12:55,949 - Deklarisan je formalni parametar j metode main na liniji 4
+ERROR 21:12:55,949 - Nije pronadjen tip test u tabeli simbola!
+INFO  21:12:55,949 - Deklarisana je promenljiva k na liniji 4
+INFO  21:12:55,949 - ===================================
+ERROR 21:12:55,950 - Parsiranje NIJE uspesno zavrseno!

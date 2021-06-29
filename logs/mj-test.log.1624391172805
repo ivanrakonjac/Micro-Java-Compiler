@@ -1,0 +1,124 @@
+INFO  21:41:04,616 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:41:04,654 - #6 program
+INFO  21:41:04,654 - #2 Program
+INFO  21:41:04,654 - #10 const
+INFO  21:41:04,655 - #2 int
+INFO  21:41:04,655 - #2 x
+INFO  21:41:04,655 - #36 =
+INFO  21:41:04,656 - #3 5
+INFO  21:41:04,656 - #39 ;
+INFO  21:41:04,656 - #10 const
+INFO  21:41:04,656 - #2 bool
+INFO  21:41:04,656 - #2 cond
+INFO  21:41:04,657 - #36 =
+INFO  21:41:04,657 - #5 true
+INFO  21:41:04,657 - #39 ;
+INFO  21:41:04,657 - #44 {
+INFO  21:41:04,657 - #11 void
+INFO  21:41:04,657 - #2 main
+INFO  21:41:04,658 - #42 (
+INFO  21:41:04,658 - #2 int
+INFO  21:41:04,658 - #2 j
+INFO  21:41:04,658 - #43 )
+INFO  21:41:04,659 - #44 {
+INFO  21:41:04,660 - #16 if
+INFO  21:41:04,660 - #42 (
+INFO  21:41:04,660 - #2 cond
+INFO  21:41:04,661 - #43 )
+INFO  21:41:04,662 - #44 {
+INFO  21:41:04,662 - #45 }
+INFO  21:41:04,662 - #45 }
+INFO  21:41:04,662 - #45 }
+INFO  21:41:04,678 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      SingleBoolConst(
+       cond
+       true
+      ) [SingleBoolConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      OptFormParams(
+        FormParam(
+          Type(
+           int
+          ) [Type]
+         j
+        ) [FormParam]
+        NoFormParams(
+        ) [NoFormParams]
+      ) [OptFormParams]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        UnmatchedStmt(
+          UnmatchedIf(
+            SimpleCond(
+              SimpleCondTerm(
+                CondExpr(
+                  BasicExpr(
+                    TermExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      FactorTerm(
+                        Var(
+                          DesBasic(
+                           cond
+                          ) [DesBasic]
+                        ) [Var]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [CondExpr]
+              ) [SimpleCondTerm]
+            ) [SimpleCond]
+            MatchedStmt(
+              BasicStmt(
+                NoStmt(
+                ) [NoStmt]
+              ) [BasicStmt]
+            ) [MatchedStmt]
+          ) [UnmatchedIf]
+        ) [UnmatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:41:04,679 - ===================================
+INFO  21:41:04,681 - Deklarisana je nova konstanta x na liniji 2
+INFO  21:41:04,681 - Deklarisana je nova konstanta cond na liniji 3
+INFO  21:41:04,682 - Obradjuje se funkcija main na liniji 5
+INFO  21:41:04,682 - Deklarisan je formalni parametar j metode main na liniji 5
+INFO  21:41:04,682 - Ispitan je uslov u if naredbi  na liniji 4
+INFO  21:41:04,682 - ===================================
+INFO  21:41:04,682 - Parsiranje uspesno zavrseno!

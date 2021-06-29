@@ -1,0 +1,42 @@
+INFO  23:19:16,578 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  23:19:16,614 - #6 program
+INFO  23:19:16,614 - #2 Program
+INFO  23:19:16,614 - #44 {
+INFO  23:19:16,616 - #2 int
+INFO  23:19:16,616 - #2 k
+INFO  23:19:16,617 - #42 (
+INFO  23:19:16,617 - #43 )
+INFO  23:19:16,618 - #44 {
+INFO  23:19:16,618 - #45 }
+INFO  23:19:16,619 - #45 }
+INFO  23:19:16,635 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       k
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:19:16,637 - ===================================
+INFO  23:19:16,639 - Deklarisan novi tip int u tabeli simbola
+INFO  23:19:16,639 - Obradjuje se funkcija k na liniji 3
+INFO  23:19:16,639 - ===================================

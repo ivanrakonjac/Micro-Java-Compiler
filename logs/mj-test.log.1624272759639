@@ -1,0 +1,34 @@
+INFO  12:52:26,367 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  12:52:26,421 - #6 program
+INFO  12:52:26,421 - #2 Program
+INFO  12:52:26,421 - #10 const
+INFO  12:52:26,423 - #2 int
+INFO  12:52:26,423 - #2 x
+INFO  12:52:26,424 - #36 =
+INFO  12:52:26,424 - #3 5
+INFO  12:52:26,424 - #40 ,
+INFO  12:52:26,424 - #2 z
+INFO  12:52:26,424 - #36 =
+INFO  12:52:26,424 - #24 -
+ERROR 12:52:26,424 - 
+Sintaksna greska na liniji 2
+INFO  12:52:26,424 - #3 2
+INFO  12:52:26,424 - #39 ;
+INFO  12:52:26,424 - #44 {
+INFO  12:52:26,425 - #45 }
+ERROR 12:52:26,425 - Izvrsen oporavak do ; u liniji 2
+INFO  12:52:26,429 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    VarDeclDerived1(
+    ) [VarDeclDerived1]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  12:52:26,479 - ===================================
+INFO  12:52:26,481 - ===================================

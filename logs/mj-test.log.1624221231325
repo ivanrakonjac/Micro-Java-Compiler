@@ -1,0 +1,83 @@
+INFO  22:31:18,929 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  22:31:18,966 - #6 program
+INFO  22:31:18,966 - #2 Program
+INFO  22:31:18,966 - #2 int
+INFO  22:31:18,967 - #2 x
+INFO  22:31:18,967 - #40 ,
+INFO  22:31:18,968 - #2 y
+INFO  22:31:18,968 - #40 ,
+INFO  22:31:18,969 - #2 z
+INFO  22:31:18,969 - #39 ;
+INFO  22:31:18,969 - #2 char
+INFO  22:31:18,969 - #2 c
+INFO  22:31:18,969 - #39 ;
+INFO  22:31:18,969 - #2 bool
+INFO  22:31:18,969 - #2 b
+INFO  22:31:18,969 - #39 ;
+INFO  22:31:18,969 - #44 {
+INFO  22:31:18,969 - #45 }
+INFO  22:31:18,985 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        ParamDeclDerived1(
+        ) [ParamDeclDerived1]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         x
+          NoSquares(
+          ) [NoSquares]
+          VarDeclMore(
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             y
+              NoSquares(
+              ) [NoSquares]
+            ) [VarDeclMore]
+           z
+            NoSquares(
+            ) [NoSquares]
+          ) [VarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+       c
+        NoSquares(
+        ) [NoSquares]
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclaration(
+      Type(
+       bool
+      ) [Type]
+     b
+      NoSquares(
+      ) [NoSquares]
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  22:31:18,988 - ===================================
+INFO  22:31:18,989 - Deklarisan novi tip int u tabeli simbola
+INFO  22:31:18,990 - Deklarisana promenljiva y na liniji 2
+INFO  22:31:18,990 - Deklarisana promenljiva z na liniji 2
+INFO  22:31:18,990 - Deklarisana promenljiva x na liniji 2
+INFO  22:31:18,990 - Deklarisan novi tip char u tabeli simbola
+INFO  22:31:18,990 - Deklarisana promenljiva c na liniji 3
+ERROR 22:31:18,990 - Nije pronadjen tip bool u tabeli simbola!
+INFO  22:31:18,990 - Deklarisana promenljiva b na liniji 4
+INFO  22:31:18,990 - ===================================

@@ -1,0 +1,281 @@
+INFO  14:20:17,984 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  14:20:18,035 - #6 program
+INFO  14:20:18,035 - #2 test302
+INFO  14:20:18,035 - #10 const
+INFO  14:20:18,036 - #2 int
+INFO  14:20:18,037 - #2 jedan
+INFO  14:20:18,037 - #36 =
+INFO  14:20:18,037 - #3 1
+INFO  14:20:18,037 - #39 ;
+INFO  14:20:18,037 - #2 int
+INFO  14:20:18,038 - #2 i
+INFO  14:20:18,038 - #40 ,
+INFO  14:20:18,039 - #2 j
+INFO  14:20:18,039 - #39 ;
+INFO  14:20:18,039 - #2 bool
+INFO  14:20:18,039 - #2 ibool
+INFO  14:20:18,039 - #39 ;
+INFO  14:20:18,040 - #2 int
+INFO  14:20:18,040 - #2 niz
+INFO  14:20:18,040 - #46 [
+INFO  14:20:18,040 - #47 ]
+INFO  14:20:18,040 - #39 ;
+INFO  14:20:18,072 - #44 {
+INFO  14:20:18,072 - #2 int
+INFO  14:20:18,073 - #2 sum
+INFO  14:20:18,073 - #42 (
+INFO  14:20:18,074 - #2 int
+INFO  14:20:18,074 - #2 z
+INFO  14:20:18,074 - #40 ,
+INFO  14:20:18,074 - #2 int
+INFO  14:20:18,074 - #2 d
+INFO  14:20:18,074 - #43 )
+INFO  14:20:18,074 - #44 {
+INFO  14:20:18,075 - #8 return
+INFO  14:20:18,076 - #2 z
+INFO  14:20:18,077 - #23 +
+INFO  14:20:18,077 - #2 d
+INFO  14:20:18,078 - #39 ;
+INFO  14:20:18,079 - #45 }
+INFO  14:20:18,079 - #11 void
+INFO  14:20:18,080 - #2 main
+INFO  14:20:18,080 - #42 (
+INFO  14:20:18,080 - #43 )
+INFO  14:20:18,081 - #44 {
+INFO  14:20:18,081 - #21 print
+INFO  14:20:18,081 - #42 (
+INFO  14:20:18,081 - #2 sum
+INFO  14:20:18,081 - #42 (
+INFO  14:20:18,081 - #2 sum
+INFO  14:20:18,081 - #42 (
+INFO  14:20:18,081 - #3 1
+INFO  14:20:18,081 - #40 ,
+INFO  14:20:18,081 - #4 c
+INFO  14:20:18,081 - #43 )
+INFO  14:20:18,082 - #40 ,
+INFO  14:20:18,082 - #3 3
+INFO  14:20:18,082 - #43 )
+INFO  14:20:18,082 - #43 )
+INFO  14:20:18,082 - #39 ;
+INFO  14:20:18,082 - #45 }
+INFO  14:20:18,082 - #45 }
+INFO  14:20:18,086 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        ConstParam(
+          ParamDeclDerived1(
+          ) [ParamDeclDerived1]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            SingleNumberConst(
+             jedan
+             1
+            ) [SingleNumberConst]
+          ) [ConstDecl]
+        ) [ConstParam]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         i
+          VarDeclMore(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           j
+          ) [VarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclaration(
+        Type(
+         bool
+        ) [Type]
+       ibool
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       int
+      ) [Type]
+     niz
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          MethodRetType(
+            Type(
+             int
+            ) [Type]
+          ) [MethodRetType]
+         sum
+        ) [MethodTypeName]
+        OptFormParams(
+          FormParams(
+            NoFormParams(
+              FormParam(
+                Type(
+                 int
+                ) [Type]
+               z
+              ) [FormParam]
+            ) [NoFormParams]
+            FormParam(
+              Type(
+               int
+              ) [Type]
+             d
+            ) [FormParam]
+          ) [FormParams]
+        ) [OptFormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          RetStmt(
+            BasicExpr(
+              NoMinus(
+              ) [NoMinus]
+              AddExpr(
+                TermExpr(
+                  FactorTerm(
+                    Var(
+                      DesBasic(
+                       z
+                      ) [DesBasic]
+                    ) [Var]
+                  ) [FactorTerm]
+                ) [TermExpr]
+                AddOperator(
+                ) [AddOperator]
+                FactorTerm(
+                  Var(
+                    DesBasic(
+                     d
+                    ) [DesBasic]
+                  ) [Var]
+                ) [FactorTerm]
+              ) [AddExpr]
+            ) [BasicExpr]
+          ) [RetStmt]
+        ) [MultiStmtList]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmt(
+          BasicExpr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                FuncCall(
+                  DesBasic(
+                   sum
+                  ) [DesBasic]
+                  Actuals(
+                    MultipleParam(
+                      SingleParam(
+                        BasicExpr(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermExpr(
+                            FactorTerm(
+                              FuncCall(
+                                DesBasic(
+                                 sum
+                                ) [DesBasic]
+                                Actuals(
+                                  MultipleParam(
+                                    SingleParam(
+                                      BasicExpr(
+                                        NoMinus(
+                                        ) [NoMinus]
+                                        TermExpr(
+                                          FactorTerm(
+                                            NumConst(
+                                             1
+                                            ) [NumConst]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [BasicExpr]
+                                    ) [SingleParam]
+                                    BasicExpr(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      TermExpr(
+                                        FactorTerm(
+                                          CharConst(
+                                           c
+                                          ) [CharConst]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [BasicExpr]
+                                  ) [MultipleParam]
+                                ) [Actuals]
+                              ) [FuncCall]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [BasicExpr]
+                      ) [SingleParam]
+                      BasicExpr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumConst(
+                             3
+                            ) [NumConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExpr]
+                    ) [MultipleParam]
+                  ) [Actuals]
+                ) [FuncCall]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExpr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:20:18,087 - ===================================
+INFO  14:20:18,089 - Deklarisana je nova konstanta jedan na liniji 5
+INFO  14:20:18,089 - Deklarisana je promenljiva j na liniji 7
+INFO  14:20:18,089 - Deklarisana je promenljiva i na liniji 7
+INFO  14:20:18,089 - Deklarisana je promenljiva ibool na liniji 8
+INFO  14:20:18,089 - Deklarisana je promenljiva niz na liniji 10
+INFO  14:20:18,089 - Obradjuje se funkcija sum na liniji 14
+INFO  14:20:18,089 - Deklarisan je formalni parametar z metode sum na liniji 14
+INFO  14:20:18,089 - Deklarisan je formalni parametar d metode sum na liniji 14
+INFO  14:20:18,090 - Obradjuje se funkcija main na liniji 19
+INFO  14:20:18,090 - Pronadjen poziv funkcije sum na liniji 21
+ERROR 14:20:18,090 - Greska : prosledjeni parametri funkcije sum se ne slazu sa formalnim parametrima funkcije  na liniji 21
+INFO  14:20:18,090 - Pronadjen poziv funkcije sum na liniji 21
+INFO  14:20:18,090 - ===================================
+ERROR 14:20:18,090 - Parsiranje NIJE uspesno zavrseno!

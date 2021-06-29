@@ -1,0 +1,289 @@
+INFO  14:48:35,653 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:48:35,705 - #6 program
+INFO  14:48:35,706 - #2 VezbaGenerisanje
+INFO  14:48:35,706 - #10 const
+INFO  14:48:35,707 - #2 int
+INFO  14:48:35,707 - #2 jedan
+INFO  14:48:35,707 - #36 =
+INFO  14:48:35,707 - #3 1
+INFO  14:48:35,708 - #39 ;
+INFO  14:48:35,708 - #2 int
+INFO  14:48:35,708 - #2 g
+INFO  14:48:35,708 - #39 ;
+INFO  14:48:35,709 - #44 {
+INFO  14:48:35,709 - #11 void
+INFO  14:48:35,710 - #2 main
+INFO  14:48:35,710 - #42 (
+INFO  14:48:35,711 - #43 )
+INFO  14:48:35,712 - #2 int
+INFO  14:48:35,712 - #2 a
+INFO  14:48:35,712 - #40 ,
+INFO  14:48:35,712 - #2 b
+INFO  14:48:35,712 - #39 ;
+INFO  14:48:35,713 - #2 int
+INFO  14:48:35,714 - #2 arr
+INFO  14:48:35,714 - #46 [
+INFO  14:48:35,714 - #47 ]
+INFO  14:48:35,714 - #39 ;
+INFO  14:48:35,714 - #44 {
+INFO  14:48:35,715 - #2 arr
+INFO  14:48:35,715 - #36 =
+INFO  14:48:35,715 - #14 new
+INFO  14:48:35,717 - #2 int
+INFO  14:48:35,717 - #46 [
+INFO  14:48:35,717 - #3 5
+INFO  14:48:35,717 - #47 ]
+INFO  14:48:35,717 - #39 ;
+INFO  14:48:35,717 - #2 arr
+INFO  14:48:35,718 - #46 [
+INFO  14:48:35,718 - #3 0
+INFO  14:48:35,718 - #47 ]
+INFO  14:48:35,718 - #36 =
+INFO  14:48:35,718 - #3 5
+INFO  14:48:35,718 - #39 ;
+INFO  14:48:35,718 - #52 goto
+INFO  14:48:35,718 - #2 lab1
+INFO  14:48:35,718 - #39 ;
+INFO  14:48:35,719 - #2 arr
+INFO  14:48:35,719 - #46 [
+INFO  14:48:35,719 - #3 0
+INFO  14:48:35,719 - #47 ]
+INFO  14:48:35,719 - #36 =
+INFO  14:48:35,719 - #3 7
+INFO  14:48:35,719 - #39 ;
+INFO  14:48:35,719 - #2 lab1
+INFO  14:48:35,719 - #49 :
+INFO  14:48:35,719 - #21 print
+INFO  14:48:35,720 - #42 (
+INFO  14:48:35,720 - #2 arr
+INFO  14:48:35,720 - #46 [
+INFO  14:48:35,720 - #3 0
+INFO  14:48:35,720 - #47 ]
+INFO  14:48:35,720 - #43 )
+INFO  14:48:35,720 - #39 ;
+INFO  14:48:35,720 - #45 }
+INFO  14:48:35,720 - #45 }
+INFO  14:48:35,741 - Program(
+  ProgName(
+   VezbaGenerisanje
+  ) [ProgName]
+  VarParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         jedan
+         1
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     g
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           a
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             b
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclarationArray(
+          Type(
+           int
+          ) [Type]
+         arr
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclarationArray]
+      ) [VarDeclarations]
+      MultiStmtListLabel(
+        MultiStmtList(
+          MultiStmtList(
+            MultiStmtList(
+              MultiStmtList(
+                NoStmt(
+                ) [NoStmt]
+                DesStmt(
+                  DesAssign(
+                    DesBasic(
+                     arr
+                    ) [DesBasic]
+                    AssignOperator(
+                    ) [AssignOperator]
+                    BasicExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NewArray(
+                            Type(
+                             int
+                            ) [Type]
+                            BasicExpr(
+                              NoMinus(
+                              ) [NoMinus]
+                              TermExpr(
+                                FactorTerm(
+                                  NumConst(
+                                   5
+                                  ) [NumConst]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [BasicExpr]
+                          ) [NewArray]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExpr]
+                  ) [DesAssign]
+                ) [DesStmt]
+              ) [MultiStmtList]
+              DesStmt(
+                DesAssign(
+                  DesArray(
+                    DesignatorArrayName(
+                     arr
+                    ) [DesignatorArrayName]
+                    BasicExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumConst(
+                           0
+                          ) [NumConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExpr]
+                  ) [DesArray]
+                  AssignOperator(
+                  ) [AssignOperator]
+                  BasicExpr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumConst(
+                         5
+                        ) [NumConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [DesAssign]
+              ) [DesStmt]
+            ) [MultiStmtList]
+            GotoStmt(
+             lab1
+            ) [GotoStmt]
+          ) [MultiStmtList]
+          DesStmt(
+            DesAssign(
+              DesArray(
+                DesignatorArrayName(
+                 arr
+                ) [DesignatorArrayName]
+                BasicExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumConst(
+                       0
+                      ) [NumConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [DesArray]
+              AssignOperator(
+              ) [AssignOperator]
+              BasicExpr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumConst(
+                     7
+                    ) [NumConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExpr]
+            ) [DesAssign]
+          ) [DesStmt]
+        ) [MultiStmtList]
+        Label(
+         lab1
+        ) [Label]
+        PrintStmt(
+          BasicExpr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesArray(
+                    DesignatorArrayName(
+                     arr
+                    ) [DesignatorArrayName]
+                    BasicExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumConst(
+                           0
+                          ) [NumConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExpr]
+                  ) [DesArray]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExpr]
+        ) [PrintStmt]
+      ) [MultiStmtListLabel]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:48:35,741 - ===================================
+INFO  14:48:35,746 - Deklarisana je nova konstanta jedan na liniji 2
+INFO  14:48:35,751 - Deklarisana je promenljiva g na liniji 3
+INFO  14:48:35,751 - Obradjuje se funkcija main na liniji 7
+INFO  14:48:35,752 - Deklarisana je promenljiva b na liniji 7
+INFO  14:48:35,752 - Deklarisana je promenljiva a na liniji 7
+INFO  14:48:35,752 - Deklarisana je promenljiva arr na liniji 7
+INFO  14:48:35,752 - Formiran novi niz  na liniji 9
+INFO  14:48:35,752 - Promenljivoj se dodeljuje vrednost  na liniji 9
+INFO  14:48:35,752 - Promenljivoj se dodeljuje vrednost  na liniji 11
+INFO  14:48:35,752 - Promenljivoj se dodeljuje vrednost  na liniji 16
+INFO  14:48:35,752 - ===================================
+INFO  14:48:35,756 - Parsiranje uspesno zavrseno!

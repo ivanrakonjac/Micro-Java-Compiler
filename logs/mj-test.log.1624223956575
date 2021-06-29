@@ -1,0 +1,91 @@
+INFO  23:18:50,999 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  23:18:51,036 - #6 program
+INFO  23:18:51,037 - #2 Program
+INFO  23:18:51,037 - #2 int
+INFO  23:18:51,037 - #2 x
+INFO  23:18:51,038 - #40 ,
+INFO  23:18:51,039 - #2 y
+INFO  23:18:51,039 - #40 ,
+INFO  23:18:51,039 - #2 z
+INFO  23:18:51,039 - #39 ;
+INFO  23:18:51,039 - #2 char
+INFO  23:18:51,040 - #2 c
+INFO  23:18:51,040 - #39 ;
+INFO  23:18:51,040 - #2 char
+INFO  23:18:51,040 - #2 b
+INFO  23:18:51,040 - #40 ,
+INFO  23:18:51,040 - #2 a
+INFO  23:18:51,040 - #39 ;
+INFO  23:18:51,040 - #44 {
+INFO  23:18:51,040 - #45 }
+INFO  23:18:51,056 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        ParamDeclDerived1(
+        ) [ParamDeclDerived1]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         x
+          NoSquares(
+          ) [NoSquares]
+          VarDeclMore(
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             y
+              NoSquares(
+              ) [NoSquares]
+            ) [VarDeclMore]
+           z
+            NoSquares(
+            ) [NoSquares]
+          ) [VarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+       c
+        NoSquares(
+        ) [NoSquares]
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+     b
+      NoSquares(
+      ) [NoSquares]
+      VarDeclMore(
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+       a
+        NoSquares(
+        ) [NoSquares]
+      ) [VarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  23:18:51,058 - ===================================
+INFO  23:18:51,060 - Deklarisan novi tip int u tabeli simbola
+INFO  23:18:51,061 - Deklarisana promenljiva y na liniji 2
+INFO  23:18:51,061 - Deklarisana promenljiva z na liniji 2
+INFO  23:18:51,061 - Deklarisana promenljiva x na liniji 2
+INFO  23:18:51,061 - Deklarisan novi tip char u tabeli simbola
+INFO  23:18:51,061 - Deklarisana promenljiva c na liniji 3
+INFO  23:18:51,061 - Deklarisan novi tip char u tabeli simbola
+INFO  23:18:51,061 - Deklarisana promenljiva a na liniji 4
+INFO  23:18:51,061 - Deklarisana promenljiva b na liniji 4
+INFO  23:18:51,061 - ===================================

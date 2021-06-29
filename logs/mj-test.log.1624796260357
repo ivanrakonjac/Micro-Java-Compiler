@@ -1,0 +1,13 @@
+INFO  14:15:57,317 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  14:15:57,448 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:15:57,449 - ===================================
+ERROR 14:15:57,452 - Semanticka greska: morate dodati main fju!
+INFO  14:15:57,452 - ===================================

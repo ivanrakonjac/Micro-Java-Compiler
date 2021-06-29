@@ -1,0 +1,62 @@
+INFO  13:04:32,049 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  13:04:32,108 - #6 program
+INFO  13:04:32,108 - #2 Program
+INFO  13:04:32,108 - #10 const
+INFO  13:04:32,109 - #2 int
+INFO  13:04:32,109 - #2 x
+INFO  13:04:32,110 - #36 =
+INFO  13:04:32,110 - #3 5
+INFO  13:04:32,110 - #40 ,
+INFO  13:04:32,111 - #2 z
+INFO  13:04:32,111 - #36 =
+INFO  13:04:32,111 - #4 c
+INFO  13:04:32,111 - #39 ;
+INFO  13:04:32,111 - #10 const
+INFO  13:04:32,112 - #2 char
+INFO  13:04:32,112 - #2 x
+INFO  13:04:32,112 - #36 =
+INFO  13:04:32,112 - #3 5
+INFO  13:04:32,112 - #39 ;
+INFO  13:04:32,112 - #44 {
+INFO  13:04:32,112 - #45 }
+INFO  13:04:32,116 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        MultiCharConst(
+          SingleNumberConst(
+           x
+           5
+          ) [SingleNumberConst]
+         z
+         c
+        ) [MultiCharConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      SingleNumberConst(
+       x
+       5
+      ) [SingleNumberConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  13:04:32,153 - ===================================
+INFO  13:04:32,155 - Definisana je nova konstanta x sa vrednoscu 5
+INFO  13:04:32,155 - Definisana je nova konstanta z sa vrednoscu 99
+ERROR 13:04:32,155 - Greska: identifikator x je vec deklarisan!
+ERROR 13:04:32,155 - Greska: konstanta x nije odgovarajuceg tipa na liniji 3
+INFO  13:04:32,155 - ===================================

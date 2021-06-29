@@ -1,0 +1,40 @@
+INFO  14:14:46,032 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:14:46,071 - #6 program
+INFO  14:14:46,071 - #2 Program
+INFO  14:14:46,071 - #24 {
+INFO  14:14:46,072 - #10 void
+INFO  14:14:46,072 - #2 main
+INFO  14:14:46,073 - #33 (
+INFO  14:14:46,073 - #34 )
+INFO  14:14:46,074 - #24 {
+INFO  14:14:46,074 - #25 }
+INFO  14:14:46,075 - #25 }
+INFO  14:14:46,091 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        VoidMethType(
+        ) [VoidMethType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:14:46,093 - ===================================
+INFO  14:14:46,095 - Obradjuje se funkcija main na liniji 3
+INFO  14:14:46,095 - Obradjuje se funkcija currMehofmain
+INFO  14:14:46,095 -  Deklarisanih promenljivih ima = 0
+INFO  14:14:46,095 - ===================================

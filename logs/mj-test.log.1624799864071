@@ -1,0 +1,28 @@
+INFO  15:17:21,537 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  15:17:21,653 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    NoParamDecl(
+    ) [NoParamDecl]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         a
+          ConstValue(
+           5
+          ) [ConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  15:17:21,654 - ===================================
+INFO  15:17:21,658 - --ConstValue 5 na liniji 4
+INFO  15:17:21,658 - ===================================

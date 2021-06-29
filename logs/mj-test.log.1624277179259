@@ -1,0 +1,127 @@
+INFO  14:06:08,692 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  14:06:08,753 - #6 program
+INFO  14:06:08,753 - #2 Program
+INFO  14:06:08,753 - #10 const
+INFO  14:06:08,754 - #2 int
+INFO  14:06:08,755 - #2 x
+INFO  14:06:08,755 - #36 =
+INFO  14:06:08,755 - #3 5
+INFO  14:06:08,756 - #39 ;
+INFO  14:06:08,756 - #10 const
+INFO  14:06:08,757 - #2 char
+INFO  14:06:08,757 - #2 c
+INFO  14:06:08,757 - #36 =
+INFO  14:06:08,757 - #4 c
+INFO  14:06:08,757 - #40 ,
+INFO  14:06:08,757 - #2 b
+INFO  14:06:08,757 - #36 =
+INFO  14:06:08,757 - #4 b
+INFO  14:06:08,757 - #39 ;
+INFO  14:06:08,757 - #10 const
+INFO  14:06:08,758 - #2 bool
+INFO  14:06:08,758 - #2 cond
+INFO  14:06:08,759 - #36 =
+INFO  14:06:08,759 - #5 true
+INFO  14:06:08,759 - #39 ;
+INFO  14:06:08,759 - #2 int
+INFO  14:06:08,759 - #2 m
+INFO  14:06:08,759 - #40 ,
+INFO  14:06:08,761 - #2 n
+INFO  14:06:08,761 - #39 ;
+INFO  14:06:08,761 - #2 int
+INFO  14:06:08,761 - #2 q
+INFO  14:06:08,762 - #40 ,
+INFO  14:06:08,762 - #2 w
+INFO  14:06:08,762 - #39 ;
+INFO  14:06:08,762 - #44 {
+INFO  14:06:08,762 - #45 }
+INFO  14:06:08,767 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      ConstParam(
+        ConstParam(
+          ConstParam(
+            ParamDeclDerived1(
+            ) [ParamDeclDerived1]
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              SingleNumberConst(
+               x
+               5
+              ) [SingleNumberConst]
+            ) [ConstDecl]
+          ) [ConstParam]
+          ConstDecl(
+            Type(
+             char
+            ) [Type]
+            MultiCharConst(
+              SingleCharConst(
+               c
+               c
+              ) [SingleCharConst]
+             b
+             b
+            ) [MultiCharConst]
+          ) [ConstDecl]
+        ) [ConstParam]
+        ConstDecl(
+          Type(
+           bool
+          ) [Type]
+          SingleBoolConst(
+           cond
+           true
+          ) [SingleBoolConst]
+        ) [ConstDecl]
+      ) [ConstParam]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       m
+        NoSquares(
+        ) [NoSquares]
+        VarDeclMore(
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+         n
+          NoSquares(
+          ) [NoSquares]
+        ) [VarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     q
+      NoSquares(
+      ) [NoSquares]
+      VarDeclMore(
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+       w
+        NoSquares(
+        ) [NoSquares]
+      ) [VarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:06:08,768 - ===================================
+INFO  14:06:08,770 - Deklarisana je nova konstanta x
+INFO  14:06:08,770 - Deklarisana je nova konstanta c
+INFO  14:06:08,770 - Deklarisana je nova konstanta b
+INFO  14:06:08,771 - Deklarisana je nova konstanta cond
+INFO  14:06:08,771 - Deklarisana je promenljiva n na liniji 5
+INFO  14:06:08,771 - Deklarisana je promenljiva m na liniji 5
+INFO  14:06:08,771 - Deklarisana je promenljiva w na liniji 5
+INFO  14:06:08,771 - Deklarisana je promenljiva q na liniji 7
+INFO  14:06:08,771 - ===================================

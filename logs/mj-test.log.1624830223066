@@ -1,0 +1,257 @@
+INFO  23:43:03,515 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+ERROR 23:43:03,583 - 
+Sintaksna greska na liniji 7
+ERROR 23:43:03,584 - Izvrsen oporavak do ; u liniji 7
+INFO  23:43:03,595 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          MultiStmtList(
+            MultiStmtList(
+              MultiStmtList(
+                MultiStmtList(
+                  NoStmt(
+                  ) [NoStmt]
+                  DesignStmt(
+                    DesignatorAssign(
+                      DesignatorArray(
+                        DesArrName(
+                         bodovi
+                        ) [DesArrName]
+                        BasicExprr(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermExpr(
+                            FactorTerm(
+                              NumberConst(
+                               0
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [BasicExprr]
+                      ) [DesignatorArray]
+                      AssignOper(
+                      ) [AssignOper]
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [DesignatorAssign]
+                  ) [DesignStmt]
+                ) [MultiStmtList]
+                DesignStmt(
+                  DesignatorAssign(
+                    DesignatorArray(
+                      DesArrName(
+                       bodovi
+                      ) [DesArrName]
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [DesignatorArray]
+                    AssignOper(
+                    ) [AssignOper]
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [DesignatorAssign]
+                ) [DesignStmt]
+              ) [MultiStmtList]
+              DesignStmt(
+                DesignatorAssign(
+                  DesignatorArray(
+                    DesArrName(
+                     bodovi
+                    ) [DesArrName]
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [DesignatorArray]
+                  AssignOper(
+                  ) [AssignOper]
+                  BasicExprr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         1
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExprr]
+                ) [DesignatorAssign]
+              ) [DesignStmt]
+            ) [MultiStmtList]
+            DesignStmt(
+              DesignatorAssign(
+                DesignatorArray(
+                  DesArrName(
+                   bodovi
+                  ) [DesArrName]
+                  BasicExprr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         3
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExprr]
+                ) [DesignatorArray]
+                AssignOper(
+                ) [AssignOper]
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       1
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [DesignatorAssign]
+            ) [DesignStmt]
+          ) [MultiStmtList]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorArray(
+                DesArrName(
+                 bodovi
+                ) [DesArrName]
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       4
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [DesignatorArray]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     1
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        DesignStmt(
+          DesignatorAssign(
+            DesignatorArray(
+              DesArrName(
+               bodovi
+              ) [DesArrName]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     5
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorArray]
+            AssignOper(
+            ) [AssignOper]
+            BasicExprr(
+              NoMinus(
+              ) [NoMinus]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   1
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExprr]
+          ) [DesignatorAssign]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:43:03,597 - ===================================
+INFO  23:43:03,601 - --MethodTypeName main na liniji 6
+ERROR 23:43:03,601 - Semanticka greska na liniji: 9. Niz nije deklarisan! na liniji 9
+ERROR 23:43:03,602 - Semanticka greska na liniji: 9. Tipovi nisu kompatibilni!
+ERROR 23:43:03,602 - Semanticka greska na liniji: 10. Niz nije deklarisan! na liniji 10
+ERROR 23:43:03,602 - Semanticka greska na liniji: 10. Tipovi nisu kompatibilni!
+ERROR 23:43:03,602 - Semanticka greska na liniji: 11. Niz nije deklarisan! na liniji 11
+ERROR 23:43:03,602 - Semanticka greska na liniji: 11. Tipovi nisu kompatibilni!
+ERROR 23:43:03,602 - Semanticka greska na liniji: 12. Niz nije deklarisan! na liniji 12
+ERROR 23:43:03,602 - Semanticka greska na liniji: 12. Tipovi nisu kompatibilni!
+ERROR 23:43:03,603 - Semanticka greska na liniji: 13. Niz nije deklarisan! na liniji 13
+ERROR 23:43:03,603 - Semanticka greska na liniji: 13. Tipovi nisu kompatibilni!
+ERROR 23:43:03,603 - Semanticka greska na liniji: 14. Niz nije deklarisan! na liniji 14
+ERROR 23:43:03,603 - Semanticka greska na liniji: 14. Tipovi nisu kompatibilni!
+INFO  23:43:03,603 - ===================================

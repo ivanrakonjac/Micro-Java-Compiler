@@ -1,0 +1,45 @@
+INFO  14:37:56,373 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  14:37:56,470 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  VarParamDecl(
+    VarParamDecl(
+      VarParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         a
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParamDecl]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       b
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParamDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     a
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:37:56,473 - ===================================
+INFO  14:37:56,478 - --VarDeclaration a na liniji 4
+INFO  14:37:56,478 - --VarDeclaration b na liniji 5
+ERROR 14:37:56,478 - Semanticka greska: Varijabla a je vec deklarisana
+INFO  14:37:56,479 - ===================================

@@ -1,0 +1,154 @@
+INFO  20:27:55,420 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  20:27:55,511 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  VarParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        ConstParamDecl(
+          NoParamDecl(
+          ) [NoParamDecl]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstAssignList(
+              OneConstAssign(
+                SingleConstAssign(
+                 a
+                  NumConstValue(
+                   5
+                  ) [NumConstValue]
+                ) [SingleConstAssign]
+              ) [OneConstAssign]
+              SingleConstAssign(
+               b
+                NumConstValue(
+                 3
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [ConstAssignList]
+          ) [ConstDecl]
+        ) [ConstParamDecl]
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          OneConstAssign(
+            SingleConstAssign(
+             g
+              CharConstValue(
+               d
+              ) [CharConstValue]
+            ) [SingleConstAssign]
+          ) [OneConstAssign]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         bool
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           bo
+            BoolConstValue(
+             false
+            ) [BoolConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     aa
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParamDecl]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          VoidRetType(
+          ) [VoidRetType]
+         put
+        ) [MethodTypeName]
+        OptionalFormalParams(
+          FormParamss(
+            NoFormParams(
+              FormParam(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParam]
+            ) [NoFormParams]
+            FormParam(
+              Type(
+               bool
+              ) [Type]
+             b
+            ) [FormParam]
+          ) [FormParamss]
+        ) [OptionalFormalParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesignStmt(
+          VariableInc(
+            DesignatorBasic(
+             z
+            ) [DesignatorBasic]
+          ) [VariableInc]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:27:55,512 - ===================================
+INFO  20:27:55,516 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  20:27:55,517 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  20:27:55,517 - --SingleConstAssignChar g= d na liniji 5
+INFO  20:27:55,517 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  20:27:55,517 - --VarDeclaration aa na liniji 8
+INFO  20:27:55,517 - --MethodTypeName put na liniji 11
+INFO  20:27:55,518 - --FormParam a u metodi put na liniji 11
+INFO  20:27:55,518 - --FormParam b u metodi put na liniji 11
+INFO  20:27:55,518 - --MethodTypeName main na liniji 15
+INFO  20:27:55,518 - --VarDeclExt i na liniji 16
+INFO  20:27:55,518 - --VarDeclaration bodovi na liniji 16
+ERROR 20:27:55,518 - Semanticka greska na liniji: 18. Naziv: z nije deklarisan!

@@ -640,18 +640,18 @@ public class RuleVisitor extends VisitorAdaptor {
 		switchCaseValues.clear();
 	}
 	
-	public void visit(SwitchExpr expr) {
+	public void visit(SwitchTerm switchTerm) {
 		this.inTheSwitch = true;
 		this.switchCaseValues.clear();
 	}
 	
-	public void visit(CaseStmt caseStmt) {
-		if(switchCaseValues.contains(caseStmt.getN1())) {
-			report_error("Semanticka greska: ne moze u vise caseova ista vrednost!; Nadjena vrednost: " + caseStmt.getN1() + " ", caseStmt);
+	public void visit(SingleCaseLine singleCaseLine) {
+		if(switchCaseValues.contains(singleCaseLine.getN1())) {
+			report_error("Semanticka greska: ne moze u vise caseova ista vrednost!; Nadjena vrednost: " + singleCaseLine.getN1() + " ", singleCaseLine);
 			return;
 		}
 		else {
-			switchCaseValues.add(caseStmt.getN1());
+			switchCaseValues.add(singleCaseLine.getN1());
 		}
 	}
 	

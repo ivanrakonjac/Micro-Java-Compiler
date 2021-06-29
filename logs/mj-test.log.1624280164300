@@ -1,0 +1,143 @@
+INFO  14:55:40,217 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  14:55:40,279 - #6 program
+INFO  14:55:40,279 - #2 Program
+INFO  14:55:40,279 - #10 const
+INFO  14:55:40,280 - #2 int
+INFO  14:55:40,281 - #2 x
+INFO  14:55:40,282 - #36 =
+INFO  14:55:40,282 - #3 5
+INFO  14:55:40,282 - #39 ;
+INFO  14:55:40,282 - #10 const
+INFO  14:55:40,283 - #2 char
+INFO  14:55:40,283 - #2 c
+INFO  14:55:40,283 - #36 =
+INFO  14:55:40,283 - #4 c
+INFO  14:55:40,283 - #40 ,
+INFO  14:55:40,283 - #2 b
+INFO  14:55:40,283 - #36 =
+INFO  14:55:40,283 - #4 b
+INFO  14:55:40,283 - #39 ;
+INFO  14:55:40,284 - #10 const
+INFO  14:55:40,284 - #2 bool
+INFO  14:55:40,284 - #2 cond
+INFO  14:55:40,284 - #36 =
+INFO  14:55:40,284 - #5 true
+INFO  14:55:40,284 - #39 ;
+INFO  14:55:40,285 - #2 int
+INFO  14:55:40,285 - #2 m
+INFO  14:55:40,285 - #39 ;
+INFO  14:55:40,286 - #2 int
+INFO  14:55:40,286 - #2 q
+INFO  14:55:40,286 - #40 ,
+INFO  14:55:40,286 - #2 w
+INFO  14:55:40,286 - #39 ;
+INFO  14:55:40,286 - #2 bool
+INFO  14:55:40,286 - #2 asd
+INFO  14:55:40,286 - #39 ;
+INFO  14:55:40,286 - #2 int
+INFO  14:55:40,286 - #2 niz
+INFO  14:55:40,286 - #46 [
+INFO  14:55:40,287 - #47 ]
+INFO  14:55:40,287 - #39 ;
+INFO  14:55:40,287 - #44 {
+INFO  14:55:40,287 - #45 }
+INFO  14:55:40,292 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          ConstParam(
+            ConstParam(
+              ConstParam(
+                ParamDeclDerived1(
+                ) [ParamDeclDerived1]
+                ConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleNumberConst(
+                   x
+                   5
+                  ) [SingleNumberConst]
+                ) [ConstDecl]
+              ) [ConstParam]
+              ConstDecl(
+                Type(
+                 char
+                ) [Type]
+                MultiCharConst(
+                  SingleCharConst(
+                   c
+                   c
+                  ) [SingleCharConst]
+                 b
+                 b
+                ) [MultiCharConst]
+              ) [ConstDecl]
+            ) [ConstParam]
+            ConstDecl(
+              Type(
+               bool
+              ) [Type]
+              SingleBoolConst(
+               cond
+               true
+              ) [SingleBoolConst]
+            ) [ConstDecl]
+          ) [ConstParam]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           m
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         q
+          VarDeclMore(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           w
+          ) [VarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclaration(
+        Type(
+         bool
+        ) [Type]
+       asd
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       int
+      ) [Type]
+     niz
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:55:40,293 - ===================================
+INFO  14:55:40,295 - Deklarisana je nova konstanta x na liniji 2
+INFO  14:55:40,295 - Deklarisana je nova konstanta c na liniji 3
+INFO  14:55:40,295 - Deklarisana je nova konstanta b na liniji 3
+INFO  14:55:40,296 - Deklarisana je nova konstanta cond na liniji 4
+INFO  14:55:40,296 - Deklarisana je promenljiva m na liniji 5
+ERROR 14:55:40,296 - Greska: Promenljiva w je vec deklarisana
+INFO  14:55:40,296 - Deklarisana je promenljiva q na liniji 6
+INFO  14:55:40,296 - Deklarisana je promenljiva asd na liniji 7
+INFO  14:55:40,296 - Deklarisana je promenljiva niz na liniji 8
+INFO  14:55:40,296 - ===================================

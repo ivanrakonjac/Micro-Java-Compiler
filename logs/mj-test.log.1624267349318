@@ -1,0 +1,79 @@
+INFO  11:20:36,008 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  11:20:36,065 - #6 program
+INFO  11:20:36,066 - #2 Program
+INFO  11:20:36,066 - #44 {
+INFO  11:20:36,067 - #2 int
+INFO  11:20:36,068 - #2 main
+INFO  11:20:36,069 - #42 (
+INFO  11:20:36,070 - #43 )
+INFO  11:20:36,071 - #2 int
+INFO  11:20:36,072 - #2 c
+INFO  11:20:36,072 - #39 ;
+INFO  11:20:36,073 - #44 {
+INFO  11:20:36,073 - #8 return
+INFO  11:20:36,074 - #3 1
+INFO  11:20:36,076 - #39 ;
+INFO  11:20:36,076 - #45 }
+INFO  11:20:36,076 - #45 }
+INFO  11:20:36,081 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         c
+          NoSquares(
+          ) [NoSquares]
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          RetStmt(
+            BasicExpr(
+              TermExpr(
+                NoMinus(
+                ) [NoMinus]
+                FactorTerm(
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExpr]
+          ) [RetStmt]
+        ) [MatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:20:36,139 - ===================================
+INFO  11:20:36,142 - Obradjuje se funkcija main na liniji 6
+INFO  11:20:36,142 - Deklarisana promenljiva c na liniji 6
+ERROR 11:20:36,142 - Greska na liniji 2 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+INFO  11:20:36,142 - ===================================
+ERROR 11:20:36,142 - Parsiranje NIJE uspesno zavrseno!

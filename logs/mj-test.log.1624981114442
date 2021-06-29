@@ -1,0 +1,165 @@
+INFO  17:34:22,691 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  17:34:22,902 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclArray(
+          Type(
+           int
+          ) [Type]
+         niz
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclArray]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorBasic(
+               i
+              ) [DesignatorBasic]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        IfElseMatchedStmt(
+          IfStmt(
+          ) [IfStmt]
+          Condition(
+            CondSimple(
+              CondTerm(
+                CondTermSimple(
+                  CondRelop(
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          Var(
+                            DesignatorBasic(
+                             i
+                            ) [DesignatorBasic]
+                          ) [Var]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                    EqualsOper(
+                    ) [EqualsOper]
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           3
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [CondRelop]
+                ) [CondTermSimple]
+              ) [CondTerm]
+            ) [CondSimple]
+          ) [Condition]
+          BasicStmt(
+            MultiStmtList(
+              MultiStmtList(
+                NoStmt(
+                ) [NoStmt]
+                DesignStmt(
+                  VariableInc(
+                    DesignatorBasic(
+                     i
+                    ) [DesignatorBasic]
+                  ) [VariableInc]
+                ) [DesignStmt]
+              ) [MultiStmtList]
+              PrintStmt(
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      Var(
+                        DesignatorBasic(
+                         i
+                        ) [DesignatorBasic]
+                      ) [Var]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [PrintStmt]
+            ) [MultiStmtList]
+          ) [BasicStmt]
+          ElseStatmt(
+            ElseTerm(
+            ) [ElseTerm]
+            BasicStmt(
+              MultiStmtList(
+                NoStmt(
+                ) [NoStmt]
+                PrintStmt(
+                  BasicExprr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        Var(
+                          DesignatorBasic(
+                           i
+                          ) [DesignatorBasic]
+                        ) [Var]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExprr]
+                ) [PrintStmt]
+              ) [MultiStmtList]
+            ) [BasicStmt]
+          ) [ElseStatmt]
+        ) [IfElseMatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  17:34:22,906 - ===================================
+INFO  17:34:22,937 - --MethodTypeName main na liniji 8
+INFO  17:34:22,937 - --VarDeclExt i na liniji 9
+INFO  17:34:22,937 - --VarDeclArray niz na liniji 9
+INFO  17:34:22,939 - --Varijabla dobija vrednost  na liniji 11
+INFO  17:34:22,939 - --Uslov u ifu ok,  na liniji 5
+INFO  17:34:22,939 - --Varijabla i INC  na liniji 14
+INFO  17:34:22,939 - ===================================

@@ -1,0 +1,69 @@
+INFO  15:56:05,919 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  15:56:05,951 - #6 program
+INFO  15:56:05,951 - #2 test302
+INFO  15:56:05,951 - #44 {
+INFO  15:56:05,952 - #11 void
+INFO  15:56:05,953 - #2 main
+INFO  15:56:05,953 - #42 (
+INFO  15:56:05,954 - #43 )
+INFO  15:56:05,954 - #44 {
+INFO  15:56:05,955 - #2 chr
+INFO  15:56:05,955 - #42 (
+INFO  15:56:05,955 - #3 88
+INFO  15:56:05,956 - #43 )
+INFO  15:56:05,956 - #39 ;
+INFO  15:56:05,957 - #45 }
+INFO  15:56:05,957 - #45 }
+INFO  15:56:05,974 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesStmt(
+          ProcedureCall(
+            DesBasic(
+             chr
+            ) [DesBasic]
+            Actuals(
+              SingleParam(
+                BasicExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumConst(
+                       88
+                      ) [NumConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [SingleParam]
+            ) [Actuals]
+          ) [ProcedureCall]
+        ) [DesStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:56:05,976 - ===================================
+INFO  15:56:05,979 - Obradjuje se funkcija main na liniji 9
+INFO  15:56:05,979 - Pronadjen poziv funkcije chr na liniji 11
+INFO  15:56:05,980 - ===================================
+INFO  15:56:05,982 - Parsiranje uspesno zavrseno!

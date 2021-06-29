@@ -1,0 +1,69 @@
+INFO  17:35:51,373 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  17:35:51,493 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                NumConstValue(
+                 5
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              CharConstValue(
+               0
+              ) [CharConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           g
+            CharConstValue(
+             g
+            ) [CharConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  17:35:51,495 - ===================================
+INFO  17:35:51,499 - --SingleConstAssignInt a= 5 na liniji 4
+ERROR 17:35:51,500 - Semanticka greska: Konstanta b je tipa int!
+INFO  17:35:51,500 - --SingleConstAssignChar g= g na liniji 5
+INFO  17:35:51,500 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  17:35:51,501 - ===================================

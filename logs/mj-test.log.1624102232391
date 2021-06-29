@@ -1,0 +1,163 @@
+INFO  13:30:13,620 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  13:30:13,658 - #6 program
+INFO  13:30:13,658 - #2 Program
+INFO  13:30:13,658 - #2 int
+INFO  13:30:13,659 - #2 x
+INFO  13:30:13,660 - #27 ,
+INFO  13:30:13,661 - #2 z
+INFO  13:30:13,661 - #26 ;
+INFO  13:30:13,661 - #2 int
+INFO  13:30:13,661 - #2 y
+INFO  13:30:13,661 - #26 ;
+INFO  13:30:13,661 - #2 boolean
+INFO  13:30:13,662 - #2 kita
+INFO  13:30:13,662 - #26 ;
+INFO  13:30:13,662 - #2 char
+INFO  13:30:13,662 - #2 stojko
+INFO  13:30:13,662 - #26 ;
+INFO  13:30:13,662 - #2 char
+INFO  13:30:13,662 - #2 kurcicic
+INFO  13:30:13,662 - #36 [
+INFO  13:30:13,662 - #37 ]
+INFO  13:30:13,662 - #26 ;
+INFO  13:30:13,663 - #24 {
+INFO  13:30:13,665 - #10 void
+INFO  13:30:13,665 - #2 main
+INFO  13:30:13,665 - #33 (
+INFO  13:30:13,666 - #34 )
+INFO  13:30:13,666 - #24 {
+INFO  13:30:13,667 - #2 y
+INFO  13:30:13,667 - #38 =
+INFO  13:30:13,667 - #3 5
+INFO  13:30:13,669 - #26 ;
+INFO  13:30:13,669 - #25 }
+INFO  13:30:13,669 - #25 }
+INFO  13:30:13,686 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamVar(
+    ParamVar(
+      ParamVar(
+        ParamVar(
+          ParamVar(
+            NoDecl(
+            ) [NoDecl]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             x
+              NoSquares(
+              ) [NoSquares]
+              MultiBasicVarDecl(
+                NoBasicVarDecl(
+                ) [NoBasicVarDecl]
+               z
+                NoSquares(
+                ) [NoSquares]
+              ) [MultiBasicVarDecl]
+            ) [VarDeclaration]
+          ) [ParamVar]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           y
+            NoSquares(
+            ) [NoSquares]
+            NoBasicVarDecl(
+            ) [NoBasicVarDecl]
+          ) [VarDeclaration]
+        ) [ParamVar]
+        VarDeclaration(
+          Type(
+           boolean
+          ) [Type]
+         kita
+          NoSquares(
+          ) [NoSquares]
+          NoBasicVarDecl(
+          ) [NoBasicVarDecl]
+        ) [VarDeclaration]
+      ) [ParamVar]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+       stojko
+        NoSquares(
+        ) [NoSquares]
+        NoBasicVarDecl(
+        ) [NoBasicVarDecl]
+      ) [VarDeclaration]
+    ) [ParamVar]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+     kurcicic
+      Squares(
+      ) [Squares]
+      NoBasicVarDecl(
+      ) [NoBasicVarDecl]
+    ) [VarDeclaration]
+  ) [ParamVar]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethDecl(
+      VoidMethType(
+      ) [VoidMethType]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmts(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          DesStmt(
+            DesignatorStatementDerived1(
+              DesAsign(
+                DesBasic(
+                 y
+                ) [DesBasic]
+                AssignOperator(
+                ) [AssignOperator]
+                BasicExpretion(
+                  TermExp(
+                    NoOptMin(
+                    ) [NoOptMin]
+                    BasicExpTerm(
+                      BasicTerm(
+                        FactNum(
+                         5
+                        ) [FactNum]
+                      ) [BasicTerm]
+                    ) [BasicExpTerm]
+                  ) [TermExp]
+                ) [BasicExpretion]
+              ) [DesAsign]
+            ) [DesignatorStatementDerived1]
+          ) [DesStmt]
+        ) [MatchedStmt]
+      ) [MultiStmts]
+    ) [MethDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  13:30:13,686 - ===================================
+ERROR 13:30:13,688 - Deklarisan novi tip int u tabeli simbola
+INFO  13:30:13,689 - Deklarisana promenljiva z na liniji 5
+INFO  13:30:13,689 - Deklarisana promenljiva x na liniji 2
+ERROR 13:30:13,689 - Deklarisan novi tip int u tabeli simbola
+INFO  13:30:13,689 - Deklarisana promenljiva y na liniji 3
+ERROR 13:30:13,689 - Nije pronadjen tip boolean u tabeli simbola
+INFO  13:30:13,689 - Deklarisana promenljiva kita na liniji 4
+ERROR 13:30:13,689 - Deklarisan novi tip char u tabeli simbola
+INFO  13:30:13,689 - Deklarisana promenljiva stojko na liniji 5
+ERROR 13:30:13,689 - Deklarisan novi tip char u tabeli simbola
+INFO  13:30:13,689 - Deklarisana promenljiva kurcicic na liniji 6
+INFO  13:30:13,689 -  Deklarisanih promenljivih ima = 6
+INFO  13:30:13,690 - ===================================

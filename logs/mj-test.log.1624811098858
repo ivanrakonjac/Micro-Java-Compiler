@@ -1,0 +1,100 @@
+INFO  18:24:18,205 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  18:24:18,281 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                NumConstValue(
+                 5
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              NumConstValue(
+               3
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           g
+            CharConstValue(
+             d
+            ) [CharConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:24:18,282 - ===================================
+INFO  18:24:18,285 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  18:24:18,285 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  18:24:18,286 - --SingleConstAssignChar g= d na liniji 5
+INFO  18:24:18,286 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  18:24:18,286 - MethodTypeName main na liniji 10
+INFO  18:24:18,286 - --VarDeclExt i na liniji 11
+INFO  18:24:18,286 - --VarDeclaration bodovi na liniji 11
+INFO  18:24:18,286 - ===================================

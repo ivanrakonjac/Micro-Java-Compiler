@@ -1,0 +1,144 @@
+INFO  21:50:12,213 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:50:12,249 - #6 program
+INFO  21:50:12,249 - #2 Program
+INFO  21:50:12,249 - #10 const
+INFO  21:50:12,250 - #2 int
+INFO  21:50:12,250 - #2 x
+INFO  21:50:12,250 - #36 =
+INFO  21:50:12,250 - #3 5
+INFO  21:50:12,251 - #39 ;
+INFO  21:50:12,251 - #10 const
+INFO  21:50:12,251 - #2 bool
+INFO  21:50:12,251 - #2 cond
+INFO  21:50:12,251 - #36 =
+INFO  21:50:12,251 - #5 true
+INFO  21:50:12,252 - #39 ;
+INFO  21:50:12,252 - #44 {
+INFO  21:50:12,252 - #11 void
+INFO  21:50:12,252 - #2 main
+INFO  21:50:12,253 - #42 (
+INFO  21:50:12,253 - #2 int
+INFO  21:50:12,253 - #2 j
+INFO  21:50:12,253 - #43 )
+INFO  21:50:12,254 - #44 {
+INFO  21:50:12,256 - #16 if
+INFO  21:50:12,257 - #42 (
+INFO  21:50:12,257 - #2 cond
+INFO  21:50:12,258 - #35 ||
+INFO  21:50:12,258 - #5 false
+INFO  21:50:12,258 - #43 )
+INFO  21:50:12,258 - #44 {
+INFO  21:50:12,259 - #45 }
+INFO  21:50:12,259 - #45 }
+INFO  21:50:12,259 - #45 }
+INFO  21:50:12,276 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      SingleBoolConst(
+       cond
+       true
+      ) [SingleBoolConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      OptFormParams(
+        FormParam(
+          Type(
+           int
+          ) [Type]
+         j
+        ) [FormParam]
+        NoFormParams(
+        ) [NoFormParams]
+      ) [OptFormParams]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        UnmatchedStmt(
+          UnmatchedIf(
+            OrCond(
+              SimpleCond(
+                SimpleCondTerm(
+                  CondExpr(
+                    BasicExpr(
+                      TermExpr(
+                        NoMinus(
+                        ) [NoMinus]
+                        FactorTerm(
+                          Var(
+                            DesBasic(
+                             cond
+                            ) [DesBasic]
+                          ) [Var]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExpr]
+                  ) [CondExpr]
+                ) [SimpleCondTerm]
+              ) [SimpleCond]
+              SimpleCondTerm(
+                CondExpr(
+                  BasicExpr(
+                    TermExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      FactorTerm(
+                        BoolConst(
+                         false
+                        ) [BoolConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [CondExpr]
+              ) [SimpleCondTerm]
+            ) [OrCond]
+            MatchedStmt(
+              BasicStmt(
+                NoStmt(
+                ) [NoStmt]
+              ) [BasicStmt]
+            ) [MatchedStmt]
+          ) [UnmatchedIf]
+        ) [UnmatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:50:12,276 - ===================================
+INFO  21:50:12,280 - Deklarisana je nova konstanta x na liniji 2
+INFO  21:50:12,281 - Deklarisana je nova konstanta cond na liniji 3
+INFO  21:50:12,281 - Obradjuje se funkcija main na liniji 5
+INFO  21:50:12,281 - Deklarisan je formalni parametar j metode main na liniji 5
+INFO  21:50:12,281 - Ispitan je uslov u if naredbi  na liniji 4
+INFO  21:50:12,281 - Ispitan uslov u if naredbi  na liniji 4
+INFO  21:50:12,281 - ===================================
+INFO  21:50:12,282 - Parsiranje uspesno zavrseno!

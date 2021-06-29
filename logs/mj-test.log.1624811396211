@@ -1,0 +1,7 @@
+INFO  18:28:59,842 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+ERROR 18:28:59,925 - 
+Sintaksna greska na liniji 8
+ERROR 18:28:59,926 - Izvrsen oporavak do ; u liniji 6
+ERROR 18:28:59,928 - 
+Sintaksna greska na liniji 18
+ERROR 18:28:59,928 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 20

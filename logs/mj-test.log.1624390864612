@@ -1,0 +1,104 @@
+INFO  21:40:04,464 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:40:04,500 - #6 program
+INFO  21:40:04,500 - #2 Program
+INFO  21:40:04,500 - #10 const
+INFO  21:40:04,501 - #2 int
+INFO  21:40:04,501 - #2 x
+INFO  21:40:04,501 - #36 =
+INFO  21:40:04,501 - #3 5
+INFO  21:40:04,501 - #39 ;
+INFO  21:40:04,502 - #44 {
+INFO  21:40:04,502 - #11 void
+INFO  21:40:04,503 - #2 main
+INFO  21:40:04,503 - #42 (
+INFO  21:40:04,504 - #2 int
+INFO  21:40:04,504 - #2 j
+INFO  21:40:04,504 - #43 )
+INFO  21:40:04,505 - #44 {
+INFO  21:40:04,505 - #16 if
+INFO  21:40:04,506 - #42 (
+INFO  21:40:04,506 - #3 1
+INFO  21:40:04,507 - #43 )
+INFO  21:40:04,507 - #44 {
+INFO  21:40:04,508 - #45 }
+INFO  21:40:04,508 - #45 }
+INFO  21:40:04,508 - #45 }
+INFO  21:40:04,525 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+      SingleNumberConst(
+       x
+       5
+      ) [SingleNumberConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      OptFormParams(
+        FormParam(
+          Type(
+           int
+          ) [Type]
+         j
+        ) [FormParam]
+        NoFormParams(
+        ) [NoFormParams]
+      ) [OptFormParams]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        UnmatchedStmt(
+          UnmatchedIf(
+            SimpleCond(
+              SimpleCondTerm(
+                CondExpr(
+                  BasicExpr(
+                    TermExpr(
+                      NoMinus(
+                      ) [NoMinus]
+                      FactorTerm(
+                        NumConst(
+                         1
+                        ) [NumConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [CondExpr]
+              ) [SimpleCondTerm]
+            ) [SimpleCond]
+            MatchedStmt(
+              BasicStmt(
+                NoStmt(
+                ) [NoStmt]
+              ) [BasicStmt]
+            ) [MatchedStmt]
+          ) [UnmatchedIf]
+        ) [UnmatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:40:04,525 - ===================================
+INFO  21:40:04,528 - Deklarisana je nova konstanta x na liniji 2
+INFO  21:40:04,528 - Obradjuje se funkcija main na liniji 4
+INFO  21:40:04,528 - Deklarisan je formalni parametar j metode main na liniji 4
+ERROR 21:40:04,528 - Greska na liniji 4 : Uslov u if naredbi nije bool tipa
+INFO  21:40:04,528 - ===================================
+ERROR 21:40:04,529 - Parsiranje NIJE uspesno zavrseno!

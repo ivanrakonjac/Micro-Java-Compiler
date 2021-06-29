@@ -1,0 +1,66 @@
+INFO  21:50:26,952 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:50:26,987 - #6 program
+INFO  21:50:26,987 - #2 Program
+INFO  21:50:26,988 - #2 int
+INFO  21:50:26,988 - #2 x
+INFO  21:50:26,989 - #40 ,
+INFO  21:50:26,990 - #2 y
+INFO  21:50:26,990 - #40 ,
+INFO  21:50:26,990 - #2 z
+INFO  21:50:26,990 - #39 ;
+INFO  21:50:26,990 - #2 int
+INFO  21:50:26,991 - #2 m
+INFO  21:50:26,991 - #39 ;
+INFO  21:50:26,991 - #44 {
+INFO  21:50:26,991 - #45 }
+INFO  21:50:27,008 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       x
+        NoSquares(
+        ) [NoSquares]
+        VarDeclMore(
+          VarDeclMore(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           y
+            NoSquares(
+            ) [NoSquares]
+          ) [VarDeclMore]
+         z
+          NoSquares(
+          ) [NoSquares]
+        ) [VarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     m
+      NoSquares(
+      ) [NoSquares]
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  21:50:27,009 - ===================================
+INFO  21:50:27,012 - Deklarisan novi tip int u tabeli simbola
+INFO  21:50:27,012 - Deklarisana promenljiva y na liniji 4
+INFO  21:50:27,012 - Deklarisana promenljiva z na liniji 4
+INFO  21:50:27,012 - Deklarisana promenljiva x na liniji 2
+INFO  21:50:27,012 - Deklarisan novi tip int u tabeli simbola
+INFO  21:50:27,012 - Deklarisana promenljiva m na liniji 3
+INFO  21:50:27,012 - ===================================

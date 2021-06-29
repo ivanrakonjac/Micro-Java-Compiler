@@ -1,0 +1,68 @@
+INFO  15:36:31,879 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  15:36:31,978 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                ConstValue(
+                 5
+                ) [ConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              ConstValue(
+               3
+              ) [ConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           g
+            ValueDerived1(
+             g
+            ) [ValueDerived1]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       boolean
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          ValueDerived2(
+           false
+          ) [ValueDerived2]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  15:36:31,980 - ===================================
+INFO  15:36:31,986 - --ConstIntValue 5 na liniji 4
+INFO  15:36:31,986 - --ConstIntValue 3 na liniji 4
+ERROR 15:36:31,986 - Semanticka greska: Tip boolean nije pronadjen u tabeli simbola
+INFO  15:36:31,986 - ===================================

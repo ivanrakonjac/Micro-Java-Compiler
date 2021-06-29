@@ -1,0 +1,119 @@
+INFO  10:07:42,400 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  10:07:42,525 - #6 program
+INFO  10:07:42,525 - #2 Program
+INFO  10:07:42,525 - #44 {
+INFO  10:07:42,529 - #2 int
+INFO  10:07:42,530 - #2 k
+INFO  10:07:42,532 - #42 (
+INFO  10:07:42,534 - #43 )
+INFO  10:07:42,536 - #44 {
+INFO  10:07:42,537 - #45 }
+INFO  10:07:42,539 - #2 int
+INFO  10:07:42,541 - #2 main
+INFO  10:07:42,541 - #42 (
+INFO  10:07:42,541 - #43 )
+INFO  10:07:42,541 - #2 int
+INFO  10:07:42,541 - #2 c
+INFO  10:07:42,542 - #39 ;
+INFO  10:07:42,545 - #44 {
+INFO  10:07:42,546 - #2 c
+INFO  10:07:42,546 - #36 =
+INFO  10:07:42,546 - #2 k
+INFO  10:07:42,550 - #42 (
+INFO  10:07:42,551 - #43 )
+INFO  10:07:42,566 - #39 ;
+INFO  10:07:42,567 - #45 }
+INFO  10:07:42,567 - #45 }
+INFO  10:07:42,578 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          MethodRetType(
+            Type(
+             int
+            ) [Type]
+          ) [MethodRetType]
+         k
+        ) [MethodTypeName]
+        NoFormPars(
+        ) [NoFormPars]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         c
+          NoSquares(
+          ) [NoSquares]
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          DesStmt(
+            DesAssign(
+              Assign(
+                DesBasic(
+                 c
+                ) [DesBasic]
+                AssignOperator(
+                ) [AssignOperator]
+                BasicExpr(
+                  TermExpr(
+                    NoMinus(
+                    ) [NoMinus]
+                    FactorTerm(
+                      FuncCall(
+                        DesBasic(
+                         k
+                        ) [DesBasic]
+                        NoActuals(
+                        ) [NoActuals]
+                      ) [FuncCall]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [Assign]
+            ) [DesAssign]
+          ) [DesStmt]
+        ) [MatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  10:07:42,578 - ===================================
+INFO  10:07:42,583 - Obradjuje se funkcija k na liniji 4
+INFO  10:07:42,583 - Obradjuje se funkcija main na liniji 6
+INFO  10:07:42,583 - Deklarisana promenljiva c na liniji 6
+INFO  10:07:42,583 - Pronadjen poziv funkcije k  na liniji 7
+INFO  10:07:42,583 - ===================================

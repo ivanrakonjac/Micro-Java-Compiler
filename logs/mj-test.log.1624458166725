@@ -1,0 +1,141 @@
+INFO  16:21:08,021 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:21:08,129 - #6 program
+INFO  16:21:08,129 - #2 test302
+INFO  16:21:08,129 - #44 {
+INFO  16:21:08,133 - #2 int
+INFO  16:21:08,134 - #2 k
+INFO  16:21:08,136 - #42 (
+INFO  16:21:08,138 - #2 int
+INFO  16:21:08,138 - #2 c
+INFO  16:21:08,138 - #43 )
+INFO  16:21:08,139 - #44 {
+INFO  16:21:08,140 - #8 return
+INFO  16:21:08,142 - #2 c
+INFO  16:21:08,144 - #39 ;
+INFO  16:21:08,145 - #45 }
+INFO  16:21:08,145 - #11 void
+INFO  16:21:08,147 - #2 main
+INFO  16:21:08,149 - #42 (
+INFO  16:21:08,149 - #43 )
+INFO  16:21:08,151 - #44 {
+INFO  16:21:08,152 - #2 chr
+INFO  16:21:08,152 - #42 (
+INFO  16:21:08,152 - #3 1
+INFO  16:21:08,194 - #40 ,
+INFO  16:21:08,194 - #3 2
+INFO  16:21:08,194 - #43 )
+INFO  16:21:08,195 - #39 ;
+INFO  16:21:08,195 - #45 }
+INFO  16:21:08,195 - #45 }
+INFO  16:21:08,206 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          MethodRetType(
+            Type(
+             int
+            ) [Type]
+          ) [MethodRetType]
+         k
+        ) [MethodTypeName]
+        OptFormParams(
+          NoFormParams(
+            FormParam(
+              Type(
+               int
+              ) [Type]
+             c
+            ) [FormParam]
+          ) [NoFormParams]
+        ) [OptFormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          RetStmt(
+            BasicExpr(
+              NoMinus(
+              ) [NoMinus]
+              TermExpr(
+                FactorTerm(
+                  Var(
+                    DesBasic(
+                     c
+                    ) [DesBasic]
+                  ) [Var]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExpr]
+          ) [RetStmt]
+        ) [MultiStmtList]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesStmt(
+          ProcedureCall(
+            DesBasic(
+             chr
+            ) [DesBasic]
+            Actuals(
+              MultipleParam(
+                SingleParam(
+                  BasicExpr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumConst(
+                         1
+                        ) [NumConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [SingleParam]
+                BasicExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumConst(
+                       2
+                      ) [NumConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [MultipleParam]
+            ) [Actuals]
+          ) [ProcedureCall]
+        ) [DesStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:21:08,207 - ===================================
+INFO  16:21:08,214 - Obradjuje se funkcija k na liniji 6
+INFO  16:21:08,214 - Deklarisan je formalni parametar c metode k na liniji 6
+INFO  16:21:08,214 - Obradjuje se funkcija main na liniji 9
+INFO  16:21:08,215 - Pronadjen poziv funkcije chr na liniji 11
+ERROR 16:21:08,215 - Greska : broj prosledjenih parametara u pozivu funkcije chr se ne slaze sa brojem formalnih parametara  na liniji 11
+INFO  16:21:08,215 - ===================================
+ERROR 16:21:08,216 - Parsiranje NIJE uspesno zavrseno!

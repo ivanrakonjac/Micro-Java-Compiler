@@ -1,0 +1,29 @@
+INFO  18:16:07,534 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  18:16:07,570 - #6 program
+INFO  18:16:07,571 - #2 Program
+INFO  18:16:07,571 - #12 class
+INFO  18:16:07,571 - #2 A
+INFO  18:16:07,572 - #44 {
+INFO  18:16:07,572 - #2 int
+INFO  18:16:07,572 - #2 x
+INFO  18:16:07,573 - #46 [
+INFO  18:16:07,573 - #47 ]
+INFO  18:16:07,573 - #40 ,
+INFO  18:16:07,574 - #2 y
+INFO  18:16:07,574 - #46 [
+INFO  18:16:07,574 - #47 ]
+INFO  18:16:07,574 - #39 ;
+INFO  18:16:07,574 - #45 }
+INFO  18:16:07,574 - #10 const
+INFO  18:16:07,575 - #2 int
+INFO  18:16:07,575 - #2 pi
+INFO  18:16:07,575 - #36 =
+INFO  18:16:07,575 - #3 3
+INFO  18:16:07,575 - #40 ,
+INFO  18:16:07,575 - #2 e
+INFO  18:16:07,577 - #36 =
+INFO  18:16:07,577 - #3 2
+INFO  18:16:07,577 - #39 ;
+ERROR 18:16:07,577 - 
+Sintaksna greska na liniji 3
+ERROR 18:16:07,577 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

@@ -1,0 +1,43 @@
+INFO  12:58:11,597 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  12:58:11,652 - #6 program
+INFO  12:58:11,652 - #2 Program
+INFO  12:58:11,652 - #10 const
+INFO  12:58:11,653 - #2 char
+INFO  12:58:11,653 - #2 x
+INFO  12:58:11,654 - #36 =
+INFO  12:58:11,654 - #3 5
+INFO  12:58:11,654 - #40 ,
+INFO  12:58:11,654 - #2 z
+INFO  12:58:11,654 - #36 =
+INFO  12:58:11,654 - #4 c
+INFO  12:58:11,654 - #39 ;
+INFO  12:58:11,655 - #44 {
+INFO  12:58:11,655 - #45 }
+INFO  12:58:11,659 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      MultiCharConst(
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+       z
+       c
+      ) [MultiCharConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  12:58:11,679 - ===================================
+INFO  12:58:11,681 - Definisana je nova konstanta x sa vrednoscu 5
+ERROR 12:58:11,681 - Greska: konstanta x nije odgovarajuceg int tipa na liniji 2
+INFO  12:58:11,681 - ===================================

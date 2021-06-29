@@ -1,0 +1,12 @@
+INFO  14:17:40,365 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  14:17:40,490 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:17:40,491 - ===================================
+INFO  14:17:40,494 - ===================================

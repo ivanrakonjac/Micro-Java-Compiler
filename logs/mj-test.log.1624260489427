@@ -1,0 +1,41 @@
+INFO  09:13:07,621 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  09:13:07,754 - #6 program
+INFO  09:13:07,754 - #2 Program
+INFO  09:13:07,755 - #44 {
+INFO  09:13:07,757 - #2 int
+INFO  09:13:07,759 - #2 k
+INFO  09:13:07,761 - #42 (
+INFO  09:13:07,762 - #43 )
+INFO  09:13:07,763 - #44 {
+INFO  09:13:07,765 - #45 }
+INFO  09:13:07,766 - #45 }
+INFO  09:13:07,773 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       k
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  09:13:07,810 - ===================================
+INFO  09:13:07,815 - Obradjuje se funkcija k na liniji 3
+INFO  09:13:07,815 - ===================================

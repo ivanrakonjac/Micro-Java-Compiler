@@ -1,0 +1,167 @@
+INFO  17:38:34,452 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  17:38:34,654 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoParamDecl(
+  ) [NoParamDecl]
+  MethodDeclarationList(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclArray(
+          Type(
+           int
+          ) [Type]
+         niz
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclArray]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          DesignStmt(
+            DesignatorAssign(
+              DesignatorBasic(
+               i
+              ) [DesignatorBasic]
+              AssignOper(
+              ) [AssignOper]
+              BasicExprr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExprr]
+            ) [DesignatorAssign]
+          ) [DesignStmt]
+        ) [MultiStmtList]
+        IfElseMatchedStmt(
+          IfStmt(
+          ) [IfStmt]
+          Condition(
+            CondSimple(
+              CondTerm(
+                AndCond(
+                  CondTermSimple(
+                    CondExpr(
+                      BasicExprr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             1
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExprr]
+                    ) [CondExpr]
+                  ) [CondTermSimple]
+                  CondExpr(
+                    BasicExprr(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           1
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [BasicExprr]
+                  ) [CondExpr]
+                ) [AndCond]
+              ) [CondTerm]
+            ) [CondSimple]
+          ) [Condition]
+          BasicStmt(
+            MultiStmtList(
+              MultiStmtList(
+                NoStmt(
+                ) [NoStmt]
+                DesignStmt(
+                  VariableInc(
+                    DesignatorBasic(
+                     i
+                    ) [DesignatorBasic]
+                  ) [VariableInc]
+                ) [DesignStmt]
+              ) [MultiStmtList]
+              PrintStmt(
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      Var(
+                        DesignatorBasic(
+                         i
+                        ) [DesignatorBasic]
+                      ) [Var]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [PrintStmt]
+            ) [MultiStmtList]
+          ) [BasicStmt]
+          ElseStatmt(
+            ElseTerm(
+            ) [ElseTerm]
+            BasicStmt(
+              MultiStmtList(
+                NoStmt(
+                ) [NoStmt]
+                PrintStmt(
+                  BasicExprr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        Var(
+                          DesignatorBasic(
+                           i
+                          ) [DesignatorBasic]
+                        ) [Var]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExprr]
+                ) [PrintStmt]
+              ) [MultiStmtList]
+            ) [BasicStmt]
+          ) [ElseStatmt]
+        ) [IfElseMatchedStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  17:38:34,657 - ===================================
+INFO  17:38:34,690 - --MethodTypeName main na liniji 8
+INFO  17:38:34,691 - --VarDeclExt i na liniji 9
+INFO  17:38:34,691 - --VarDeclArray niz na liniji 9
+INFO  17:38:34,693 - --Varijabla dobija vrednost  na liniji 11
+ERROR 17:38:34,694 - Semanticka greska: Uslovi nisu BOOL tipa,  na liniji 5
+ERROR 17:38:34,694 - Semanticka greska: Uslov u if naredbi NIJE bool tipa,  na liniji 5
+INFO  17:38:34,694 - --Varijabla i INC  na liniji 14
+INFO  17:38:34,694 - ===================================
+ERROR 17:38:34,695 - Parsiranje NIJE uspesno zavrseno!

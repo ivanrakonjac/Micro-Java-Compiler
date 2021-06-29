@@ -1,0 +1,44 @@
+INFO  14:20:14,673 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:20:14,714 - #6 program
+INFO  14:20:14,714 - #2 VezbaGenerisanje
+INFO  14:20:14,714 - #10 const
+INFO  14:20:14,715 - #2 int
+INFO  14:20:14,715 - #2 jedan
+INFO  14:20:14,716 - #36 =
+INFO  14:20:14,716 - #3 1
+INFO  14:20:14,716 - #39 ;
+INFO  14:20:14,716 - #2 int
+INFO  14:20:14,717 - #2 g
+INFO  14:20:14,717 - #39 ;
+INFO  14:20:14,717 - #44 {
+INFO  14:20:14,718 - #11 void
+INFO  14:20:14,718 - #2 main
+INFO  14:20:14,719 - #42 (
+INFO  14:20:14,719 - #43 )
+INFO  14:20:14,720 - #2 int
+INFO  14:20:14,720 - #2 a
+INFO  14:20:14,721 - #40 ,
+INFO  14:20:14,721 - #2 b
+INFO  14:20:14,721 - #39 ;
+INFO  14:20:14,721 - #2 int
+INFO  14:20:14,723 - #2 arr
+INFO  14:20:14,723 - #46 [
+INFO  14:20:14,723 - #47 ]
+INFO  14:20:14,723 - #39 ;
+INFO  14:20:14,723 - #44 {
+INFO  14:20:14,723 - #2 a
+INFO  14:20:14,724 - #36 =
+INFO  14:20:14,724 - #3 5
+INFO  14:20:14,725 - #39 ;
+INFO  14:20:14,726 - #21 print
+INFO  14:20:14,726 - #42 (
+INFO  14:20:14,726 - #2 a
+INFO  14:20:14,726 - #40 ,
+INFO  14:20:14,726 - #3 7
+INFO  14:20:14,726 - #43 )
+INFO  14:20:14,726 - #39 ;
+ERROR 14:20:14,726 - 
+Sintaksna greska na liniji 11
+INFO  14:20:14,726 - #45 }
+INFO  14:20:14,726 - #45 }
+ERROR 14:20:14,727 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16

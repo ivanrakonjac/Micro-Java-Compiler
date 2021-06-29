@@ -1,0 +1,156 @@
+INFO  14:11:53,684 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  14:11:53,739 - #6 program
+INFO  14:11:53,739 - #2 VezbaGenerisanje
+INFO  14:11:53,739 - #10 const
+INFO  14:11:53,740 - #2 int
+INFO  14:11:53,740 - #2 jedan
+INFO  14:11:53,741 - #36 =
+INFO  14:11:53,741 - #3 1
+INFO  14:11:53,742 - #39 ;
+INFO  14:11:53,742 - #2 int
+INFO  14:11:53,742 - #2 g
+INFO  14:11:53,743 - #39 ;
+INFO  14:11:53,743 - #44 {
+INFO  14:11:53,743 - #11 void
+INFO  14:11:53,744 - #2 main
+INFO  14:11:53,745 - #42 (
+INFO  14:11:53,746 - #43 )
+INFO  14:11:53,746 - #2 int
+INFO  14:11:53,747 - #2 a
+INFO  14:11:53,747 - #40 ,
+INFO  14:11:53,747 - #2 b
+INFO  14:11:53,747 - #39 ;
+INFO  14:11:53,748 - #2 int
+INFO  14:11:53,750 - #2 arr
+INFO  14:11:53,750 - #46 [
+INFO  14:11:53,750 - #47 ]
+INFO  14:11:53,750 - #39 ;
+INFO  14:11:53,750 - #44 {
+INFO  14:11:53,750 - #2 a
+INFO  14:11:53,751 - #36 =
+INFO  14:11:53,752 - #3 5
+INFO  14:11:53,754 - #39 ;
+INFO  14:11:53,754 - #21 print
+INFO  14:11:53,754 - #42 (
+INFO  14:11:53,754 - #2 a
+INFO  14:11:53,755 - #43 )
+INFO  14:11:53,755 - #39 ;
+INFO  14:11:53,755 - #45 }
+INFO  14:11:53,755 - #45 }
+INFO  14:11:53,772 - Program(
+  ProgName(
+   VezbaGenerisanje
+  ) [ProgName]
+  VarParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         jedan
+         1
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     g
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           a
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             b
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclarationArray(
+          Type(
+           int
+          ) [Type]
+         arr
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclarationArray]
+      ) [VarDeclarations]
+      MultiStmtList(
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          DesStmt(
+            DesAssign(
+              DesBasic(
+               a
+              ) [DesBasic]
+              AssignOperator(
+              ) [AssignOperator]
+              BasicExpr(
+                NoMinus(
+                ) [NoMinus]
+                TermExpr(
+                  FactorTerm(
+                    NumConst(
+                     5
+                    ) [NumConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [BasicExpr]
+            ) [DesAssign]
+          ) [DesStmt]
+        ) [MultiStmtList]
+        PrintStmt(
+          BasicExpr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesBasic(
+                   a
+                  ) [DesBasic]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExpr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:11:53,773 - ===================================
+INFO  14:11:53,776 - Deklarisana je nova konstanta jedan na liniji 2
+INFO  14:11:53,776 - Deklarisana je promenljiva g na liniji 3
+INFO  14:11:53,777 - Obradjuje se funkcija main na liniji 7
+INFO  14:11:53,777 - Deklarisana je promenljiva b na liniji 7
+INFO  14:11:53,777 - Deklarisana je promenljiva a na liniji 7
+INFO  14:11:53,777 - Deklarisana je promenljiva arr na liniji 7
+INFO  14:11:53,777 - Promenljivoj se dodeljuje vrednost  na liniji 9
+INFO  14:11:53,777 - ===================================
+INFO  14:11:53,782 - Parsiranje uspesno zavrseno!

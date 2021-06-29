@@ -1,0 +1,70 @@
+INFO  15:54:31,048 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  15:54:31,083 - #6 program
+INFO  15:54:31,084 - #2 test302
+INFO  15:54:31,084 - #44 {
+INFO  15:54:31,085 - #11 void
+INFO  15:54:31,085 - #2 main
+INFO  15:54:31,086 - #42 (
+INFO  15:54:31,086 - #43 )
+INFO  15:54:31,086 - #44 {
+INFO  15:54:31,087 - #2 chr
+INFO  15:54:31,087 - #42 (
+INFO  15:54:31,088 - #3 88
+INFO  15:54:31,088 - #43 )
+INFO  15:54:31,089 - #39 ;
+INFO  15:54:31,089 - #45 }
+INFO  15:54:31,089 - #45 }
+INFO  15:54:31,107 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesStmt(
+          ProcedureCall(
+            DesBasic(
+             chr
+            ) [DesBasic]
+            Actuals(
+              SingleParam(
+                BasicExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumConst(
+                       88
+                      ) [NumConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [SingleParam]
+            ) [Actuals]
+          ) [ProcedureCall]
+        ) [DesStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:54:31,107 - ===================================
+INFO  15:54:31,111 - Obradjuje se funkcija main na liniji 9
+INFO  15:54:31,111 - Pronadjen poziv funkcije chr na liniji 11
+ERROR 15:54:31,111 - Greska : broj prosledjenih parametara u pozivu funkcije chr se ne slaze sa brojem formalnih parametara  na liniji 11
+INFO  15:54:31,111 - ===================================
+ERROR 15:54:31,111 - Parsiranje NIJE uspesno zavrseno!

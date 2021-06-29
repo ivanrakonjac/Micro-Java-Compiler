@@ -1,0 +1,79 @@
+INFO  13:37:39,267 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  13:37:39,331 - #6 program
+INFO  13:37:39,331 - #2 Program
+INFO  13:37:39,331 - #10 const
+INFO  13:37:39,333 - #2 int
+INFO  13:37:39,333 - #2 x
+INFO  13:37:39,334 - #36 =
+INFO  13:37:39,334 - #3 5
+INFO  13:37:39,334 - #39 ;
+INFO  13:37:39,334 - #10 const
+INFO  13:37:39,335 - #2 char
+INFO  13:37:39,335 - #2 c
+INFO  13:37:39,335 - #36 =
+INFO  13:37:39,335 - #4 c
+INFO  13:37:39,335 - #40 ,
+INFO  13:37:39,335 - #2 b
+INFO  13:37:39,336 - #36 =
+INFO  13:37:39,336 - #4 b
+INFO  13:37:39,336 - #39 ;
+INFO  13:37:39,336 - #10 const
+INFO  13:37:39,336 - #2 bool
+INFO  13:37:39,336 - #2 cond
+INFO  13:37:39,386 - #36 =
+INFO  13:37:39,386 - #5 true
+INFO  13:37:39,386 - #39 ;
+INFO  13:37:39,386 - #44 {
+INFO  13:37:39,386 - #45 }
+INFO  13:37:39,392 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ConstParam(
+        ParamDeclDerived1(
+        ) [ParamDeclDerived1]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          SingleNumberConst(
+           x
+           5
+          ) [SingleNumberConst]
+        ) [ConstDecl]
+      ) [ConstParam]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        MultiCharConst(
+          SingleCharConst(
+           c
+           c
+          ) [SingleCharConst]
+         b
+         b
+        ) [MultiCharConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      SingleBoolConst(
+       cond
+       true
+      ) [SingleBoolConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  13:37:39,392 - ===================================
+INFO  13:37:39,395 - Deklarisana je nova konstanta x
+INFO  13:37:39,395 - Deklarisana je nova konstanta c
+INFO  13:37:39,395 - Deklarisana je nova konstanta b
+INFO  13:37:39,395 - Deklarisana je nova konstanta cond
+INFO  13:37:39,395 - ===================================

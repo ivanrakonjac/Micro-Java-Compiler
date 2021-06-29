@@ -1,0 +1,41 @@
+INFO  21:47:14,791 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:47:14,826 - #6 program
+INFO  21:47:14,827 - #2 Program
+INFO  21:47:14,827 - #2 int
+INFO  21:47:14,827 - #2 x
+INFO  21:47:14,828 - #40 ,
+INFO  21:47:14,829 - #2 y
+INFO  21:47:14,829 - #39 ;
+INFO  21:47:14,829 - #44 {
+INFO  21:47:14,830 - #45 }
+INFO  21:47:14,845 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     x
+      NoSquares(
+      ) [NoSquares]
+      VarDeclMore(
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+       y
+        NoSquares(
+        ) [NoSquares]
+      ) [VarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  21:47:14,847 - ===================================
+INFO  21:47:14,849 - Deklarisan novi tip int u tabeli simbola
+INFO  21:47:14,849 - Deklarisana promenljiva y na liniji 4
+INFO  21:47:14,849 - Deklarisana promenljiva x na liniji 2
+INFO  21:47:14,849 - ===================================

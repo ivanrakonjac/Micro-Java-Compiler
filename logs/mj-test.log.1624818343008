@@ -1,0 +1,159 @@
+INFO  20:16:09,183 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  20:16:09,289 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                NumConstValue(
+                 5
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              NumConstValue(
+               3
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           g
+            CharConstValue(
+             d
+            ) [CharConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          VoidRetType(
+          ) [VoidRetType]
+         put
+        ) [MethodTypeName]
+        OptionalFormalParams(
+          FormParamss(
+            NoFormParams(
+              FormParam(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParam]
+            ) [NoFormParams]
+            FormParam(
+              Type(
+               bool
+              ) [Type]
+             b
+            ) [FormParam]
+          ) [FormParamss]
+        ) [OptionalFormalParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesignStmt(
+          ProcCall(
+            DesignatorBasic(
+             put
+            ) [DesignatorBasic]
+            ActualParamss(
+              OneParam(
+                BasicExprr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExprr]
+              ) [OneParam]
+            ) [ActualParamss]
+          ) [ProcCall]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:16:09,292 - ===================================
+INFO  20:16:09,304 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  20:16:09,304 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  20:16:09,304 - --SingleConstAssignChar g= d na liniji 5
+INFO  20:16:09,304 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  20:16:09,304 - --MethodTypeName put na liniji 11
+INFO  20:16:09,305 - --FormParam a u metodi put na liniji 11
+INFO  20:16:09,305 - --FormParam b u metodi put na liniji 11
+INFO  20:16:09,305 - --MethodTypeName main na liniji 15
+INFO  20:16:09,305 - --VarDeclExt i na liniji 16
+INFO  20:16:09,305 - --VarDeclaration bodovi na liniji 16
+INFO  20:19:47,884 - --ProcCall put na liniji 18
+ERROR 20:21:20,100 - Semanticka greska na liniji: 18. Broj prosledjenih parametara nije dobar!

@@ -1,0 +1,61 @@
+INFO  13:06:38,435 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  13:06:38,491 - #6 program
+INFO  13:06:38,491 - #2 Program
+INFO  13:06:38,491 - #10 const
+INFO  13:06:38,493 - #2 int
+INFO  13:06:38,493 - #2 x
+INFO  13:06:38,493 - #36 =
+INFO  13:06:38,494 - #3 5
+INFO  13:06:38,494 - #39 ;
+INFO  13:06:38,494 - #10 const
+INFO  13:06:38,494 - #2 char
+INFO  13:06:38,495 - #2 c
+INFO  13:06:38,495 - #36 =
+INFO  13:06:38,495 - #4 c
+INFO  13:06:38,495 - #40 ,
+INFO  13:06:38,495 - #2 b
+INFO  13:06:38,495 - #36 =
+INFO  13:06:38,495 - #4 b
+INFO  13:06:38,495 - #39 ;
+INFO  13:06:38,495 - #44 {
+INFO  13:06:38,495 - #45 }
+INFO  13:06:38,500 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      MultiCharConst(
+        SingleCharConst(
+         c
+         c
+        ) [SingleCharConst]
+       b
+       b
+      ) [MultiCharConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  13:06:38,522 - ===================================
+INFO  13:06:38,524 - Deklarisana je nova konstanta x
+INFO  13:06:38,524 - Deklarisana je nova konstanta c
+INFO  13:06:38,524 - Deklarisana je nova konstanta b
+INFO  13:06:38,524 - ===================================

@@ -1,0 +1,140 @@
+INFO  16:18:05,879 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:18:05,978 - #6 program
+INFO  16:18:05,978 - #2 test302
+INFO  16:18:05,978 - #44 {
+INFO  16:18:05,981 - #2 int
+INFO  16:18:05,983 - #2 k
+INFO  16:18:05,984 - #42 (
+INFO  16:18:05,986 - #2 int
+INFO  16:18:05,986 - #2 c
+INFO  16:18:05,986 - #43 )
+INFO  16:18:05,987 - #44 {
+INFO  16:18:05,988 - #8 return
+INFO  16:18:05,990 - #2 c
+INFO  16:18:05,992 - #39 ;
+INFO  16:18:05,992 - #45 }
+INFO  16:18:05,993 - #11 void
+INFO  16:18:05,994 - #2 main
+INFO  16:18:05,996 - #42 (
+INFO  16:18:05,996 - #43 )
+INFO  16:18:05,998 - #44 {
+INFO  16:18:05,998 - #2 chr
+INFO  16:18:05,998 - #42 (
+INFO  16:18:05,998 - #3 1
+INFO  16:18:06,025 - #40 ,
+INFO  16:18:06,025 - #3 2
+INFO  16:18:06,026 - #43 )
+INFO  16:18:06,026 - #39 ;
+INFO  16:18:06,026 - #45 }
+INFO  16:18:06,026 - #45 }
+INFO  16:18:06,037 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          MethodRetType(
+            Type(
+             int
+            ) [Type]
+          ) [MethodRetType]
+         k
+        ) [MethodTypeName]
+        OptFormParams(
+          NoFormParams(
+            FormParam(
+              Type(
+               int
+              ) [Type]
+             c
+            ) [FormParam]
+          ) [NoFormParams]
+        ) [OptFormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        MultiStmtList(
+          NoStmt(
+          ) [NoStmt]
+          RetStmt(
+            BasicExpr(
+              NoMinus(
+              ) [NoMinus]
+              TermExpr(
+                FactorTerm(
+                  Var(
+                    DesBasic(
+                     c
+                    ) [DesBasic]
+                  ) [Var]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExpr]
+          ) [RetStmt]
+        ) [MultiStmtList]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesStmt(
+          ProcedureCall(
+            DesBasic(
+             chr
+            ) [DesBasic]
+            Actuals(
+              MultipleParam(
+                SingleParam(
+                  BasicExpr(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermExpr(
+                      FactorTerm(
+                        NumConst(
+                         1
+                        ) [NumConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [BasicExpr]
+                ) [SingleParam]
+                BasicExpr(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermExpr(
+                    FactorTerm(
+                      NumConst(
+                       2
+                      ) [NumConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [BasicExpr]
+              ) [MultipleParam]
+            ) [Actuals]
+          ) [ProcedureCall]
+        ) [DesStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:18:06,038 - ===================================
+INFO  16:18:06,044 - Obradjuje se funkcija k na liniji 6
+INFO  16:18:06,045 - Deklarisan je formalni parametar c metode k na liniji 6
+INFO  16:18:06,045 - Obradjuje se funkcija main na liniji 9
+INFO  16:18:06,045 - Pronadjen poziv funkcije chr na liniji 11
+INFO  16:18:06,046 - ===================================
+INFO  16:18:06,046 - Parsiranje uspesno zavrseno!

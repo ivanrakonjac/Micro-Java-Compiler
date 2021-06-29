@@ -1,0 +1,34 @@
+INFO  14:37:28,525 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  14:37:28,651 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  VarParamDecl(
+    VarParamDecl(
+      NoParamDecl(
+      ) [NoParamDecl]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       a
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParamDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     b
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParamDecl]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  14:37:28,651 - ===================================
+INFO  14:37:28,655 - --VarDeclaration a na liniji 4
+INFO  14:37:28,657 - --VarDeclaration b na liniji 5
+INFO  14:37:28,657 - ===================================

@@ -1,0 +1,166 @@
+INFO  22:54:35,711 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  22:54:35,797 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  VarParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        ConstParamDecl(
+          NoParamDecl(
+          ) [NoParamDecl]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstAssignList(
+              OneConstAssign(
+                SingleConstAssign(
+                 a
+                  NumConstValue(
+                   5
+                  ) [NumConstValue]
+                ) [SingleConstAssign]
+              ) [OneConstAssign]
+              SingleConstAssign(
+               b
+                NumConstValue(
+                 3
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [ConstAssignList]
+          ) [ConstDecl]
+        ) [ConstParamDecl]
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          OneConstAssign(
+            SingleConstAssign(
+             g
+              CharConstValue(
+               d
+              ) [CharConstValue]
+            ) [SingleConstAssign]
+          ) [OneConstAssign]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         bool
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           bo
+            BoolConstValue(
+             false
+            ) [BoolConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     aa
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParamDecl]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          VoidRetType(
+          ) [VoidRetType]
+         put
+        ) [MethodTypeName]
+        OptionalFormalParams(
+          FormParamss(
+            NoFormParams(
+              FormParam(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParam]
+            ) [NoFormParams]
+            FormParam(
+              Type(
+               bool
+              ) [Type]
+             b
+            ) [FormParam]
+          ) [FormParamss]
+        ) [OptionalFormalParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        DesignStmt(
+          DesignatorAssign(
+            DesignatorBasic(
+             aa
+            ) [DesignatorBasic]
+            AssignOper(
+            ) [AssignOper]
+            BasicExprr(
+              NoMinus(
+              ) [NoMinus]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   1
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [BasicExprr]
+          ) [DesignatorAssign]
+        ) [DesignStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  22:54:35,798 - ===================================
+INFO  22:54:35,801 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  22:54:35,802 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  22:54:35,802 - --SingleConstAssignChar g= d na liniji 5
+INFO  22:54:35,802 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  22:54:35,802 - --VarDeclaration aa na liniji 8
+INFO  22:54:35,802 - --MethodTypeName put na liniji 11
+INFO  22:54:35,802 - --FormParam a u metodi put na liniji 11
+INFO  22:54:35,802 - --FormParam b u metodi put na liniji 11
+INFO  22:54:35,803 - --MethodTypeName main na liniji 15
+INFO  22:54:35,803 - --VarDeclExt i na liniji 16
+INFO  22:54:35,803 - --VarDeclaration bodovi na liniji 16

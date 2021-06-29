@@ -1,0 +1,61 @@
+INFO  13:05:38,074 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  13:05:38,131 - #6 program
+INFO  13:05:38,132 - #2 Program
+INFO  13:05:38,132 - #10 const
+INFO  13:05:38,133 - #2 int
+INFO  13:05:38,133 - #2 x
+INFO  13:05:38,134 - #36 =
+INFO  13:05:38,134 - #3 5
+INFO  13:05:38,134 - #39 ;
+INFO  13:05:38,134 - #10 const
+INFO  13:05:38,135 - #2 char
+INFO  13:05:38,135 - #2 c
+INFO  13:05:38,135 - #36 =
+INFO  13:05:38,135 - #4 c
+INFO  13:05:38,135 - #40 ,
+INFO  13:05:38,136 - #2 b
+INFO  13:05:38,136 - #36 =
+INFO  13:05:38,136 - #4 b
+INFO  13:05:38,136 - #39 ;
+INFO  13:05:38,136 - #44 {
+INFO  13:05:38,136 - #45 }
+INFO  13:05:38,142 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  ConstParam(
+    ConstParam(
+      ParamDeclDerived1(
+      ) [ParamDeclDerived1]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        SingleNumberConst(
+         x
+         5
+        ) [SingleNumberConst]
+      ) [ConstDecl]
+    ) [ConstParam]
+    ConstDecl(
+      Type(
+       char
+      ) [Type]
+      MultiCharConst(
+        SingleCharConst(
+         c
+         c
+        ) [SingleCharConst]
+       b
+       b
+      ) [MultiCharConst]
+    ) [ConstDecl]
+  ) [ConstParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  13:05:38,192 - ===================================
+INFO  13:05:38,195 - Definisana je nova konstanta x sa vrednoscu 5
+INFO  13:05:38,195 - Definisana je nova konstanta c sa vrednoscu 99
+INFO  13:05:38,195 - Definisana je nova konstanta b sa vrednoscu 98
+INFO  13:05:38,195 - ===================================

@@ -1,0 +1,78 @@
+INFO  16:07:50,290 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:07:50,352 - #6 program
+INFO  16:07:50,352 - #2 test302
+INFO  16:07:50,352 - #44 {
+INFO  16:07:50,354 - #11 void
+INFO  16:07:50,355 - #2 main
+INFO  16:07:50,355 - #42 (
+INFO  16:07:50,356 - #43 )
+INFO  16:07:50,357 - #44 {
+INFO  16:07:50,358 - #21 print
+INFO  16:07:50,359 - #42 (
+INFO  16:07:50,359 - #2 ord
+INFO  16:07:50,360 - #42 (
+INFO  16:07:50,360 - #4 A
+INFO  16:07:50,360 - #43 )
+INFO  16:07:50,361 - #43 )
+INFO  16:07:50,361 - #39 ;
+INFO  16:07:50,361 - #45 }
+INFO  16:07:50,361 - #45 }
+INFO  16:07:50,367 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ParamDeclDerived1(
+  ) [ParamDeclDerived1]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDecl(
+      ) [NoVarDecl]
+      MultiStmtList(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmt(
+          BasicExpr(
+            NoMinus(
+            ) [NoMinus]
+            TermExpr(
+              FactorTerm(
+                FuncCall(
+                  DesBasic(
+                   ord
+                  ) [DesBasic]
+                  Actuals(
+                    SingleParam(
+                      BasicExpr(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermExpr(
+                          FactorTerm(
+                            CharConst(
+                             A
+                            ) [CharConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [BasicExpr]
+                    ) [SingleParam]
+                  ) [Actuals]
+                ) [FuncCall]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [BasicExpr]
+        ) [PrintStmt]
+      ) [MultiStmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:07:50,367 - ===================================
+INFO  16:07:50,388 - Obradjuje se funkcija main na liniji 6
+INFO  16:07:50,388 - Pronadjen poziv funkcije ord na liniji 8

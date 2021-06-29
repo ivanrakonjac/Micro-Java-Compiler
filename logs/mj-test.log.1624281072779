@@ -1,0 +1,221 @@
+INFO  15:10:19,255 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  15:10:19,319 - #6 program
+INFO  15:10:19,319 - #2 Program
+INFO  15:10:19,319 - #10 const
+INFO  15:10:19,320 - #2 int
+INFO  15:10:19,320 - #2 x
+INFO  15:10:19,321 - #36 =
+INFO  15:10:19,321 - #3 5
+INFO  15:10:19,321 - #39 ;
+INFO  15:10:19,321 - #10 const
+INFO  15:10:19,322 - #2 char
+INFO  15:10:19,322 - #2 c
+INFO  15:10:19,322 - #36 =
+INFO  15:10:19,322 - #4 c
+INFO  15:10:19,322 - #40 ,
+INFO  15:10:19,323 - #2 b
+INFO  15:10:19,323 - #36 =
+INFO  15:10:19,323 - #4 b
+INFO  15:10:19,323 - #39 ;
+INFO  15:10:19,323 - #10 const
+INFO  15:10:19,323 - #2 bool
+INFO  15:10:19,323 - #2 cond
+INFO  15:10:19,324 - #36 =
+INFO  15:10:19,324 - #5 true
+INFO  15:10:19,324 - #39 ;
+INFO  15:10:19,324 - #2 int
+INFO  15:10:19,324 - #2 m
+INFO  15:10:19,324 - #39 ;
+INFO  15:10:19,325 - #2 int
+INFO  15:10:19,326 - #2 q
+INFO  15:10:19,326 - #40 ,
+INFO  15:10:19,326 - #2 p
+INFO  15:10:19,326 - #39 ;
+INFO  15:10:19,326 - #2 bool
+INFO  15:10:19,326 - #2 asd
+INFO  15:10:19,326 - #39 ;
+INFO  15:10:19,326 - #2 int
+INFO  15:10:19,326 - #2 niz
+INFO  15:10:19,326 - #46 [
+INFO  15:10:19,326 - #47 ]
+INFO  15:10:19,326 - #39 ;
+INFO  15:10:19,326 - #2 char
+INFO  15:10:19,327 - #2 niz1
+INFO  15:10:19,327 - #46 [
+INFO  15:10:19,327 - #47 ]
+INFO  15:10:19,327 - #39 ;
+INFO  15:10:19,327 - #44 {
+INFO  15:10:19,327 - #2 int
+INFO  15:10:19,328 - #2 main
+INFO  15:10:19,328 - #42 (
+INFO  15:10:19,329 - #2 int
+INFO  15:10:19,329 - #2 a
+INFO  15:10:19,329 - #40 ,
+INFO  15:10:19,330 - #2 int
+INFO  15:10:19,330 - #2 b
+INFO  15:10:19,330 - #43 )
+INFO  15:10:19,330 - #2 int
+INFO  15:10:19,331 - #2 x
+INFO  15:10:19,331 - #39 ;
+INFO  15:10:19,331 - #10 const
+ERROR 15:10:19,331 - 
+Sintaksna greska na liniji 11
+INFO  15:10:19,332 - #2 int
+INFO  15:10:19,332 - #2 a
+INFO  15:10:19,332 - #39 ;
+INFO  15:10:19,332 - #44 {
+INFO  15:10:19,332 - #45 }
+INFO  15:10:19,332 - #45 }
+ERROR 15:10:19,332 - Izvrsen oporavak do ; u liniji 11
+INFO  15:10:19,339 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          VarParam(
+            ConstParam(
+              ConstParam(
+                ConstParam(
+                  ParamDeclDerived1(
+                  ) [ParamDeclDerived1]
+                  ConstDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleNumberConst(
+                     x
+                     5
+                    ) [SingleNumberConst]
+                  ) [ConstDecl]
+                ) [ConstParam]
+                ConstDecl(
+                  Type(
+                   char
+                  ) [Type]
+                  MultiCharConst(
+                    SingleCharConst(
+                     c
+                     c
+                    ) [SingleCharConst]
+                   b
+                   b
+                  ) [MultiCharConst]
+                ) [ConstDecl]
+              ) [ConstParam]
+              ConstDecl(
+                Type(
+                 bool
+                ) [Type]
+                SingleBoolConst(
+                 cond
+                 true
+                ) [SingleBoolConst]
+              ) [ConstDecl]
+            ) [ConstParam]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             m
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+            ) [VarDeclaration]
+          ) [VarParam]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           q
+            VarDeclMore(
+              NoVarDeclMore(
+              ) [NoVarDeclMore]
+             p
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+         asd
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclarationArray(
+        Type(
+         int
+        ) [Type]
+       niz
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+      ) [VarDeclarationArray]
+    ) [VarParam]
+    VarDeclarationArray(
+      Type(
+       char
+      ) [Type]
+     niz1
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclarationArray]
+  ) [VarParam]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDecl(
+      MethodTypeName(
+        MethodRetType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodRetType]
+       main
+      ) [MethodTypeName]
+      OptFormParams(
+        FormParam(
+          Type(
+           int
+          ) [Type]
+         a
+        ) [FormParam]
+        FormParams(
+          NoFormParams(
+          ) [NoFormParams]
+          FormParam(
+            Type(
+             int
+            ) [Type]
+           b
+          ) [FormParam]
+        ) [FormParams]
+      ) [OptFormParams]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [VarDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:10:19,339 - ===================================
+INFO  15:10:19,342 - Deklarisana je nova konstanta x na liniji 2
+INFO  15:10:19,342 - Deklarisana je nova konstanta c na liniji 3
+INFO  15:10:19,342 - Deklarisana je nova konstanta b na liniji 3
+INFO  15:10:19,342 - Deklarisana je nova konstanta cond na liniji 4
+INFO  15:10:19,342 - Deklarisana je promenljiva m na liniji 5
+INFO  15:10:19,342 - Deklarisana je promenljiva p na liniji 6
+INFO  15:10:19,342 - Deklarisana je promenljiva q na liniji 6
+INFO  15:10:19,342 - Deklarisana je promenljiva asd na liniji 7
+INFO  15:10:19,342 - Deklarisana je promenljiva niz na liniji 8
+INFO  15:10:19,342 - Deklarisana je promenljiva niz1 na liniji 9
+INFO  15:10:19,342 - Obradjuje se funkcija main na liniji 11
+INFO  15:10:19,342 - Deklarisan je formalni parametar a metode main na liniji 11
+INFO  15:10:19,342 - Deklarisan je formalni parametar b metode main na liniji 11
+INFO  15:10:19,342 - ===================================

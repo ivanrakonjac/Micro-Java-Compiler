@@ -1,0 +1,27 @@
+INFO  15:39:02,548 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  15:39:02,563 - #6 program
+INFO  15:39:02,563 - #5 SemAnaliza
+INFO  15:39:02,564 - #10 const
+INFO  15:39:02,564 - #5 int
+INFO  15:39:02,564 - #5 a
+INFO  15:39:02,564 - #36 =
+INFO  15:39:02,565 - #2 5
+INFO  15:39:02,565 - #40 ,
+INFO  15:39:02,565 - #5 b
+INFO  15:39:02,565 - #36 =
+INFO  15:39:02,565 - #2 3
+INFO  15:39:02,565 - #39 ;
+INFO  15:39:02,566 - #10 const
+INFO  15:39:02,566 - #5 char
+INFO  15:39:02,566 - #5 g
+INFO  15:39:02,566 - #36 =
+INFO  15:39:02,566 - #3 g
+INFO  15:39:02,567 - #39 ;
+INFO  15:39:02,567 - #10 const
+INFO  15:39:02,567 - #5 bool
+INFO  15:39:02,567 - #5 bo
+INFO  15:39:02,567 - #36 =
+INFO  15:39:02,569 - #4 false
+INFO  15:39:02,569 - #39 ;
+INFO  15:39:02,570 - #44 {
+INFO  15:39:02,570 - #45 }

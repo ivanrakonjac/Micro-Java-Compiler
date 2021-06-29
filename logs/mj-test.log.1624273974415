@@ -1,0 +1,25 @@
+INFO  13:12:06,184 - Compiling source file: C:\Users\Nikola Krstic\Desktop\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  13:12:06,265 - #6 program
+INFO  13:12:06,265 - #2 Program
+INFO  13:12:06,265 - #10 const
+INFO  13:12:06,267 - #2 int
+INFO  13:12:06,267 - #2 x
+INFO  13:12:06,268 - #36 =
+INFO  13:12:06,268 - #3 5
+INFO  13:12:06,268 - #39 ;
+INFO  13:12:06,268 - #10 const
+INFO  13:12:06,269 - #2 char
+INFO  13:12:06,269 - #2 c
+INFO  13:12:06,269 - #36 =
+INFO  13:12:06,269 - #4 c
+INFO  13:12:06,269 - #40 ,
+INFO  13:12:06,269 - #2 b
+INFO  13:12:06,269 - #36 =
+INFO  13:12:06,270 - #4 b
+INFO  13:12:06,270 - #39 ;
+INFO  13:12:06,270 - #10 const
+INFO  13:12:06,270 - #2 bool
+INFO  13:12:06,270 - #2 cond
+INFO  13:12:06,270 - #36 =
+INFO  13:12:06,270 - #5 true
+INFO  13:12:06,270 - #39 ;

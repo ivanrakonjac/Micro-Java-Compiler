@@ -1,0 +1,134 @@
+INFO  18:30:15,510 - Compiling source file: C:\pp1 domaci\workspace\MJCompiler\test\program.mj
+INFO  18:30:15,585 - Program(
+  ProgramName(
+   SemAnaliza
+  ) [ProgramName]
+  ConstParamDecl(
+    ConstParamDecl(
+      ConstParamDecl(
+        NoParamDecl(
+        ) [NoParamDecl]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstAssignList(
+            OneConstAssign(
+              SingleConstAssign(
+               a
+                NumConstValue(
+                 5
+                ) [NumConstValue]
+              ) [SingleConstAssign]
+            ) [OneConstAssign]
+            SingleConstAssign(
+             b
+              NumConstValue(
+               3
+              ) [NumConstValue]
+            ) [SingleConstAssign]
+          ) [ConstAssignList]
+        ) [ConstDecl]
+      ) [ConstParamDecl]
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstAssign(
+          SingleConstAssign(
+           g
+            CharConstValue(
+             d
+            ) [CharConstValue]
+          ) [SingleConstAssign]
+        ) [OneConstAssign]
+      ) [ConstDecl]
+    ) [ConstParamDecl]
+    ConstDecl(
+      Type(
+       bool
+      ) [Type]
+      OneConstAssign(
+        SingleConstAssign(
+         bo
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [SingleConstAssign]
+      ) [OneConstAssign]
+    ) [ConstDecl]
+  ) [ConstParamDecl]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          VoidRetType(
+          ) [VoidRetType]
+         put
+        ) [MethodTypeName]
+        OptionalFormalParams(
+          FormParamss(
+            NoFormParams(
+              FormParam(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParam]
+            ) [NoFormParams]
+            FormParamArray(
+              Type(
+               bool
+              ) [Type]
+             b
+            ) [FormParamArray]
+          ) [FormParamss]
+        ) [OptionalFormalParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodTypeName(
+        VoidRetType(
+        ) [VoidRetType]
+       main
+      ) [MethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      VarDeclarationList(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         bodovi
+          VarDeclExt(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           i
+          ) [VarDeclExt]
+        ) [VarDeclaration]
+      ) [VarDeclarationList]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:30:15,586 - ===================================
+INFO  18:30:15,590 - --SingleConstAssignInt a= 5 na liniji 4
+INFO  18:30:15,590 - --SingleConstAssignInt b= 3 na liniji 4
+INFO  18:30:15,590 - --SingleConstAssignChar g= d na liniji 5
+INFO  18:30:15,590 - --SingleConstAssignBool bo= 0 na liniji 6
+INFO  18:30:15,590 - --MethodTypeName put na liniji 11
+INFO  18:30:15,590 - --FormParam a u metodi put na liniji 11
+INFO  18:30:15,590 - --FormParamArray b u metodi put na liniji 11
+INFO  18:30:15,591 - --MethodTypeName main na liniji 13
+INFO  18:30:15,591 - --VarDeclExt i na liniji 14
+INFO  18:30:15,591 - --VarDeclaration bodovi na liniji 14
+INFO  18:30:15,591 - ===================================

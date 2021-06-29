@@ -1,0 +1,124 @@
+INFO  21:58:43,529 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:58:43,566 - #6 program
+INFO  21:58:43,566 - #2 Program
+INFO  21:58:43,566 - #2 int
+INFO  21:58:43,567 - #2 x
+INFO  21:58:43,568 - #40 ,
+INFO  21:58:43,569 - #2 y
+INFO  21:58:43,569 - #40 ,
+INFO  21:58:43,569 - #2 z
+INFO  21:58:43,569 - #39 ;
+INFO  21:58:43,569 - #2 int
+INFO  21:58:43,569 - #2 m
+INFO  21:58:43,569 - #40 ,
+INFO  21:58:43,570 - #2 h
+INFO  21:58:43,570 - #39 ;
+INFO  21:58:43,570 - #2 int
+INFO  21:58:43,570 - #2 a
+INFO  21:58:43,570 - #40 ,
+INFO  21:58:43,570 - #2 b
+INFO  21:58:43,570 - #39 ;
+INFO  21:58:43,570 - #2 int
+INFO  21:58:43,570 - #2 a
+INFO  21:58:43,570 - #40 ,
+INFO  21:58:43,570 - #2 c
+INFO  21:58:43,570 - #39 ;
+INFO  21:58:43,571 - #44 {
+INFO  21:58:43,571 - #45 }
+INFO  21:58:43,587 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    VarParam(
+      VarParam(
+        VarParam(
+          ParamDeclDerived1(
+          ) [ParamDeclDerived1]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           x
+            NoSquares(
+            ) [NoSquares]
+            VarDeclMore(
+              VarDeclMore(
+                NoVarDeclMore(
+                ) [NoVarDeclMore]
+               y
+                NoSquares(
+                ) [NoSquares]
+              ) [VarDeclMore]
+             z
+              NoSquares(
+              ) [NoSquares]
+            ) [VarDeclMore]
+          ) [VarDeclaration]
+        ) [VarParam]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         m
+          NoSquares(
+          ) [NoSquares]
+          VarDeclMore(
+            NoVarDeclMore(
+            ) [NoVarDeclMore]
+           h
+            NoSquares(
+            ) [NoSquares]
+          ) [VarDeclMore]
+        ) [VarDeclaration]
+      ) [VarParam]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+       a
+        NoSquares(
+        ) [NoSquares]
+        VarDeclMore(
+          NoVarDeclMore(
+          ) [NoVarDeclMore]
+         b
+          NoSquares(
+          ) [NoSquares]
+        ) [VarDeclMore]
+      ) [VarDeclaration]
+    ) [VarParam]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     a
+      NoSquares(
+      ) [NoSquares]
+      VarDeclMore(
+        NoVarDeclMore(
+        ) [NoVarDeclMore]
+       c
+        NoSquares(
+        ) [NoSquares]
+      ) [VarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  21:58:43,587 - ===================================
+INFO  21:58:43,589 - Deklarisan novi tip int u tabeli simbola
+INFO  21:58:43,589 - Deklarisana promenljiva y na liniji 4
+INFO  21:58:43,589 - Deklarisana promenljiva z na liniji 4
+INFO  21:58:43,589 - Deklarisana promenljiva x na liniji 2
+INFO  21:58:43,589 - Deklarisan novi tip int u tabeli simbola
+INFO  21:58:43,589 - Deklarisana promenljiva h na liniji 4
+INFO  21:58:43,589 - Deklarisana promenljiva m na liniji 3
+INFO  21:58:43,589 - Deklarisan novi tip int u tabeli simbola
+INFO  21:58:43,590 - Deklarisana promenljiva b na liniji 4
+INFO  21:58:43,590 - Deklarisana promenljiva a na liniji 4
+INFO  21:58:43,590 - Deklarisan novi tip int u tabeli simbola
+INFO  21:58:43,590 - Deklarisana promenljiva c na liniji 4
+INFO  21:58:43,590 - Deklarisana promenljiva a na liniji 5
+INFO  21:58:43,590 - ===================================

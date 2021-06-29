@@ -1,0 +1,32 @@
+INFO  21:37:34,565 - Compiling source file: C:\Users\Nikola\Desktop\MJCompiler\MJCompiler\test\program.mj
+INFO  21:37:34,601 - #6 program
+INFO  21:37:34,601 - #2 Program
+INFO  21:37:34,601 - #2 int
+INFO  21:37:34,602 - #2 x
+INFO  21:37:34,603 - #39 ;
+INFO  21:37:34,604 - #44 {
+INFO  21:37:34,604 - #45 }
+INFO  21:37:34,620 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  VarParam(
+    ParamDeclDerived1(
+    ) [ParamDeclDerived1]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+     x
+      NoSquares(
+      ) [NoSquares]
+      NoVarDeclMore(
+      ) [NoVarDeclMore]
+    ) [VarDeclaration]
+  ) [VarParam]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program]
+INFO  21:37:34,620 - ===================================
+INFO  21:37:34,624 - Deklarisana promenljiva x na liniji 2
+INFO  21:37:34,624 - ===================================
